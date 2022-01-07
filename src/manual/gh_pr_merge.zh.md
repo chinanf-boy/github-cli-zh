@@ -16,7 +16,6 @@ gh pr merge [<number> | <url> | <branch>] [flags]
 	<dt><code>--admin</code></dt>
 	<dd>Use administrator privileges to merge a pull request that does not meet requirements</dd>
 
-```
 <dt><code>--auto</code></dt>
 <dd>Automatically merge only after necessary requirements are met</dd>
 
@@ -43,7 +42,6 @@ gh pr merge [<number> | <url> | <branch>] [flags]
 
 <dt><code>-t</code>, <code>--subject &lt;text&gt;</code></dt>
 <dd>Subject text for the merge commit</dd>
-```
 
 </dl>
 

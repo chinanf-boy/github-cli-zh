@@ -1,5 +1,3 @@
-
-
 ## gh codespace delete
 
 删除代码空间
@@ -12,24 +10,22 @@ gh codespace delete [flags]
 
 <dl class="flags">
 	<dt><code>--all</code></dt>
-	<dd>Delete all codespaces</dd>
+	<dd>删除所有</dd>
 
-```
 <dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-<dd>Name of the codespace</dd>
+<dd>名称</dd>
 
 <dt><code>--days &lt;N&gt;</code></dt>
-<dd>Delete codespaces older than N days</dd>
+<dd>删除过去 N 天</dd>
 
 <dt><code>-f</code>, <code>--force</code></dt>
-<dd>Skip confirmation for codespaces that contain unsaved changes</dd>
+<dd>强制删除</dd>
 
 <dt><code>-r</code>, <code>--repo &lt;repository&gt;</code></dt>
-<dd>Delete codespaces for a repository</dd>
-```
+<dd>删除一个库</dd>
 
 </dl>
 
 ### See also
 
--   [gh codespace](./gh_codespace)
+- [gh codespace](./gh_codespace.zh.md)

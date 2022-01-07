@@ -13,7 +13,7 @@ gh codespace code [flags]
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-	<dd>Name of the codespace</dd>
+	<dd>名字</dd>
 
 	<dt><code>--insiders</code></dt>
 	<dd>Use the insiders version of Visual Studio Code</dd>

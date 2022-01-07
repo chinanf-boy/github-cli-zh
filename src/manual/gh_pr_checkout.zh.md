@@ -14,7 +14,6 @@ gh pr checkout {<number> | <url> | <branch>} [flags]
 	<dt><code>-b</code>, <code>--branch &lt;string&gt;</code></dt>
 	<dd>Local branch name to use (default: the name of the head branch)</dd>
 
-```
 <dt><code>--detach</code></dt>
 <dd>Checkout PR with a detached HEAD</dd>
 
@@ -23,7 +22,6 @@ gh pr checkout {<number> | <url> | <branch>} [flags]
 
 <dt><code>--recurse-submodules</code></dt>
 <dd>Update all submodules after checkout</dd>
-```
 
 </dl>
 

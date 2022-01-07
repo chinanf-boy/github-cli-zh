@@ -16,10 +16,8 @@ gh pr diff [<number> | <url> | <branch>] [flags]
 	<dt><code>--color &lt;string&gt;</code></dt>
 	<dd>Use color in diff output: {always|never|auto}</dd>
 
-```
 <dt><code>--patch</code></dt>
 <dd>Display diff in patch format</dd>
-```
 
 </dl>
 

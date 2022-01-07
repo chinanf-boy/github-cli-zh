@@ -14,7 +14,6 @@ gh pr list [flags]
 	<dt><code>-a</code>, <code>--assignee &lt;string&gt;</code></dt>
 	<dd>Filter by assignee</dd>
 
-```
 <dt><code>-A</code>, <code>--author &lt;string&gt;</code></dt>
 <dd>Filter by author</dd>
 
@@ -28,10 +27,10 @@ gh pr list [flags]
 <dd>Filter by head branch</dd>
 
 <dt><code>-q</code>, <code>--jq &lt;expression&gt;</code></dt>
-<dd>Filter JSON output using a jq expression</dd>
+<dd>jq 表达式，过滤 JSON 输出</dd>
 
 <dt><code>--json &lt;fields&gt;</code></dt>
-<dd>Output JSON with the specified fields</dd>
+<dd>JSON 输出特殊字段</dd>
 
 <dt><code>-l</code>, <code>--label &lt;strings&gt;</code></dt>
 <dd>Filter by labels</dd>
@@ -46,11 +45,10 @@ gh pr list [flags]
 <dd>Filter by state: {open|closed|merged|all}</dd>
 
 <dt><code>-t</code>, <code>--template &lt;string&gt;</code></dt>
-<dd>Format JSON output using a Go template</dd>
+<dd>模板化输出</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
 <dd>Open the browser to list the pull requests</dd>
-```
 
 </dl>
 

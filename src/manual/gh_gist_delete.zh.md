@@ -1,8 +1,6 @@
-
-
 ## gh gist delete
 
-删除要点
+删除 gist
 
 ```
 gh gist delete {<id> | <url>}
@@ -10,4 +8,4 @@ gh gist delete {<id> | <url>}
 
 ### See also
 
--   [gh gist](./gh_gist)
+- [gh gist](./gh_gist.zh.md)

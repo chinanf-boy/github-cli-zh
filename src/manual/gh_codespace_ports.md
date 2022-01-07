@@ -19,16 +19,16 @@ gh codespace ports [flags]
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-	<dd>Name of the codespace</dd>
+	<dd>名字</dd>
 
 	<dt><code>-q</code>, <code>--jq &lt;expression&gt;</code></dt>
-	<dd>Filter JSON output using a jq expression</dd>
+	<dd>jq 表达式，过滤 JSON 输出</dd>
 
 	<dt><code>--json &lt;fields&gt;</code></dt>
-	<dd>Output JSON with the specified fields</dd>
+	<dd>JSON 输出特殊字段</dd>
 
 	<dt><code>-t</code>, <code>--template &lt;string&gt;</code></dt>
-	<dd>Format JSON output using a Go template</dd>
+	<dd>模板化输出</dd>
 </dl>
 
 

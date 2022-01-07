@@ -2,6 +2,9 @@
 
 连接并管理您的代码空间
 
+GitHub Codespaces
+通过 Visual Studio Code 或你的浏览器访问云托管的开发环境。
+
 ### Commands
 
 - [gh codespace code](./gh_codespace_code.zh.md)

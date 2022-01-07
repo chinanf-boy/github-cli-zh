@@ -16,13 +16,11 @@ gh release download [<tag>] [flags]
 	<dt><code>-A</code>, <code>--archive &lt;format&gt;</code></dt>
 	<dd>Download the source code archive in the specified format (zip or tar.gz)</dd>
 
-```
 <dt><code>-D</code>, <code>--dir &lt;string&gt;</code></dt>
 <dd>The directory to download files into</dd>
 
 <dt><code>-p</code>, <code>--pattern &lt;stringArray&gt;</code></dt>
 <dd>Download only assets that match a glob pattern</dd>
-```
 
 </dl>
 

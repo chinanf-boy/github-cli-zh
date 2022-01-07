@@ -18,7 +18,6 @@ gh pr comment [<number> | <url> | <branch>] [flags]
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
 	<dd>Supply a body. Will prompt for one otherwise.</dd>
 
-```
 <dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
 <dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
 
@@ -27,7 +26,6 @@ gh pr comment [<number> | <url> | <branch>] [flags]
 
 <dt><code>-w</code>, <code>--web</code></dt>
 <dd>Add body in browser</dd>
-```
 
 </dl>
 

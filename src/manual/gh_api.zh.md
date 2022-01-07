@@ -18,13 +18,13 @@ endpoint 参数中的占位符值`{owner}`、`{repo}`和`{branch}`将替换成�
 
 - 文本值`true`、`false`、`null`和整数，被转换为适当的 JSON 类型；
 - 占位符值`{owner}`、`{repo}`和`{branch}`由当前目录存储库中的值填充；
-- 如果该值以`@`开头，则该值的其余部分将被解释为，读取值的文件名。传递`-`从标准输入读取。
+- 如果该值以`@`开头，则该值的其余部分将被解释为，读取值的文件名。传递`-`则从标准输入读取。
 
 对于 GraphQL 请求，除`query`和`operationName`之外的所有字段都被解释为 GraphQL 变量。
 
-原始请求主体可以通过`--input`指定的文件，从外部传递。传递`-`从标准输入读取。在此模式下，通过`--field`指定的参数。被序列化为 URL 查询参数。
+原始请求主体可以通过`--input`指定的文件，从外部传递。传递`-`则从标准输入读取。在此模式下，通过`--field`指定的参数。被序列化为 URL 查询参数。
 
-在里面`--paginate`模式下，将按顺序请求所有结果页，直到没有更多结果页为止。对于 GraphQL 请求，这要求原始查询接受一个`$endCursor: String`变量，之后它从一个集合，获取`pageInfo{ hasNextPage, endCursor }`字段集。
+在`--paginate`模式下，将按顺序请求所有结果页，直到没有更多结果页为止。对于 GraphQL 请求，这要求原始查询接受一个`$endCursor: String`变量，之后它从一个集合，获取`pageInfo{ hasNextPage, endCursor }`字段集。
 
 ### Options
 
@@ -48,54 +48,54 @@ endpoint 参数中的占位符值`{owner}`、`{repo}`和`{branch}`将替换成�
 <dd>file 作为 HTTP 请求的主体 (使用 &#34;-&#34; 可以从标准输入读取)</dd>
 
 <dt><code>-q</code>, <code>--jq &lt;string&gt;</code></dt>
-<dd>Query to select values from the response using jq syntax</dd>
+<dd>使用 jq 语法，查询响应的值</dd>
 
 <dt><code>-X</code>, <code>--method &lt;string&gt;</code></dt>
-<dd>The HTTP method for the request</dd>
+<dd>HTTP 方法</dd>
 
 <dt><code>--paginate</code></dt>
-<dd>Make additional HTTP requests to fetch all pages of results</dd>
+<dd>发出额外的 HTTP 请求，获取所有的结果页</dd>
 
 <dt><code>-p</code>, <code>--preview &lt;strings&gt;</code></dt>
-<dd>Opt into GitHub API previews</dd>
+<dd> GitHub API 预览版本的功能</dd>
 
 <dt><code>-f</code>, <code>--raw-field &lt;key=value&gt;</code></dt>
-<dd>Add a string parameter in key=value format</dd>
+<dd>添加一个字符串参数，格式是 key=value</dd>
 
 <dt><code>--silent</code></dt>
-<dd>Do not print the response body</dd>
+<dd>不打印</dd>
 
 <dt><code>-t</code>, <code>--template &lt;string&gt;</code></dt>
-<dd>Format the response using a Go template</dd>
+<dd>用模板格式化响应</dd>
 
 </dl>
 
 ### Examples
 
 ```bash
-# list releases in the current repository
+# 列出，repo 的 releases 
 $ gh api repos/{owner}/{repo}/releases
 
-# post an issue comment
+# 发布一个 issue 评论
 $ gh api repos/{owner}/{repo}/issues/123/comments -f body='Hi from CLI'
 
-# add parameters to a GET request
+# 为 GET 请求，添加参数
 $ gh api -X GET search/issues -f q='repo:cli/cli is:open remote'
 
-# set a custom HTTP header
+# 自定义 HTTP header
 $ gh api -H 'Accept: application/vnd.github.v3.raw+json' ...
 
-# opt into GitHub API previews
+# GitHub API 预览版本的功能
 $ gh api --preview baptiste,nebula ...
 
-# print only specific fields from the response
+# 打印 response 中特殊字段
 $ gh api repos/{owner}/{repo}/issues --jq '.[].title'
 
-# use a template for the output
+# 模板化输出
 $ gh api repos/{owner}/{repo}/issues --template \
   '{{range .}}{{.title}} ({{.labels | pluck "name" | join ", " | color "yellow"}}){{"\n"}}{{end}}'
 
-# list releases with GraphQL
+# 列出，releases with GraphQL
 $ gh api graphql -F owner='{owner}' -F name='{repo}' -f query='
   query($name: String!, $owner: String!) {
     repository(owner: $owner, name: $name) {
@@ -106,7 +106,7 @@ $ gh api graphql -F owner='{owner}' -F name='{repo}' -f query='
   }
 '
 
-# list all repositories for a user
+# 列出，一个用户所有的存储库
 $ gh api graphql --paginate -f query='
   query($endCursor: String) {
     viewer {

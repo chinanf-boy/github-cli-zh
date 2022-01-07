@@ -1,63 +1,51 @@
-
-
 ## gh gist create
 
 ```
 gh gist create [<filename>... | -] [flags]
 ```
 
-创建具有给定内容的新GitHub gist。
+创建具有给定内容的新 GitHub gist。
 
-GIST可以从一个或多个文件创建。或者，通过“-”作为文件名从标准输入读取。
+GIST 可以从一个或多个文件创建。或者，传递`-`作为文件名，从标准输入读取。
 
-默认情况下，GIST是保密的；使用“--public”将其公开列出。
+默认情况下，GIST 是保密的；使用`--public`将其公开列出。
 
 ### Options
 
 <dl class="flags">
 	<dt><code>-d</code>, <code>--desc &lt;string&gt;</code></dt>
-	<dd>A description for this gist</dd>
+	<dd>描述</dd>
 
-```
 <dt><code>-f</code>, <code>--filename &lt;string&gt;</code></dt>
-<dd>Provide a filename to be used when reading from standard input</dd>
+<dd>标准输入，给个文件名</dd>
 
 <dt><code>-p</code>, <code>--public</code></dt>
-<dd>List the gist publicly (default: secret)</dd>
+<dd>公开 (default: secret)</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
-<dd>Open the web browser with created gist</dd>
-```
+<dd>gist 链接，打开浏览器</dd>
 
 </dl>
 
 ### Examples
 
 ```bash
+# 上传 'hello.py' 作为公开的 gist
+$ gh gist create --public hello.py
 
+# 带描述
+$ gh gist create hello.py -d "my Hello-World program in Python"
 
-# publish file 'hello.py' as a public gist
+# 带多个文件
+$ gh gist create hello.py world.py cool.txt
 
-$gh—公共你好。派克
+# 要标准输入
+$ gh gist create -
 
-# create a gist with a description
-
-$gh，你好。py-d“Python中的我的Hello World程序”
-
-# create a gist containing several files
-
-$gh，你好。疯狂的世界。太酷了。文本
-
-# read from standard input to create a gist
-
-$gh创建-
-
-# create a gist from output piped from another command
-
-$cat酷。txt |创建
+# 管道输入
+$ cat cool.txt | gh gist create
 ```
-
 
 ### See also
 
--   [gh gist](./gh_gist)
+- [gh gist](./gh_gist.zh.md)

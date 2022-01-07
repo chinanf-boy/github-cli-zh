@@ -22,7 +22,6 @@ gh release create [<tag>] [<files>...]
 	<dt><code>--discussion-category &lt;string&gt;</code></dt>
 	<dd>Start a discussion of the specified category</dd>
 
-```
 <dt><code>-d</code>, <code>--draft</code></dt>
 <dd>Save the release as a draft instead of publishing it</dd>
 
@@ -43,7 +42,6 @@ gh release create [<tag>] [<files>...]
 
 <dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
 <dd>Release title</dd>
-```
 
 </dl>
 

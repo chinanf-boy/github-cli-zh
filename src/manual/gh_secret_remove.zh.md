@@ -19,13 +19,11 @@ gh secret remove <secret-name> [flags]
 	<dt><code>-e</code>, <code>--env &lt;string&gt;</code></dt>
 	<dd>Remove a secret for an environment</dd>
 
-```
 <dt><code>-o</code>, <code>--org &lt;string&gt;</code></dt>
 <dd>Remove a secret for an organization</dd>
 
 <dt><code>-u</code>, <code>--user</code></dt>
 <dd>Remove a secret for your user</dd>
-```
 
 </dl>
 

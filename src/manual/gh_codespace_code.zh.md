@@ -1,8 +1,6 @@
-
-
 ## gh codespace code
 
-在Visual Studio代码中打开代码空间
+在 Visual Studio Code 中，打开代码空间
 
 ```
 gh codespace code [flags]
@@ -12,15 +10,13 @@ gh codespace code [flags]
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-	<dd>Name of the codespace</dd>
+	<dd>名字</dd>
 
-```
 <dt><code>--insiders</code></dt>
-<dd>Use the insiders version of Visual Studio Code</dd>
-```
+<dd>Visual Studio Code 内部版本</dd>
 
 </dl>
 
 ### See also
 
--   [gh codespace](./gh_codespace)
+- [gh codespace](./gh_codespace.zh.md)

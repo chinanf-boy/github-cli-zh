@@ -16,7 +16,6 @@ gh pr review [<number> | <url> | <branch>] [flags]
 	<dt><code>-a</code>, <code>--approve</code></dt>
 	<dd>Approve pull request</dd>
 
-```
 <dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
 <dd>Specify the body of a review</dd>
 
@@ -28,7 +27,6 @@ gh pr review [<number> | <url> | <branch>] [flags]
 
 <dt><code>-r</code>, <code>--request-changes</code></dt>
 <dd>Request changes on a pull request</dd>
-```
 
 </dl>
 

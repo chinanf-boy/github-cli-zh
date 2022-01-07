@@ -19,13 +19,11 @@ gh secret list [flags]
 	<dt><code>-e</code>, <code>--env &lt;string&gt;</code></dt>
 	<dd>List secrets for an environment</dd>
 
-```
 <dt><code>-o</code>, <code>--org &lt;string&gt;</code></dt>
 <dd>List secrets for an organization</dd>
 
 <dt><code>-u</code>, <code>--user</code></dt>
 <dd>List a secret for your user</dd>
-```
 
 </dl>
 

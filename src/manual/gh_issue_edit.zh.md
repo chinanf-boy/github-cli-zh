@@ -14,7 +14,6 @@ gh issue edit {<number> | <url>} [flags]
 	<dt><code>--add-assignee &lt;login&gt;</code></dt>
 	<dd>Add assigned users by their login. Use &#34;@me&#34; to assign yourself.</dd>
 
-```
 <dt><code>--add-label &lt;name&gt;</code></dt>
 <dd>Add labels by name</dd>
 
@@ -41,7 +40,6 @@ gh issue edit {<number> | <url>} [flags]
 
 <dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
 <dd>Set the new title.</dd>
-```
 
 </dl>
 

@@ -14,10 +14,8 @@ gh run watch <run-id> [flags]
 	<dt><code>--exit-status</code></dt>
 	<dd>Exit with non-zero status if run fails</dd>
 
-```
 <dt><code>-i</code>, <code>--interval &lt;int&gt;</code></dt>
 <dd>Refresh interval in seconds</dd>
-```
 
 </dl>
 

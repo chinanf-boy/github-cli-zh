@@ -119,7 +119,7 @@ Connect to and manage your codespaces
 Open a codespace in Visual Studio Code
 
 ```
--c, --codespace string   Name of the codespace
+-c, --codespace string   名字
     --insiders           Use the insiders version of Visual Studio Code
 ````
 
@@ -128,7 +128,7 @@ Open a codespace in Visual Studio Code
 Copy files between local and remote file systems
 
 ```
--c, --codespace string   Name of the codespace
+-c, --codespace string   名字
 -e, --expand             Expand remote file names on remote shell
 -r, --recursive          Recursively copy directories
 ````
@@ -151,7 +151,7 @@ Delete a codespace
 
 ```
     --all                Delete all codespaces
--c, --codespace string   Name of the codespace
+-c, --codespace string   名字
     --days N             Delete codespaces older than N days
 -f, --force              Skip confirmation for codespaces that contain unsaved changes
 -r, --repo repository    Delete codespaces for a repository
@@ -162,10 +162,10 @@ Delete a codespace
 List your codespaces
 
 ```
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
 -L, --limit int         Maximum number of codespaces to list (default 30)
--t, --template string   Format JSON output using a Go template
+-t, --template string   模板化输出
 ````
 
 ### `gh codespace logs [flags]`
@@ -173,8 +173,8 @@ List your codespaces
 Access codespace logs
 
 ```
--c, --codespace string   Name of the codespace
--f, --follow             Tail and follow the logs
+-c, --codespace string   名字
+-f, --follow             日志跟随滚动
 ````
 
 ### `gh codespace ports [flags]`
@@ -182,9 +182,9 @@ Access codespace logs
 List ports in a codespace
 
 ```
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 ````
 
 #### `gh codespace ports forward <remote-port>:<local-port>...`
@@ -200,10 +200,10 @@ Change the visibility of the forwarded port
 SSH into a codespace
 
 ```
--c, --codespace string    Name of the codespace
+-c, --codespace string    名字
 -d, --debug               Log debug data to a file
-    --debug-file string   Path of the file log to
-    --profile string      Name of the SSH profile to use
+    --debug-file string   文件日志的路径
+    --profile string      所使用的 SSH profile 名称
     --server-port int     SSH server port number (0 => pick unused)
 ````
 
@@ -212,7 +212,7 @@ SSH into a codespace
 Stop a running codespace
 
 ```
--c, --codespace string   Name of the codespace
+-c, --codespace string   名字
 ````
 
 ## `gh completion -s <shell>`
@@ -412,15 +412,15 @@ List and filter issues in this repository
 ```
 -a, --assignee string    Filter by assignee
 -A, --author string      Filter by author
--q, --jq expression      Filter JSON output using a jq expression
-    --json fields        Output JSON with the specified fields
+-q, --jq expression      jq 表达式，过滤 JSON 输出
+    --json fields        JSON 输出特殊字段
 -l, --label strings      Filter by labels
 -L, --limit int          Maximum number of issues to fetch (default 30)
     --mention string     Filter by mention
 -m, --milestone number   Filter by milestone number or `title`
 -S, --search query       Search issues with query
 -s, --state string       Filter by state: {open|closed|all} (default "open")
--t, --template string    Format JSON output using a Go template
+-t, --template string    模板化输出
 -w, --web                Open the browser to list the issue(s)
 ````
 
@@ -433,9 +433,9 @@ Reopen issue
 Show status of relevant issues
 
 ```
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 ````
 
 ### `gh issue transfer {<number> | <url>} <destination-repo>`
@@ -448,9 +448,9 @@ View an issue
 
 ```
 -c, --comments          View issue comments
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 -w, --web               Open an issue in the browser
 ````
 
@@ -557,13 +557,13 @@ List and filter pull requests in this repository
 -B, --base string       Filter by base branch
 -d, --draft             Filter by draft state
 -H, --head string       Filter by head branch
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
 -l, --label strings     Filter by labels
 -L, --limit int         Maximum number of items to fetch (default 30)
 -S, --search query      Search pull requests with query
 -s, --state string      Filter by state: {open|closed|merged|all} (default "open")
--t, --template string   Format JSON output using a Go template
+-t, --template string   模板化输出
 -w, --web               Open the browser to list the pull requests
 ````
 
@@ -609,9 +609,9 @@ Add a review to a pull request
 Show status of relevant pull requests
 
 ```
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 ````
 
 ### `gh pr view [<number> | <url> | <branch>] [flags]`
@@ -620,9 +620,9 @@ View a pull request
 
 ```
 -c, --comments          View pull request comments
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 -w, --web               Open a pull request in the browser
 ````
 
@@ -684,9 +684,9 @@ Upload assets to a release
 View information about a release
 
 ```
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 -w, --web               Open the release in the browser
 ````
 
@@ -777,15 +777,15 @@ List repositories owned by user or organization
 ```
     --archived          Show only archived repositories
     --fork              Show only forks
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
 -l, --language string   Filter by primary coding language
 -L, --limit int         Maximum number of repositories to list (default 30)
     --no-archived       Omit archived repositories
     --private           Show only private repositories
     --public            Show only public repositories
     --source            Show only non-forks
--t, --template string   Format JSON output using a Go template
+-t, --template string   模板化输出
     --topic string      Filter by topic
 ````
 
@@ -813,9 +813,9 @@ View a repository
 
 ```
 -b, --branch string     View a specific branch of the repository
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
--t, --template string   Format JSON output using a Go template
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
+-t, --template string   模板化输出
 -w, --web               Open a repository in the browser
 ````
 
@@ -841,10 +841,10 @@ Download artifacts generated by a workflow run
 List recent workflow runs
 
 ```
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
 -L, --limit int         Maximum number of runs to fetch (default 20)
--t, --template string   Format JSON output using a Go template
+-t, --template string   模板化输出
 -w, --workflow string   Filter runs by workflow
 ````
 
@@ -859,11 +859,11 @@ View a summary of a workflow run
 ```
     --exit-status       Exit with non-zero status if run failed
 -j, --job string        View a specific job ID from a run
--q, --jq expression     Filter JSON output using a jq expression
-    --json fields       Output JSON with the specified fields
+-q, --jq expression     jq 表达式，过滤 JSON 输出
+    --json fields       JSON 输出特殊字段
     --log               View full log for either a run or specific job
     --log-failed        View the log for any failed steps in a run or specific job
--t, --template string   Format JSON output using a Go template
+-t, --template string   模板化输出
 -v, --verbose           Show job steps
 -w, --web               Open run in the browser
 ````

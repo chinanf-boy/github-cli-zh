@@ -16,10 +16,8 @@ gh run download [<run-id>] [flags]
 	<dt><code>-D</code>, <code>--dir &lt;string&gt;</code></dt>
 	<dd>The directory to download artifacts into</dd>
 
-```
 <dt><code>-n</code>, <code>--name &lt;stringArray&gt;</code></dt>
 <dd>Only download artifacts that match any of the given names</dd>
-```
 
 </dl>
 

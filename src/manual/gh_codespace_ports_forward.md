@@ -13,7 +13,7 @@ gh codespace ports forward <remote-port>:<local-port>...
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-	<dd>Name of the codespace</dd>
+	<dd>名字</dd>
 </dl>
 
 

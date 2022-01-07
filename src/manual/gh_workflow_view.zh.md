@@ -14,13 +14,11 @@ gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]
 	<dt><code>-r</code>, <code>--ref &lt;string&gt;</code></dt>
 	<dd>The branch or tag name which contains the version of the workflow file you&#39;d like to view</dd>
 
-```
 <dt><code>-w</code>, <code>--web</code></dt>
 <dd>Open workflow in the browser</dd>
 
 <dt><code>-y</code>, <code>--yaml</code></dt>
 <dd>View the workflow yaml file</dd>
-```
 
 </dl>
 

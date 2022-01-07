@@ -1,5 +1,3 @@
-
-
 ## gh config get
 
 打印给定配置密钥的值
@@ -21,7 +19,6 @@ gh config get <key> [flags]
 $gh config get git_protocol https
 ```
 
-
 ### See also
 
--   [gh config](./gh_config)
+- [gh config](./gh_config.zh.md)

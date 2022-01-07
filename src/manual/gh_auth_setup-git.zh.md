@@ -1,8 +1,6 @@
-
-
 ## gh auth setup-git
 
-配置git以将GitHub CLI用作凭据帮助器
+配置 git，这样就可以使用 GitHub CLI ，作为凭据帮助器
 
 ```
 gh auth setup-git [flags]
@@ -17,4 +15,4 @@ gh auth setup-git [flags]
 
 ### See also
 
--   [gh auth](./gh_auth)
+- [gh auth](./gh_auth.zh.md)

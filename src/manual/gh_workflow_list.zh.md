@@ -14,10 +14,8 @@ gh workflow list [flags]
 	<dt><code>-a</code>, <code>--all</code></dt>
 	<dd>Show all workflows, including disabled workflows</dd>
 
-```
 <dt><code>-L</code>, <code>--limit &lt;int&gt;</code></dt>
 <dd>Maximum number of workflows to fetch</dd>
-```
 
 </dl>
 

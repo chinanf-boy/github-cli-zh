@@ -1,5 +1,3 @@
-
-
 ## gh codespace logs
 
 访问代码空间日志
@@ -12,15 +10,13 @@ gh codespace logs [flags]
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-	<dd>Name of the codespace</dd>
+	<dd>名字</dd>
 
-```
 <dt><code>-f</code>, <code>--follow</code></dt>
-<dd>Tail and follow the logs</dd>
-```
+<dd>日志跟随滚动</dd>
 
 </dl>
 
 ### See also
 
--   [gh codespace](./gh_codespace)
+- [gh codespace](./gh_codespace.zh.md)

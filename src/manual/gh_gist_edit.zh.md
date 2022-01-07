@@ -1,8 +1,6 @@
-
-
 ## gh gist edit
 
-编辑一个GIST
+编辑一个 GIST
 
 ```
 gh gist edit {<id> | <url>} [flags]
@@ -12,15 +10,13 @@ gh gist edit {<id> | <url>} [flags]
 
 <dl class="flags">
 	<dt><code>-a</code>, <code>--add &lt;string&gt;</code></dt>
-	<dd>Add a new file to the gist</dd>
+	<dd>新增一个文件t</dd>
 
-```
 <dt><code>-f</code>, <code>--filename &lt;string&gt;</code></dt>
-<dd>Select a file to edit</dd>
-```
+<dd>选择一个文件编辑</dd>
 
 </dl>
 
 ### See also
 
--   [gh gist](./gh_gist)
+- [gh gist](./gh_gist.zh.md)

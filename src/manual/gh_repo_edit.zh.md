@@ -14,7 +14,6 @@ gh repo edit [<repository>] [flags]
 	<dt><code>--add-topic &lt;strings&gt;</code></dt>
 	<dd>Add repository topic</dd>
 
-```
 <dt><code>--allow-forking</code></dt>
 <dd>Allow forking of an organization repository</dd>
 
@@ -59,7 +58,6 @@ gh repo edit [<repository>] [flags]
 
 <dt><code>--visibility &lt;string&gt;</code></dt>
 <dd>Change the visibility of the repository to {public,private,internal}</dd>
-```
 
 </dl>
 

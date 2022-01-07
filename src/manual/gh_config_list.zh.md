@@ -17,4 +17,4 @@ gh config list [flags]
 
 ### See also
 
--   [gh config](./gh_config)
+-   [gh config](./gh_config.zh.md)

@@ -1,8 +1,6 @@
-
-
 ## gh gist list
 
-列出你的注册医生
+列出你的 gist
 
 ```
 gh gist list [flags]
@@ -12,18 +10,16 @@ gh gist list [flags]
 
 <dl class="flags">
 	<dt><code>-L</code>, <code>--limit &lt;int&gt;</code></dt>
-	<dd>Maximum number of gists to fetch</dd>
+	<dd>列出的数量</dd>
 
-```
 <dt><code>--public</code></dt>
-<dd>Show only public gists</dd>
+<dd>只给出 public gists</dd>
 
 <dt><code>--secret</code></dt>
-<dd>Show only secret gists</dd>
-```
+<dd>只给出 secret gists</dd>
 
 </dl>
 
 ### See also
 
--   [gh gist](./gh_gist)
+- [gh gist](./gh_gist.zh.md)

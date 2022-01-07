@@ -23,7 +23,6 @@ gh secret set <secret-name> [flags]
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
 	<dd>The value for the secret (reads from standard input if not specified)</dd>
 
-```
 <dt><code>-e</code>, <code>--env &lt;environment&gt;</code></dt>
 <dd>Set deployment environment secret</dd>
 
@@ -44,7 +43,6 @@ gh secret set <secret-name> [flags]
 
 <dt><code>-v</code>, <code>--visibility &lt;{all|private|selected}&gt;</code></dt>
 <dd>Set visibility for an organization secret: {all|private|selected}</dd>
-```
 
 </dl>
 

@@ -14,15 +14,14 @@ gh run view [<run-id>] [flags]
 	<dt><code>--exit-status</code></dt>
 	<dd>Exit with non-zero status if run failed</dd>
 
-```
 <dt><code>-j</code>, <code>--job &lt;string&gt;</code></dt>
 <dd>View a specific job ID from a run</dd>
 
 <dt><code>-q</code>, <code>--jq &lt;expression&gt;</code></dt>
-<dd>Filter JSON output using a jq expression</dd>
+<dd>jq 表达式，过滤 JSON 输出</dd>
 
 <dt><code>--json &lt;fields&gt;</code></dt>
-<dd>Output JSON with the specified fields</dd>
+<dd>JSON 输出特殊字段</dd>
 
 <dt><code>--log</code></dt>
 <dd>View full log for either a run or specific job</dd>
@@ -31,14 +30,13 @@ gh run view [<run-id>] [flags]
 <dd>View the log for any failed steps in a run or specific job</dd>
 
 <dt><code>-t</code>, <code>--template &lt;string&gt;</code></dt>
-<dd>Format JSON output using a Go template</dd>
+<dd>模板化输出</dd>
 
 <dt><code>-v</code>, <code>--verbose</code></dt>
 <dd>Show job steps</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
 <dd>Open run in the browser</dd>
-```
 
 </dl>
 

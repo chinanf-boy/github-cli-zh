@@ -1,5 +1,3 @@
-
-
 ## gh codespace cp
 
 ```
@@ -24,30 +22,28 @@ be evaluated on the remote machine, subject to expansion of tildes, braces, glob
 environment variables, and backticks. For security, do not use this flag with arguments
 provided by untrusted users; see <https://lwn.net/Articles/835962/> for discussion.
 
-
 ### Options
-
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--codespace &lt;string&gt;</code></dt>
-	<dd>Name of the codespace</dd>
+	<dd>名字</dd>
 
-	<dt><code>-e</code>, <code>--expand</code></dt>
-	<dd>Expand remote file names on remote shell</dd>
+    <dt><code>-e</code>, <code>--expand</code></dt>
+    <dd>Expand remote file names on remote shell</dd>
 
-	<dt><code>-r</code>, <code>--recursive</code></dt>
-	<dd>Recursively copy directories</dd>
+    <dt><code>-r</code>, <code>--recursive</code></dt>
+    <dd>Recursively copy directories</dd>
+
 </dl>
-
 
 ### Examples
 
 {% highlight bash %}{% raw %}
 $ gh codespace cp -e README.md 'remote:/workspaces/$RepositoryName/'
-$ gh codespace cp -e 'remote:~/*.go' ./gofiles/
+$ gh codespace cp -e 'remote:~/\*.go' ./gofiles/
 $ gh codespace cp -e 'remote:/workspaces/myproj/go.{mod,sum}' ./gofiles/
 {% endraw %}{% endhighlight %}
 
 ### See also
 
-* [gh codespace](./gh_codespace)
+- [gh codespace](./gh_codespace.zh.md)

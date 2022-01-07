@@ -1,5 +1,3 @@
-
-
 ## gh codespace create
 
 创建一个代码空间
@@ -12,24 +10,22 @@ gh codespace create [flags]
 
 <dl class="flags">
 	<dt><code>-b</code>, <code>--branch &lt;string&gt;</code></dt>
-	<dd>repository branch</dd>
+	<dd>repository 分支</dd>
 
-```
 <dt><code>--idle-timeout &lt;duration&gt;</code></dt>
-<dd>allowed inactivity before codespace is stopped, e.g. &#34;10m&#34;, &#34;1h&#34;</dd>
+<dd>在 codespace 停止之前，运行不活动的时间, e.g. &#34;10m&#34;, &#34;1h&#34;</dd>
 
 <dt><code>-m</code>, <code>--machine &lt;string&gt;</code></dt>
-<dd>hardware specifications for the VM</dd>
+<dd>VM 硬件规格</dd>
 
 <dt><code>-r</code>, <code>--repo &lt;string&gt;</code></dt>
-<dd>repository name with owner: user/repo</dd>
+<dd>拥有者的库名: user/repo</dd>
 
 <dt><code>-s</code>, <code>--status</code></dt>
-<dd>show status of post-create command and dotfiles</dd>
-```
+<dd>展示 post-create 命令和 dotfiles</dd>
 
 </dl>
 
 ### See also
 
--   [gh codespace](./gh_codespace)
+- [gh codespace](./gh_codespace.zh.md)

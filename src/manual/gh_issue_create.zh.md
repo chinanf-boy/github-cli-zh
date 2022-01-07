@@ -14,7 +14,6 @@ gh issue create [flags]
 	<dt><code>-a</code>, <code>--assignee &lt;login&gt;</code></dt>
 	<dd>Assign people by their login. Use &#34;@me&#34; to self-assign.</dd>
 
-```
 <dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
 <dd>Supply a body. Will prompt for one otherwise.</dd>
 
@@ -38,7 +37,6 @@ gh issue create [flags]
 
 <dt><code>-w</code>, <code>--web</code></dt>
 <dd>Open the browser to create an issue</dd>
-```
 
 </dl>
 

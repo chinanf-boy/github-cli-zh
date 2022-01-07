@@ -20,7 +20,6 @@ gh repo fork [<repository>] [-- <gitflags>...] [flags]
 	<dt><code>--clone</code></dt>
 	<dd>Clone the fork {true|false}</dd>
 
-```
 <dt><code>--org &lt;string&gt;</code></dt>
 <dd>Create the fork in an organization</dd>
 
@@ -29,7 +28,6 @@ gh repo fork [<repository>] [-- <gitflags>...] [flags]
 
 <dt><code>--remote-name &lt;string&gt;</code></dt>
 <dd>Specify a name for a fork&#39;s new remote.</dd>
-```
 
 </dl>
 
