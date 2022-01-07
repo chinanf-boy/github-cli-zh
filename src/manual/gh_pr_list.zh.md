@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh pr list
 
@@ -66,7 +63,8 @@ gh pr list [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}列表PRs由您编写$gh pr List--作者“@me”
+```bash
+列表PRs由您编写$gh pr List--作者“@me”
 
 分配给您的列表PRs$gh pr列表--受让人“@me”
 
@@ -74,7 +72,9 @@ gh pr list [flags]
 
 使用搜索语法列出PRs$gh pr List--搜索“状态：成功审核：必需”
 
-在web浏览器中打开PRs列表$gh pr list--web{%endraw%}{%endhighlight%}
+在web浏览器中打开PRs列表$gh pr list--web
+```
+
 
 ### See also
 

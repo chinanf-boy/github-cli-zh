@@ -1,38 +1,33 @@
----
-layout: manual
-permalink: /:path/:basename
----
-
 ## gh
 
-从命令行与GitHub无缝协作。
+命令行与 GitHub 合为一体。
 
 ### Core commands
 
--   [gh browse](./gh_browse)
--   [gh codespace](./gh_codespace)
--   [gh gist](./gh_gist)
--   [gh issue](./gh_issue)
--   [gh pr](./gh_pr)
--   [gh release](./gh_release)
--   [gh repo](./gh_repo)
+- [gh browse](./gh_browse.zh.md)
+- [gh codespace](./gh_codespace.zh.md)
+- [gh gist](./gh_gist.zh.md)
+- [gh issue](./gh_issue.zh.md)
+- [gh pr](./gh_pr.zh.md)
+- [gh release](./gh_release.zh.md)
+- [gh repo](./gh_repo.zh.md)
 
 ### Actions commands
 
--   [gh run](./gh_run)
--   [gh workflow](./gh_workflow)
+- [gh run](./gh_run.zh.md)
+- [gh workflow](./gh_workflow.zh.md)
 
 ### Additional commands
 
--   [gh alias](./gh_alias)
--   [gh api](./gh_api)
--   [gh auth](./gh_auth)
--   [gh completion](./gh_completion)
--   [gh config](./gh_config)
--   [gh extension](./gh_extension)
--   [gh gpg-key](./gh_gpg-key)
--   [gh secret](./gh_secret)
--   [gh ssh-key](./gh_ssh-key)
+- [gh alias](./gh_alias.zh.md)
+- [gh api](./gh_api.zh.md)
+- [gh auth](./gh_auth.zh.md)
+- [gh completion](./gh_completion.zh.md)
+- [gh config](./gh_config.zh.md)
+- [gh extension](./gh_extension.zh.md)
+- [gh gpg-key](./gh_gpg-key.zh.md)
+- [gh secret](./gh_secret.zh.md)
+- [gh ssh-key](./gh_ssh-key.zh.md)
 
 ### Options
 
@@ -43,4 +38,7 @@ permalink: /:path/:basename
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh问题创建$gh repo clone cli/cli$gh pr checkout 321{%endraw%}{%endhighlight%}
+```bash
+$gh repo clone cli/cli
+$gh pr checkout 321
+```

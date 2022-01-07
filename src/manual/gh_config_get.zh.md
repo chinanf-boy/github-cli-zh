@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh config get
 
@@ -20,7 +17,10 @@ gh config get <key> [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh config get git_protocol https{%endraw%}{%endhighlight%}
+```bash
+$gh config get git_protocol https
+```
+
 
 ### See also
 

@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh run view
 
@@ -54,7 +51,8 @@ gh run view [<run-id>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # Interactively select a run to view, optionally selecting a single job
 
@@ -74,7 +72,9 @@ $gh运行视图--日志--作业456789
 
 # Exit non-zero if a run failed
 
-$gh run view 0451--退出状态&&echo“运行挂起或通过”{%endraw%}{%endhighlight%}
+$gh run view 0451--退出状态&&echo“运行挂起或通过”
+```
+
 
 ### See also
 

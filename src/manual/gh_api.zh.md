@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh api
 
@@ -79,7 +76,8 @@ endpoint参数应该是GitHub API v3端点的路径，或者是访问GitHub API 
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # list releases in the current repository
 

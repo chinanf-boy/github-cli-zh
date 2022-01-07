@@ -1,15 +1,10 @@
----
-layout: manual
-permalink: /:path/:basename
----
-
 ## gh browse
 
 ```
 gh browse [<number> | <path>] [flags]
 ```
 
-在web浏览器中打开GitHub存储库。
+在 web 浏览器中，打开 GitHub 存储库。
 
 ### Options
 
@@ -17,7 +12,6 @@ gh browse [<number> | <path>] [flags]
 	<dt><code>-b</code>, <code>--branch &lt;string&gt;</code></dt>
 	<dd>Select another branch by passing in the branch name</dd>
 
-```
 <dt><code>-c</code>, <code>--commit</code></dt>
 <dd>Open the last commit</dd>
 
@@ -41,16 +35,24 @@ gh browse [<number> | <path>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh browse#=>打开当前存储库的主页
+```bash
+$gh browse
+#=>打开当前存储库的主页
 
-$gh browse 217#=>未结问题或拉取请求217
+$gh browse 217
+#=>未结问题或拉取请求 217
 
-$gh浏览--设置#=>打开存储库设置
+$gh browse --settings
+#=>打开存储库设置
 
-$gh浏览主目录。go:312#=>打开主管道。到312号线
+$gh browse main.go:312
+#=>打开主管道。到 312 号线
 
-$gh浏览主目录。go——支管总管#=>打开总管。进入主分支{%endraw%}{%endhighlight%}
+$gh browse main.go --branch main
+#=>打开总管。进入主分支
+```
+
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

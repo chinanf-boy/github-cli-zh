@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh issue list
 
@@ -63,7 +60,10 @@ gh issue list [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh问题列表-l“bug”-l“需要帮助”$gh问题列表-蒙娜丽莎$gh问题列表-A“@me”$gh问题列表-web$gh问题列表-里程碑“大1.0”$gh问题列表-搜索”错误号：受让人排序：已创建asc“{%endraw%}{%endhighlight%}”
+```bash
+$gh问题列表-l“bug”-l“需要帮助”$gh问题列表-蒙娜丽莎$gh问题列表-A“@me”$gh问题列表-web$gh问题列表-里程碑“大1.0”$gh问题列表-搜索”错误号：受让人排序：已创建asc“
+```
+”
 
 ### See also
 

@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh issue
 
@@ -29,7 +26,10 @@ permalink: /:path/:basename
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh问题列表$gh问题创建--label bug$gh问题视图--web{%endraw%}{%endhighlight%}
+```bash
+$gh问题列表$gh问题创建--label bug$gh问题视图--web
+```
+
 
 ### See also
 

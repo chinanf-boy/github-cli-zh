@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh gist create
 
@@ -36,7 +33,8 @@ GIST可以从一个或多个文件创建。或者，通过“-”作为文件名
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # publish file 'hello.py' as a public gist
 
@@ -56,7 +54,9 @@ $gh创建-
 
 # create a gist from output piped from another command
 
-$cat酷。txt |创建{%endraw%}{%endhighlight%}
+$cat酷。txt |创建
+```
+
 
 ### See also
 

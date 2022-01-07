@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh run watch
 
@@ -33,7 +30,8 @@ gh run watch <run-id> [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # Watch a run until it's done
 
@@ -41,7 +39,9 @@ gh run watch <run-id> [flags]
 
 # Run some other command when the run is finished
 
-gh运行监视和通知发送“运行完成！”{%endraw%}{%endhighlight%}
+gh运行监视和通知发送“运行完成！”
+```
+
 
 ### See also
 

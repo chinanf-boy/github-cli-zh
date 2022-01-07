@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh release create
 
@@ -59,7 +56,8 @@ gh release create [<tag>] [<files>...]
 
 ### Examples
 
-{%highlight bash%}{%raw%}以交互方式创建版本$gh release create
+```bash
+以交互方式创建版本$gh release create
 
 以交互方式从特定标记$gh release create v1创建发布。2.3
 
@@ -73,7 +71,9 @@ gh release create [<tag>] [<files>...]
 
 上载带有显示标签$gh release create v1的发布资源。2.3'/path/to/asset。zip#我的显示标签'
 
-创建发布并开始讨论$gh发布创建v1。2.3--讨论类别“一般”{%endraw%}{%endhighlight%}
+创建发布并开始讨论$gh发布创建v1。2.3--讨论类别“一般”
+```
+
 
 ### See also
 

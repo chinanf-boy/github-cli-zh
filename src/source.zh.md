@@ -1,6 +1,6 @@
 # Installation from source
 
-1.  验证是否已安装Go 1.16+
+1.  验证是否已安装 Go 1.16+
 
     ```sh
     $ go version
@@ -34,7 +34,7 @@
     > go run script\build.go
     ```
 
-    Windows上没有可用的安装步骤。
+    Windows 上没有可用的安装步骤。
 
 4.  跑`gh version`检查它是否有效。
 
@@ -44,9 +44,9 @@
 
 ## Cross-compiling binaries for different platforms
 
-您可以使用安装了Go的任何平台来构建用于其他平台或CPU体系结构的二进制文件。这是通过设置环境变量（如GOOS和GOARCH）实现的。
+您可以使用安装了 Go 的任何平台来构建用于其他平台或 CPU 体系结构的二进制文件。这是通过设置环境变量（如 GOOS 和 GOARCH）实现的。
 
-例如，编译`gh`32位Raspberry Pi操作系统的二进制文件：
+例如，编译`gh`32 位 Raspberry Pi 操作系统的二进制文件：
 
 ```sh
 # on a Unix-like system:
@@ -58,6 +58,6 @@ $ GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=0 make clean bin/gh
 > go run script\build.go clean bin\gh GOOS=linux GOARCH=arm GOARM=7 CGO_ENABLED=0
 ```
 
-跑`go tool dist list`列出所有支持的GOOS/GOARCH值。
+跑`go tool dist list`列出所有支持的 GOOS/GOARCH 值。
 
 提示：要减小生成的二进制文件的大小，可以使用`GO_LDFLAGS="-s -w"`。这将忽略用于调试的符号表。请参阅[supported linker flags](https://golang.org/cmd/link/).

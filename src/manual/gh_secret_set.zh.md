@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh secret set
 
@@ -60,7 +57,8 @@ gh secret set <secret-name> [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # Paste secret value for the current repository in an interactive prompt
 
@@ -92,7 +90,9 @@ $gh秘密集MYSECRET--用户
 
 # Set multiple secrets imported from the ".env" file
 
-$gh秘密集-f。环境{%endraw%}{%endhighlight%}
+$gh秘密集-f。环境
+```
+
 
 ### See also
 

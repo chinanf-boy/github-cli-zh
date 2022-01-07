@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh release download
 
@@ -38,7 +35,8 @@ gh release download [<tag>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # download all assets from a specific release
 
@@ -54,7 +52,9 @@ $gh发布下载-p'*.deb'-p'*.rpm'
 
 # download the archive of the source code for a release
 
-$gh发布下载v1。2.3--archive=zip{%endraw%}{%endhighlight%}
+$gh发布下载v1。2.3--archive=zip
+```
+
 
 ### See also
 

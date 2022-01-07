@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh extension create
 
@@ -20,7 +17,8 @@ gh extension create [<name>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # Use interactively
 
@@ -36,7 +34,9 @@ gh扩展创建--预编译=go foobar
 
 # Create a non-Go precompiled extension
 
-gh扩展创建--precompiled=other foobar{%endraw%}{%endhighlight%}
+gh扩展创建--precompiled=other foobar
+```
+
 
 ### See also
 

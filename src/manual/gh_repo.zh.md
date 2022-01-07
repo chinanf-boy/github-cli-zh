@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh repo
 
@@ -22,7 +19,10 @@ permalink: /:path/:basename
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh repo创建$gh repo克隆cli/cli$gh repo视图--web{%endraw%}{%endhighlight%}
+```bash
+$gh repo创建$gh repo克隆cli/cli$gh repo视图--web
+```
+
 
 ### See also
 

@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh codespace ports visibility
 
@@ -20,7 +17,10 @@ gh codespace ports visibility <port>:{public|private|org}...
 
 ### Examples
 
-{%highlight bash%}{%raw%}gh代码空间端口可见性80:org 3000:private 8000:public{%endraw%}{%endhighlight%}
+```bash
+gh代码空间端口可见性80:org 3000:private 8000:public
+```
+
 
 ### See also
 

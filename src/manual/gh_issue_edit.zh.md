@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh issue edit
 
@@ -57,7 +54,10 @@ gh issue edit {<number> | <url>} [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh issue edit 23--标题“我发现了一个bug”--正文“没有任何效果”$gh issue edit 23--添加标签“bug，需要帮助”--删除标签“核心”$gh issue edit 23--添加受让人“@me”--删除受让人蒙娜丽莎，hubot$gh issue edit 23--添加项目“路线图”--删除项目v1，v2$gh问题编辑23——里程碑“版本1”$gh问题编辑23——正文文件正文。txt{%endraw%}{%endhighlight%}
+```bash
+$gh issue edit 23--标题“我发现了一个bug”--正文“没有任何效果”$gh issue edit 23--添加标签“bug，需要帮助”--删除标签“核心”$gh issue edit 23--添加受让人“@me”--删除受让人蒙娜丽莎，hubot$gh issue edit 23--添加项目“路线图”--删除项目v1，v2$gh问题编辑23——里程碑“版本1”$gh问题编辑23——正文文件正文。txt
+```
+
 
 ### See also
 

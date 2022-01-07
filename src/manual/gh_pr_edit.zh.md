@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh pr edit
 
@@ -68,7 +65,10 @@ gh pr edit [<number> | <url> | <branch>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh pr edit 23--标题“我发现了一个bug”--正文“没什么用”$gh pr edit 23--添加标签“bug，需要帮助”--删除标签“core”$gh pr edit 23--添加审阅者monalisa，hubot--删除审阅者myorg/团队名称$gh pr edit 23--添加受让者“@me”--删除受让者monalisa，hubot$gh pr edit 23--添加项目“路线图”--删除项目v1、v2$gh pr edit 23--里程碑“版本1”{%endraw%}{%endhighlight%}
+```bash
+$gh pr edit 23--标题“我发现了一个bug”--正文“没什么用”$gh pr edit 23--添加标签“bug，需要帮助”--删除标签“core”$gh pr edit 23--添加审阅者monalisa，hubot--删除审阅者myorg/团队名称$gh pr edit 23--添加受让者“@me”--删除受让者monalisa，hubot$gh pr edit 23--添加项目“路线图”--删除项目v1、v2$gh pr edit 23--里程碑“版本1”
+```
+
 
 ### See also
 

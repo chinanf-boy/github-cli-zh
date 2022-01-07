@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh auth logout
 
@@ -22,7 +19,8 @@ gh auth logout [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh auth注销
+```bash
+$gh auth注销
 
 # => select what host to log out of via a prompt
 
@@ -30,7 +28,9 @@ $gh auth logout--企业主机名。内部的
 
 # => log out of specified host
 
-{%endraw%}{%endhighlight%}
+
+```
+
 
 ### See also
 

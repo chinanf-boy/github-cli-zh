@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh pr review
 
@@ -44,7 +41,8 @@ gh pr review [<number> | <url> | <branch>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # approve the pull request of the current branch
 
@@ -60,7 +58,9 @@ $gh公共关系审查123
 
 # request changes on a specific pull request
 
-$gh pr review 123-r-b“需要更多ASCII艺术”{%endraw%}{%endhighlight%}
+$gh pr review 123-r-b“需要更多ASCII艺术”
+```
+
 
 ### See also
 

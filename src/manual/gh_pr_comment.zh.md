@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh pr comment
 
@@ -43,7 +40,10 @@ gh pr comment [<number> | <url> | <branch>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh pr comment 22--body“这看起来很棒，让我们部署它吧。”{%endraw%}{%endhighlight%}
+```bash
+$gh pr comment 22--body“这看起来很棒，让我们部署它吧。”
+```
+
 
 ### See also
 

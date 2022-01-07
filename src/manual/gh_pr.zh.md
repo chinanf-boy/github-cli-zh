@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh pr
 
@@ -33,7 +30,10 @@ permalink: /:path/:basename
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh pr checkout 353$gh pr create--fill$gh pr view--web{%endraw%}{%endhighlight%}
+```bash
+$gh pr checkout 353$gh pr create--fill$gh pr view--web
+```
+
 
 ### See also
 

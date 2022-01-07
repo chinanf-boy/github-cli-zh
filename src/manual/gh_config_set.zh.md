@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh config set
 
@@ -20,7 +17,10 @@ gh config set <key> <value> [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh配置集编辑器vim$gh配置集编辑器“code--wait”$gh配置集git\_协议ssh--host github。com$gh配置集提示已禁用{%endraw%}{%endhighlight%}
+```bash
+$gh配置集编辑器vim$gh配置集编辑器“code--wait”$gh配置集git\_协议ssh--host github。com$gh配置集提示已禁用
+```
+
 
 ### See also
 

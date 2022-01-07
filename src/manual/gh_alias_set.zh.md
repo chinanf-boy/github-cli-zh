@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh alias set
 
@@ -26,7 +23,8 @@ gh alias set <alias> <expansion> [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # note: Command Prompt on Windows requires using double quotes for arguments
 
@@ -38,7 +36,9 @@ $gh别名设置家庭作业'问题列表--受让人@me'$gh家庭作业
 
 $gh alias set-epicsBy'问题列表--author=“$1”--label=“epic”'$gh-epicsBy-vilmibm#=>gh问题列表--author=“vilmibm”--label=“epic”
 
-$gh别名集--shell igrep'gh问题列表--label=“$1”| grep“$2”$gh igrep epic foo#=>gh问题列表--label=“epic”| grep“foo”{%endraw%}{%endhighlight%}
+$gh别名集--shell igrep'gh问题列表--label=“$1”| grep“$2”$gh igrep epic foo#=>gh问题列表--label=“epic”| grep“foo”
+```
+
 
 ### See also
 

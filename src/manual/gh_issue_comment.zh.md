@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh issue comment
 
@@ -39,7 +36,10 @@ gh issue comment {<number> | <url>} [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh问题注释22--body“我能够重现这个问题，让我们来修复它。”{%endraw%}{%endhighlight%}
+```bash
+$gh问题注释22--body“我能够重现这个问题，让我们来修复它。”
+```
+
 
 ### See also
 

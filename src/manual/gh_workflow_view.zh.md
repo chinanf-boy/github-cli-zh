@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh workflow view
 
@@ -36,7 +33,8 @@ gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}
+```bash
+
 
 # Interactively select a workflow to view
 
@@ -44,7 +42,9 @@ $gh工作流视图
 
 # View a specific workflow
 
-$gh工作流视图0451{%endraw%}{%endhighlight%}
+$gh工作流视图0451
+```
+
 
 ### See also
 

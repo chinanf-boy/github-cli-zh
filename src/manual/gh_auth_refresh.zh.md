@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh auth refresh
 
@@ -28,7 +25,8 @@ gh auth refresh [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh auth refresh--scopes write:org，read:public_key
+```bash
+$gh auth refresh--scopes write:org，read:public_key
 
 # => open a browser to add write:org and read:public_key scopes for use with gh api
 
@@ -36,7 +34,9 @@ $gh授权刷新
 
 # => open a browser to ensure your authentication credentials have the correct minimum scopes
 
-{%endraw%}{%endhighlight%}
+
+```
+
 
 ### See also
 

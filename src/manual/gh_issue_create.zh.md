@@ -1,7 +1,4 @@
----
-layout: manual
-permalink: /:path/:basename
----
+
 
 ## gh issue create
 
@@ -54,7 +51,8 @@ gh issue create [flags]
 
 ### Examples
 
-{%highlight bash%}{%raw%}$gh issue create--title“我发现了一个bug”--body“没什么用”$gh issue create--label“bug，需要帮助”$gh issue create--label“需要帮助”$gh issue create--assignment monalisa，hubot$gh issue create--assignment“@me”$gh issue create--project“路线图”{%endraw%}{%endhighlight
+```bash
+$gh issue create--title“我发现了一个bug”--body“没什么用”$gh issue create--label“bug，需要帮助”$gh issue create--label“需要帮助”$gh issue create--assignment monalisa，hubot$gh issue create--assignment“@me”$gh issue create--project“路线图”{%endraw%}{%endhighlight
 
 ### See also
 
