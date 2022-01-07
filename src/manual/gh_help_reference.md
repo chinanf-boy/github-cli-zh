@@ -25,7 +25,7 @@ List your aliases
 Create a shortcut for a gh command
 
 ```
--s, --shell   Declare an alias to be passed through a shell interpreter
+-s, --shell   定义个 alias 传递给 shell 解释器，r
 ````
 
 ## `gh api <endpoint> [flags]`
@@ -35,7 +35,7 @@ Make an authenticated GitHub API request
 ```
     --cache duration        Cache the response, e.g. "3600s", "60m", "1h"
 -F, --field key=value       Add a typed parameter in key=value format
--H, --header key:value      Add a HTTP request header in key:value format
+-H, --header key:value      Add a HTTP request header 格式是 key=value
     --hostname string       The GitHub hostname for the request (default "github.com")
 -i, --include               Include HTTP response headers in the output
     --input file            The file to use as body for the HTTP request (use "-" to read from standard input)

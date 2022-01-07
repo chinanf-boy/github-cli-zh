@@ -1,14 +1,12 @@
-
-
 ## gh gpg-key
 
-管理在GitHub帐户中注册的GPG密钥
+管理在 GitHub 帐户中注册的 GPG 密钥
 
 ### Commands
 
--   [gh gpg-key add](./gh_gpg-key_add)
--   [gh gpg-key list](./gh_gpg-key_list)
+- [gh gpg-key add](./gh_gpg-key_add.zh.md)
+- [gh gpg-key list](./gh_gpg-key_list.zh.md)
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

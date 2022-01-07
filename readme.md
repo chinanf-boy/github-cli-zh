@@ -20,23 +20,17 @@ Github 官方命令行，中文文档
 
 ## Summary
 
-- [ ] [command-line-syntax.md](src/command-line-syntax.zh.md)
-- [ ] [gh-vs-hub.md](src/gh-vs-hub.zh.md)
-- [ ] [gh-vs-hub.zh.md](src/gh-vs-hub.zh.md)
-- [ ] [install_linux.md](src/install_linux.zh.md)
-- [ ] [project-layout.md](src/project-layout.zh.md)
-- [ ] [README.md](src/README.zh.md)
-- [ ] [README.zh.md](src/README.zh.md)
-- [ ] [releasing.md](src/releasing.zh.md)
-- [ ] [source.md](src/source.zh.md)
-- [ ] [source.zh.md](src/source.zh.md)
-- [ ] [triage.md](src/triage.zh.md)
-- [ ] [gh.md](src/manual/gh.zh.md)
-  - [ ] [gh_actions.md](src/manual/gh_actions.zh.md)
-  - [ ] [gh_alias.md](src/manual/gh_alias.zh.md)
-  - [ ] [gh_alias_delete.md](src/manual/gh_alias_delete.zh.md)
-  - [ ] [gh_alias_list.md](src/manual/gh_alias_list.zh.md)
-  - [ ] [gh_alias_set.md](src/manual/gh_alias_set.zh.md)
+- [x] [command-line-syntax.md](src/command-line-syntax.zh.md)
+- [x] [gh-vs-hub.zh.md](src/gh-vs-hub.zh.md)
+- [x] [install_linux.md](src/install_linux.zh.md)
+- [x] [READxME.zh.md](src/README.zh.md)
+- [x] [source.md](src/source.zh.md)
+- [x] [gh.md](src/manual/gh.zh.md)
+  <!-- - [ ] [gh_actions.md](src/manual/gh_actions.zh.md) -->
+  - [x] [gh_alias.md](src/manual/gh_alias.zh.md)
+  - [x] [gh_alias_delete.md](src/manual/gh_alias_delete.zh.md)
+  - [x] [gh_alias_list.md](src/manual/gh_alias_list.zh.md)
+  - [x] [gh_alias_set.md](src/manual/gh_alias_set.zh.md)
   - [ ] [gh_api.md](src/manual/gh_api.zh.md)
   - [ ] [gh_auth.md](src/manual/gh_auth.zh.md)
   - [ ] [gh_auth_login.md](src/manual/gh_auth_login.zh.md)
@@ -164,6 +158,8 @@ mdbook serve
 ```
 mdbook build
 ```
+
+> 生成 docs 文档
 
 ## 来源
 

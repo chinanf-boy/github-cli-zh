@@ -1,14 +1,12 @@
-
-
 ## gh ssh-key
 
-管理在GitHub帐户中注册的SSH密钥
+管理在 GitHub 帐户中注册的 SSH 密钥
 
 ### Commands
 
--   [gh ssh-key add](./gh_ssh-key_add)
--   [gh ssh-key list](./gh_ssh-key_list)
+- [gh ssh-key add](./gh_ssh-key_add.zh.md)
+- [gh ssh-key list](./gh_ssh-key_list.zh.md)
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

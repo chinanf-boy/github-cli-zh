@@ -1,17 +1,18 @@
-
-
 ## gh alias
 
-别名可用于为gh命令创建快捷方式或组合多个命令。
+别名，可用于为 gh 命令
 
-运行“gh帮助别名集”了解更多信息。
+- 创建快捷方式
+- 组合多个命令。
+
+运行 `gh help alias set` 了解更多信息。
 
 ### Commands
 
--   [gh alias delete](./gh_alias_delete)
--   [gh alias list](./gh_alias_list)
--   [gh alias set](./gh_alias_set)
+- [gh alias delete](./gh_alias_delete.zh.md)
+- [gh alias list](./gh_alias_list.zh.md)
+- [gh alias set](./gh_alias_set.zh.md)
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

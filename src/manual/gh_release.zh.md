@@ -1,17 +1,15 @@
-
-
 ## gh release
 
-管理GitHub发布
+管理 GitHub 发布
 
 ### Commands
 
--   [gh release create](./gh_release_create)
--   [gh release delete](./gh_release_delete)
--   [gh release download](./gh_release_download)
--   [gh release list](./gh_release_list)
--   [gh release upload](./gh_release_upload)
--   [gh release view](./gh_release_view)
+- [gh release create](./gh_release_create.zh.md)
+- [gh release delete](./gh_release_delete.zh.md)
+- [gh release download](./gh_release_download.zh.md)
+- [gh release list](./gh_release_list.zh.md)
+- [gh release upload](./gh_release_upload.zh.md)
+- [gh release view](./gh_release_view.zh.md)
 
 ### Options
 
@@ -22,4 +20,4 @@
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

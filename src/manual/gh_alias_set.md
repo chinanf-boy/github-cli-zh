@@ -26,14 +26,14 @@ invoked. This allows for chaining multiple commands via piping and redirection.
 
 <dl class="flags">
 	<dt><code>-s</code>, <code>--shell</code></dt>
-	<dd>Declare an alias to be passed through a shell interpreter</dd>
+	<dd>定义个 alias 传递给 shell 解释器，r</dd>
 </dl>
 
 
 ### Examples
 
 {% highlight bash %}{% raw %}
-# note: Command Prompt on Windows requires using double quotes for arguments
+# note: Command Prompt on Windows 要双引号
 $ gh alias set pv 'pr view'
 $ gh pv -w 123  #=> gh pr view -w 123
 

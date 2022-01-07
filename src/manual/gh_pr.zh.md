@@ -1,25 +1,23 @@
-
-
 ## gh pr
 
-使用GitHub拉请求
+使用 GitHub 拉请求
 
 ### Commands
 
--   [gh pr checkout](./gh_pr_checkout)
--   [gh pr checks](./gh_pr_checks)
--   [gh pr close](./gh_pr_close)
--   [gh pr comment](./gh_pr_comment)
--   [gh pr create](./gh_pr_create)
--   [gh pr diff](./gh_pr_diff)
--   [gh pr edit](./gh_pr_edit)
--   [gh pr list](./gh_pr_list)
--   [gh pr merge](./gh_pr_merge)
--   [gh pr ready](./gh_pr_ready)
--   [gh pr reopen](./gh_pr_reopen)
--   [gh pr review](./gh_pr_review)
--   [gh pr status](./gh_pr_status)
--   [gh pr view](./gh_pr_view)
+- [gh pr checkout](./gh_pr_checkout.zh.md)
+- [gh pr checks](./gh_pr_checks.zh.md)
+- [gh pr close](./gh_pr_close.zh.md)
+- [gh pr comment](./gh_pr_comment.zh.md)
+- [gh pr create](./gh_pr_create.zh.md)
+- [gh pr diff](./gh_pr_diff.zh.md)
+- [gh pr edit](./gh_pr_edit.zh.md)
+- [gh pr list](./gh_pr_list.zh.md)
+- [gh pr merge](./gh_pr_merge.zh.md)
+- [gh pr ready](./gh_pr_ready.zh.md)
+- [gh pr reopen](./gh_pr_reopen.zh.md)
+- [gh pr review](./gh_pr_review.zh.md)
+- [gh pr status](./gh_pr_status.zh.md)
+- [gh pr view](./gh_pr_view.zh.md)
 
 ### Options
 
@@ -34,7 +32,6 @@
 $gh pr checkout 353$gh pr create--fill$gh pr view--web
 ```
 
-
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

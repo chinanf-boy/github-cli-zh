@@ -1,16 +1,14 @@
-
-
 ## gh workflow
 
-在GitHub操作中列出、查看和运行工作流。
+在 GitHub 操作中列出、查看和运行工作流。
 
 ### Commands
 
--   [gh workflow disable](./gh_workflow_disable)
--   [gh workflow enable](./gh_workflow_enable)
--   [gh workflow list](./gh_workflow_list)
--   [gh workflow run](./gh_workflow_run)
--   [gh workflow view](./gh_workflow_view)
+- [gh workflow disable](./gh_workflow_disable.zh.md)
+- [gh workflow enable](./gh_workflow_enable.zh.md)
+- [gh workflow list](./gh_workflow_list.zh.md)
+- [gh workflow run](./gh_workflow_run.zh.md)
+- [gh workflow view](./gh_workflow_view.zh.md)
 
 ### Options
 
@@ -21,4 +19,4 @@
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)

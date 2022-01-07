@@ -58,7 +58,7 @@ original query accepts an `$endCursor: String` variable and that it fetches the
 	<dd>Add a typed parameter in key=value format</dd>
 
 	<dt><code>-H</code>, <code>--header &lt;key:value&gt;</code></dt>
-	<dd>Add a HTTP request header in key:value format</dd>
+	<dd>Add a HTTP request header 格式是 key=value</dd>
 
 	<dt><code>--hostname &lt;string&gt;</code></dt>
 	<dd>The GitHub hostname for the request (default &#34;github.com&#34;)</dd>

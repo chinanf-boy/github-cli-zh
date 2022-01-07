@@ -1,17 +1,15 @@
-
-
 ## gh run
 
-从GitHub操作列出、查看和查看最近的工作流运行。
+从 GitHub 操作列出、查看和查看最近的工作流运行。
 
 ### Commands
 
--   [gh run cancel](./gh_run_cancel)
--   [gh run download](./gh_run_download)
--   [gh run list](./gh_run_list)
--   [gh run rerun](./gh_run_rerun)
--   [gh run view](./gh_run_view)
--   [gh run watch](./gh_run_watch)
+- [gh run cancel](./gh_run_cancel.zh.md)
+- [gh run download](./gh_run_download.zh.md)
+- [gh run list](./gh_run_list.zh.md)
+- [gh run rerun](./gh_run_rerun.zh.md)
+- [gh run view](./gh_run_view.zh.md)
+- [gh run watch](./gh_run_watch.zh.md)
 
 ### Options
 
@@ -22,4 +20,4 @@
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh.zh.md)
