@@ -65,4 +65,4 @@ $gh问题列表-l“bug”-l“需要帮助”$gh问题列表-蒙娜丽莎$gh问
 
 ### See also
 
--   [gh issue](./gh_issue)
+-   [gh issue](./gh_issue.zh.md)

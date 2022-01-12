@@ -17,4 +17,4 @@ gh workflow enable [<workflow-id> | <workflow-name>]
 
 ### See also
 
--   [gh workflow](./gh_workflow)
+-   [gh workflow](./gh_workflow.zh.md)

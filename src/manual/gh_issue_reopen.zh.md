@@ -17,4 +17,4 @@ gh issue reopen {<number> | <url>}
 
 ### See also
 
--   [gh issue](./gh_issue)
+-   [gh issue](./gh_issue.zh.md)

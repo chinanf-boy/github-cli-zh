@@ -54,4 +54,4 @@ $gh issue create--title“我发现了一个bug”--body“没什么用”$gh is
 
 ### See also
 
--   [gh issue](./gh_issue)
+-   [gh issue](./gh_issue.zh.md)

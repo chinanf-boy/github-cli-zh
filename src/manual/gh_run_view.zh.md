@@ -76,4 +76,4 @@ $gh run view 0451--退出状态&&echo“运行挂起或通过”
 
 ### See also
 
--   [gh run](./gh_run)
+-   [gh run](./gh_run.zh.md)

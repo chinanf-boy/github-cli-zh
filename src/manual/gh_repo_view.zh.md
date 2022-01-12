@@ -36,4 +36,4 @@ gh repo view [<repository>] [flags]
 
 ### See also
 
--   [gh repo](./gh_repo)
+-   [gh repo](./gh_repo.zh.md)

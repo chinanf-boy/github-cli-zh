@@ -31,4 +31,4 @@ gh pr status [flags]
 
 ### See also
 
--   [gh pr](./gh_pr)
+-   [gh pr](./gh_pr.zh.md)

@@ -46,4 +46,4 @@ $gh工作流视图0451
 
 ### See also
 
--   [gh workflow](./gh_workflow)
+-   [gh workflow](./gh_workflow.zh.md)

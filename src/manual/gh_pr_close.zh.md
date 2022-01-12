@@ -24,4 +24,4 @@ gh pr close {<number> | <url> | <branch>} [flags]
 
 ### See also
 
--   [gh pr](./gh_pr)
+-   [gh pr](./gh_pr.zh.md)

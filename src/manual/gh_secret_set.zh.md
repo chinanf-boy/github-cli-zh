@@ -94,4 +94,4 @@ $gh秘密集-f。环境
 
 ### See also
 
--   [gh secret](./gh_secret)
+-   [gh secret](./gh_secret.zh.md)

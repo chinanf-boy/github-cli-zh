@@ -19,4 +19,4 @@ gh pr ready [<number> | <url> | <branch>]
 
 ### See also
 
--   [gh pr](./gh_pr)
+-   [gh pr](./gh_pr.zh.md)

@@ -53,4 +53,4 @@ $gh运行下载
 
 ### See also
 
--   [gh run](./gh_run)
+-   [gh run](./gh_run.zh.md)

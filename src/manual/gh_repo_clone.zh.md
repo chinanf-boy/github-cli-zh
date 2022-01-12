@@ -14,4 +14,4 @@ gh repo clone <repository> [<directory>] [-- <gitflags>...]
 
 ### See also
 
--   [gh repo](./gh_repo)
+-   [gh repo](./gh_repo.zh.md)

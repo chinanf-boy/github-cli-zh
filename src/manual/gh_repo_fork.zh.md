@@ -33,4 +33,4 @@ gh repo fork [<repository>] [-- <gitflags>...] [flags]
 
 ### See also
 
--   [gh repo](./gh_repo)
+-   [gh repo](./gh_repo.zh.md)

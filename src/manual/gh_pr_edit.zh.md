@@ -70,4 +70,4 @@ $gh pr edit 23--标题“我发现了一个bug”--正文“没什么用”$gh p
 
 ### See also
 
--   [gh pr](./gh_pr)
+-   [gh pr](./gh_pr.zh.md)

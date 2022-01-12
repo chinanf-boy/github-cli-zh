@@ -36,4 +36,4 @@ gh secret remove <secret-name> [flags]
 
 ### See also
 
--   [gh secret](./gh_secret)
+-   [gh secret](./gh_secret.zh.md)

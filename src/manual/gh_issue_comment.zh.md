@@ -1,5 +1,3 @@
-
-
 ## gh issue comment
 
 创建新的问题注释
@@ -38,7 +36,6 @@ gh issue comment {<number> | <url>} [flags]
 $gh问题注释22--body“我能够重现这个问题，让我们来修复它。”
 ```
 
-
 ### See also
 
--   [gh issue](./gh_issue)
+- [gh issue](./gh_issue.zh.md)

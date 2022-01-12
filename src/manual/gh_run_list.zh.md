@@ -37,4 +37,4 @@ gh run list [flags]
 
 ### See also
 
--   [gh run](./gh_run)
+-   [gh run](./gh_run.zh.md)

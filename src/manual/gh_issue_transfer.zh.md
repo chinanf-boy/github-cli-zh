@@ -17,4 +17,4 @@ gh issue transfer {<number> | <url>} <destination-repo>
 
 ### See also
 
--   [gh issue](./gh_issue)
+-   [gh issue](./gh_issue.zh.md)

@@ -1,8 +1,6 @@
-
-
 ## gh gpg-key list
 
-列出GitHub帐户中的GPG密钥
+列出 GitHub 帐户中的 GPG 密钥
 
 ```
 gh gpg-key list
@@ -10,4 +8,4 @@ gh gpg-key list
 
 ### See also
 
--   [gh gpg-key](./gh_gpg-key)
+- [gh gpg-key](./gh_gpg-key.zh.md)

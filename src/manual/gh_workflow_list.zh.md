@@ -28,4 +28,4 @@ gh workflow list [flags]
 
 ### See also
 
--   [gh workflow](./gh_workflow)
+-   [gh workflow](./gh_workflow.zh.md)

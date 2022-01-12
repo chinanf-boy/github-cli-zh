@@ -17,4 +17,4 @@ gh run cancel [<run-id>]
 
 ### See also
 
--   [gh run](./gh_run)
+-   [gh run](./gh_run.zh.md)

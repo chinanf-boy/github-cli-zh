@@ -62,4 +62,4 @@ $gh pr review 123-r-b“需要更多ASCII艺术”
 
 ### See also
 
--   [gh pr](./gh_pr)
+-   [gh pr](./gh_pr.zh.md)

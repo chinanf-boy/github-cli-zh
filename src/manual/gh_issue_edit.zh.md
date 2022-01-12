@@ -59,4 +59,4 @@ $gh issue edit 23--标题“我发现了一个bug”--正文“没有任何效�
 
 ### See also
 
--   [gh issue](./gh_issue)
+-   [gh issue](./gh_issue.zh.md)

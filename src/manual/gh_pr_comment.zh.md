@@ -45,4 +45,4 @@ $gh pr comment 22--body“这看起来很棒，让我们部署它吧。”
 
 ### See also
 
--   [gh pr](./gh_pr)
+-   [gh pr](./gh_pr.zh.md)

@@ -31,4 +31,4 @@ gh issue status [flags]
 
 ### See also
 
--   [gh issue](./gh_issue)
+-   [gh issue](./gh_issue.zh.md)

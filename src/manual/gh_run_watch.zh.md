@@ -43,4 +43,4 @@ gh运行监视和通知发送“运行完成！”
 
 ### See also
 
--   [gh run](./gh_run)
+-   [gh run](./gh_run.zh.md)

@@ -1,6 +1,6 @@
 ## gh gpg-key
 
-管理在 GitHub 帐户中注册的 GPG 密钥
+管理在 GitHub 帐户中，注册的 GPG 密钥
 
 ### Commands
 
