@@ -6,7 +6,7 @@
 gh pr view [<number> | <url> | <branch>] [flags]
 ```
 
-显示标题、正文和有关拉动请求的其他信息。
+显示标题、正文和有关PR的其他信息。
 
 在没有参数的情况下，将显示属于当前分支的请求。
 
@@ -36,7 +36,7 @@ gh pr view [<number> | <url> | <branch>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### See also

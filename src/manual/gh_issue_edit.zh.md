@@ -1,5 +1,3 @@
-
-
 ## gh issue edit
 
 编辑问题
@@ -15,28 +13,28 @@ gh issue edit {<number> | <url>} [flags]
 	<dd>Add assigned users by their login. Use &#34;@me&#34; to assign yourself.</dd>
 
 <dt><code>--add-label &lt;name&gt;</code></dt>
-<dd>Add labels by name</dd>
+<dd>通过 name，添加标签</dd>
 
 <dt><code>--add-project &lt;name&gt;</code></dt>
-<dd>Add the issue to projects by name</dd>
+<dd>通过 name，添加 issue 到 name 项目</dd>
 
 <dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
 <dd>Set the new body.</dd>
 
 <dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
+<dd>文件读取主体内容 (用&#34;-&#34; 的话，就从标准输入读取)</dd>
 
 <dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
-<dd>Edit the milestone the issue belongs to by name</dd>
+<dd>用 name，编辑下里程碑</dd>
 
 <dt><code>--remove-assignee &lt;login&gt;</code></dt>
-<dd>Remove assigned users by their login. Use &#34;@me&#34; to unassign yourself.</dd>
+<dd>移除 login 的人员配置. 使用 &#34;@me&#34; 就移除自己</dd>
 
 <dt><code>--remove-label &lt;name&gt;</code></dt>
 <dd>Remove labels by name</dd>
 
 <dt><code>--remove-project &lt;name&gt;</code></dt>
-<dd>Remove the issue from projects by name</dd>
+<dd>移除 name 项目</dd>
 
 <dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
 <dd>Set the new title.</dd>
@@ -47,16 +45,20 @@ gh issue edit {<number> | <url>} [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### Examples
 
 ```bash
-$gh issue edit 23--标题“我发现了一个bug”--正文“没有任何效果”$gh issue edit 23--添加标签“bug，需要帮助”--删除标签“核心”$gh issue edit 23--添加受让人“@me”--删除受让人蒙娜丽莎，hubot$gh issue edit 23--添加项目“路线图”--删除项目v1，v2$gh问题编辑23——里程碑“版本1”$gh问题编辑23——正文文件正文。txt
+$ gh issue edit 23 --title "I found a bug" --body "Nothing works"
+$ gh issue edit 23 --add-label "bug,help wanted" --remove-label "core"
+$ gh issue edit 23 --add-assignee "@me" --remove-assignee monalisa,hubot
+$ gh issue edit 23 --add-project "Roadmap" --remove-project v1,v2
+$ gh issue edit 23 --milestone "Version 1"
+$ gh issue edit 23 --body-file body.txt
 ```
-
 
 ### See also
 
--   [gh issue](./gh_issue.zh.md)
+- [gh issue](./gh_issue.zh.md)

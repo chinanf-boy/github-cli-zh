@@ -23,7 +23,7 @@ gh pr merge [<number> | <url> | <branch>] [flags]
 <dd>Body text for the merge commit</dd>
 
 <dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
+<dd>文件读取主体内容 (用&#34;-&#34; 的话，就从标准输入读取)</dd>
 
 <dt><code>-d</code>, <code>--delete-branch</code></dt>
 <dd>Delete the local and remote branch after merge</dd>
@@ -49,7 +49,7 @@ gh pr merge [<number> | <url> | <branch>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### See also

@@ -4,7 +4,7 @@
 
 ## `gh actions`
 
-了解如何使用GitHub操作
+了解如何使用 GitHub 操作
 
 ## `gh alias <command>`
 
@@ -20,7 +20,7 @@
 
 ### `gh alias set <alias> <expansion> [flags]`
 
-为gh命令创建快捷方式
+为 gh 命令创建快捷方式
 
 ```
 -s, --shell   定义个 alias 传递给 shell 解释器，r
@@ -28,7 +28,7 @@
 
 ## `gh api <endpoint> [flags]`
 
-发出经过身份验证的GitHub API请求
+发出，经过身份验证的 GitHub API 请求
 
 ```
     --cache duration        Cache the response, e.g. "3600s", "60m", "1h"
@@ -52,7 +52,7 @@
 
 ### `gh auth login [flags]`
 
-通过GitHub主机进行身份验证
+通过 GitHub 主机进行身份验证
 
 ```
 -h, --hostname string   The hostname of the GitHub instance to authenticate with
@@ -63,7 +63,7 @@
 
 ### `gh auth logout [flags]`
 
-注销GitHub主机
+注销 GitHub 主机
 
 ```
 -h, --hostname string   The hostname of the GitHub instance to log out of
@@ -80,7 +80,7 @@
 
 ### `gh auth setup-git [flags]`
 
-配置git以将GitHub CLI用作凭据帮助器
+配置 git，以将 GitHub CLI 用作凭据帮助器
 
 ```
 -h, --hostname string   The hostname to configure git for
@@ -97,7 +97,7 @@
 
 ## `gh browse [<number> | <path>] [flags]`
 
-在浏览器中打开存储库
+在浏览器中，打开存储库
 
 ```
 -b, --branch string   Select another branch by passing in the branch name
@@ -110,11 +110,11 @@
 
 ## `gh codespace`
 
-连接并管理您的代码空间
+连接，并管理您的代码空间
 
 ### `gh codespace code [flags]`
 
-在Visual Studio代码中打开代码空间
+在 Visual Studio Code 中打开代码空间
 
 ```
 -c, --codespace string   名字
@@ -123,7 +123,7 @@
 
 ### `gh codespace cp [-e] [-r] <sources>... <dest>`
 
-在本地和远程文件系统之间复制文件
+在本地和远程文件系统之间，复制文件
 
 ```
 -c, --codespace string   名字
@@ -195,7 +195,7 @@
 
 ### `gh codespace ssh [<flags>...] [-- <ssh-flags>...] [<command>]`
 
-SSH到一个代码空间
+SSH 到一个代码空间
 
 ```
 -c, --codespace string    名字
@@ -215,7 +215,7 @@ SSH到一个代码空间
 
 ## `gh completion -s <shell>`
 
-生成shell完成脚本
+生成 shell 完成脚本
 
 ```
 -s, --shell string   Shell type: {bash|zsh|fish|powershell}
@@ -223,7 +223,7 @@ SSH到一个代码空间
 
 ## `gh config <command>`
 
-管理gh的配置
+管理 gh 的配置
 
 ### `gh config get <key> [flags]`
 
@@ -251,7 +251,7 @@ SSH到一个代码空间
 
 ## `gh extension`
 
-管理gh扩展
+管理 gh 扩展
 
 ### `gh extension create [<name>] [flags]`
 
@@ -263,7 +263,7 @@ SSH到一个代码空间
 
 ### `gh extension install <repository>`
 
-从存储库安装gh扩展
+从存储库安装 gh 扩展
 
 ### `gh extension list`
 
@@ -307,7 +307,7 @@ SSH到一个代码空间
 
 ### `gh gist edit {<id> | <url>} [flags]`
 
-编辑一个GIST
+编辑一个 GIST
 
 ```
 -a, --add string        Add a new file to the gist
@@ -337,15 +337,15 @@ SSH到一个代码空间
 
 ## `gh gpg-key <command>`
 
-管理GPG密钥
+管理 GPG 密钥
 
 ### `gh gpg-key add [<key-file>]`
 
-将GPG密钥添加到GitHub帐户
+将 GPG 密钥添加到 GitHub 帐户
 
 ### `gh gpg-key list`
 
-列出GitHub帐户中的GPG密钥
+列出 GitHub 帐户中的 GPG 密钥
 
 ## `gh issue <command>`
 
@@ -458,7 +458,7 @@ SSH到一个代码空间
 
 ### `gh pr checkout {<number> | <url> | <branch>} [flags]`
 
-查看git中的pull请求
+查看 git 中的 pull 请求
 
 ```
 -b, --branch string        Local branch name to use (default: the name of the head branch)
@@ -469,7 +469,7 @@ SSH到一个代码空间
 
 ### `gh pr checks [<number> | <url> | <branch>] [flags]`
 
-显示单个拉动请求的CI状态
+显示单个PR的 CI 状态
 
 ```
 -w, --web   Open the web browser to show details about checks
@@ -584,7 +584,7 @@ SSH到一个代码空间
 
 ### `gh pr ready [<number> | <url> | <branch>]`
 
-将拉动请求标记为已准备好进行审查
+将PR标记为已准备好进行审查
 
 ### `gh pr reopen {<number> | <url> | <branch>}`
 
@@ -626,7 +626,7 @@ SSH到一个代码空间
 
 ## `gh release <command>`
 
-管理GitHub发布
+管理 GitHub 发布
 
 ### `gh release create [<tag>] [<files>...]`
 
@@ -877,7 +877,7 @@ SSH到一个代码空间
 
 ## `gh secret <command>`
 
-管理GitHub机密
+管理 GitHub 机密
 
 ### `gh secret list [flags]`
 
@@ -916,11 +916,11 @@ SSH到一个代码空间
 
 ## `gh ssh-key <command>`
 
-管理SSH密钥
+管理 SSH 密钥
 
 ### `gh ssh-key add [<key-file>] [flags]`
 
-向GitHub帐户添加SSH密钥
+向 GitHub 帐户添加 SSH 密钥
 
 ```
 -t, --title string   Title for the new key
@@ -928,11 +928,11 @@ SSH到一个代码空间
 
 ### `gh ssh-key list`
 
-列出GitHub帐户中的SSH密钥
+列出 GitHub 帐户中的 SSH 密钥
 
 ## `gh workflow <command>`
 
-查看有关GitHub操作工作流的详细信息
+查看有关 GitHub 操作工作流的详细信息
 
 ### `gh workflow disable [<workflow-id> | <workflow-name>]`
 
@@ -953,7 +953,7 @@ SSH到一个代码空间
 
 ### `gh workflow run [<workflow-id> | <workflow-name>] [flags]`
 
-通过创建工作流\\u分派事件来运行工作流
+通过创建工作流\\u 分派事件来运行工作流
 
 ```
 -F, --field key=value       Add a string parameter in key=value format, respecting @ syntax
@@ -974,4 +974,4 @@ SSH到一个代码空间
 
 ### See also
 
--   [gh](./gh)
+- [gh](./gh)

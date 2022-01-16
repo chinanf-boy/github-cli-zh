@@ -19,15 +19,15 @@
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### Examples
 
 ```bash
-$gh问题列表
-$gh问题创建--label bug
-$gh问题视图--web
+$ gh issue list
+$ gh issue create --label bug
+$ gh issue view --web
 ```
 
 ### See also

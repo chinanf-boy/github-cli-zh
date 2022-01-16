@@ -13,16 +13,16 @@ gh pr checkout {<number> | <url> | <branch>} [flags]
 
 <dl class="flags">
 	<dt><code>-b</code>, <code>--branch &lt;string&gt;</code></dt>
-	<dd>Local branch name to use (default: the name of the head branch)</dd>
+	<dd>本地分支名 (默认: the name of the head branch)</dd>
 
 	<dt><code>--detach</code></dt>
-	<dd>Checkout PR with a detached HEAD</dd>
+	<dd> 以一种分离 HEAD 的状态，查看 PR</dd>
 
 	<dt><code>-f</code>, <code>--force</code></dt>
-	<dd>Reset the existing local branch to the latest state of the pull request</dd>
+	<dd>重设本地分支为最新的PR</dd>
 
 	<dt><code>--recurse-submodules</code></dt>
-	<dd>Update all submodules after checkout</dd>
+	<dd>在 checkout 之后，更新所有的 submodules </dd>
 </dl>
 
 

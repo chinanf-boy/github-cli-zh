@@ -20,7 +20,7 @@ gh pr review [<number> | <url> | <branch>] [flags]
 <dd>Specify the body of a review</dd>
 
 <dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
+<dd>文件读取主体内容 (用&#34;-&#34; 的话，就从标准输入读取)</dd>
 
 <dt><code>-c</code>, <code>--comment</code></dt>
 <dd>Comment on a pull request</dd>
@@ -34,7 +34,7 @@ gh pr review [<number> | <url> | <branch>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### Examples

@@ -34,7 +34,7 @@ gh issue create [flags]
 	<dd>Recover input from a failed run of create</dd>
 
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Supply a title. Will prompt for one otherwise.</dd>
+	<dd>提供一个标题。不填，也会提示</dd>
 
 	<dt><code>-w</code>, <code>--web</code></dt>
 	<dd>Open the browser to create an issue</dd>

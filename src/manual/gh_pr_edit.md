@@ -41,7 +41,7 @@ is selected.
 	<dd>Edit the milestone the pull request belongs to by name</dd>
 
 	<dt><code>--remove-assignee &lt;login&gt;</code></dt>
-	<dd>Remove assigned users by their login. Use &#34;@me&#34; to unassign yourself.</dd>
+	<dd>移除 login 的人员配置. 使用 &#34;@me&#34; 就移除自己</dd>
 
 	<dt><code>--remove-label &lt;name&gt;</code></dt>
 	<dd>Remove labels by name</dd>

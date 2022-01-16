@@ -1,8 +1,6 @@
-
-
 ## gh issue status
 
-显示相关问题的状态
+显示 issue 的状态
 
 ```
 gh issue status [flags]
@@ -26,9 +24,9 @@ gh issue status [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### See also
 
--   [gh issue](./gh_issue.zh.md)
+- [gh issue](./gh_issue.zh.md)

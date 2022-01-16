@@ -28,16 +28,16 @@ gh issue edit {<number> | <url>} [flags]
 	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
-	<dd>Edit the milestone the issue belongs to by name</dd>
+	<dd>用 name，编辑下里程碑</dd>
 
 	<dt><code>--remove-assignee &lt;login&gt;</code></dt>
-	<dd>Remove assigned users by their login. Use &#34;@me&#34; to unassign yourself.</dd>
+	<dd>移除 login 的人员配置. 使用 &#34;@me&#34; 就移除自己</dd>
 
 	<dt><code>--remove-label &lt;name&gt;</code></dt>
 	<dd>Remove labels by name</dd>
 
 	<dt><code>--remove-project &lt;name&gt;</code></dt>
-	<dd>Remove the issue from projects by name</dd>
+	<dd>移除 name 项目</dd>
 
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
 	<dd>Set the new title.</dd>

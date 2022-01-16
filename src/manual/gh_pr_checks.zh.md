@@ -1,12 +1,10 @@
-
-
 ## gh pr checks
 
 ```
 gh pr checks [<number> | <url> | <branch>] [flags]
 ```
 
-显示单个拉动请求的CI状态。
+显示单个 PR 的 CI 状态。
 
 在没有参数的情况下，将选择属于当前分支的请求。
 
@@ -21,9 +19,9 @@ gh pr checks [<number> | <url> | <branch>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

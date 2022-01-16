@@ -1,5 +1,3 @@
-
-
 ## gh issue view
 
 ```
@@ -8,7 +6,7 @@ gh issue view {<number> | <url>} [flags]
 
 显示有关问题的标题、正文和其他信息。
 
-使用“--web”，改为在web浏览器中打开问题。
+使用`--web`，改为在 web 浏览器中打开问题。
 
 ### Options
 
@@ -34,9 +32,9 @@ gh issue view {<number> | <url>} [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### See also
 
--   [gh issue](./gh_issue.zh.md)
+- [gh issue](./gh_issue.zh.md)

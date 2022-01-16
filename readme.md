@@ -9,8 +9,8 @@ Github 官方命令行，中文文档
 <!-- commit = 'eaa64df80193f4f632d574f25729460d8b657819' -->
 <!-- time = '2021-12-22' -->
 
-| 翻译的原文 | 与日期      | 最新更新 | 更多                       |
-| ---------- | ----------- | -------- | -------------------------- |
+| 翻译的原文 | 与日期        | 最新更新 | 更多                       |
+| ---------- | ------------- | -------- | -------------------------- |
 | [commit]   | ⏰ 2021-12-22 | ![last]  | [中文翻译][translate-list] |
 
 [last]: https://img.shields.io/github/last-commit/cli/cli.svg
@@ -73,25 +73,25 @@ Github 官方命令行，中文文档
     - [x] [gh_gpg-key_add.md](src/manual/gh_gpg-key_add.zh.md)
     - [x] [gh_gpg-key_list.md](src/manual/gh_gpg-key_list.zh.md)
   - [x] [gh_help.md](src/manual/gh_help.zh.md)
-    - [ ] [gh_help_environment.md](src/manual/gh_help_environment.zh.md)
-    - [ ] [gh_help_formatting.md](src/manual/gh_help_formatting.zh.md)
-    - [ ] [gh_help_mintty.md](src/manual/gh_help_mintty.zh.md)
+    - [x] [gh_help_environment.md](src/manual/gh_help_environment.zh.md)
+    - [x] [gh_help_formatting.md](src/manual/gh_help_formatting.zh.md)
+    - [x] [gh_help_mintty.md](src/manual/gh_help_mintty.zh.md)
     - [ ] [gh_help_reference.md](src/manual/gh_help_reference.zh.md)
-  - [ ] [gh_issue.md](src/manual/gh_issue.zh.md)
-    - [ ] [gh_issue_close.md](src/manual/gh_issue_close.zh.md)
-    - [ ] [gh_issue_comment.md](src/manual/gh_issue_comment.zh.md)
-    - [ ] [gh_issue_create.md](src/manual/gh_issue_create.zh.md)
-    - [ ] [gh_issue_delete.md](src/manual/gh_issue_delete.zh.md)
-    - [ ] [gh_issue_edit.md](src/manual/gh_issue_edit.zh.md)
-    - [ ] [gh_issue_list.md](src/manual/gh_issue_list.zh.md)
-    - [ ] [gh_issue_reopen.md](src/manual/gh_issue_reopen.zh.md)
-    - [ ] [gh_issue_status.md](src/manual/gh_issue_status.zh.md)
-    - [ ] [gh_issue_transfer.md](src/manual/gh_issue_transfer.zh.md)
-    - [ ] [gh_issue_view.md](src/manual/gh_issue_view.zh.md)
+  - [x] [gh_issue.md](src/manual/gh_issue.zh.md)
+    - [x] [gh_issue_close.md](src/manual/gh_issue_close.zh.md)
+    - [x] [gh_issue_comment.md](src/manual/gh_issue_comment.zh.md)
+    - [x] [gh_issue_create.md](src/manual/gh_issue_create.zh.md)
+    - [x] [gh_issue_delete.md](src/manual/gh_issue_delete.zh.md)
+    - [x] [gh_issue_edit.md](src/manual/gh_issue_edit.zh.md)
+    - [x] [gh_issue_list.md](src/manual/gh_issue_list.zh.md)
+    - [x] [gh_issue_reopen.md](src/manual/gh_issue_reopen.zh.md)
+    - [x] [gh_issue_status.md](src/manual/gh_issue_status.zh.md)
+    - [x] [gh_issue_transfer.md](src/manual/gh_issue_transfer.zh.md)
+    - [x] [gh_issue_view.md](src/manual/gh_issue_view.zh.md)
   - [ ] [gh_pr.md](src/manual/gh_pr.zh.md)
-    - [ ] [gh_pr_checkout.md](src/manual/gh_pr_checkout.zh.md)
-    - [ ] [gh_pr_checks.md](src/manual/gh_pr_checks.zh.md)
-    - [ ] [gh_pr_close.md](src/manual/gh_pr_close.zh.md)
+    - [x] [gh_pr_checkout.md](src/manual/gh_pr_checkout.zh.md)
+    - [x] [gh_pr_checks.md](src/manual/gh_pr_checks.zh.md)
+    - [x] [gh_pr_close.md](src/manual/gh_pr_close.zh.md)
     - [ ] [gh_pr_comment.md](src/manual/gh_pr_comment.zh.md)
     - [ ] [gh_pr_create.md](src/manual/gh_pr_create.zh.md)
     - [ ] [gh_pr_diff.md](src/manual/gh_pr_diff.zh.md)
@@ -142,12 +142,11 @@ Github 官方命令行，中文文档
     - [ ] [gh_workflow_run.md](src/manual/gh_workflow_run.zh.md)
     - [ ] [gh_workflow_view.md](src/manual/gh_workflow_view.zh.md)
 
-
 ## HTML 文章的构建
 
 使用 mdbook 构建，[到 mdbook github 下载](https://github.com/rust-lang/mdBook/releases)就好
 
-- 启动开发服务器 
+- 启动开发服务器
 
 ```
 mdbook serve
@@ -163,7 +162,7 @@ mdbook build
 
 ## 来源
 
-1. 一些官方博文，比如 'gh 打 hub' 啊，'Linux 环境下的安装'啊。 
+1. 一些官方博文，比如 'gh 打 hub' 啊，'Linux 环境下的安装'啊。
 
 2. 命令手册：
 
@@ -174,6 +173,5 @@ go run ./cmd/gen-docs --website --doc-path site/manual
 ```
 
 拿到了，命令行配置的 markdown 文件。
-
 
 > 使用 translate-mds 进行，中文文档的初始化

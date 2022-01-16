@@ -13,7 +13,7 @@ gh pr close {<number> | <url> | <branch>} [flags]
 
 <dl class="flags">
 	<dt><code>-d</code>, <code>--delete-branch</code></dt>
-	<dd>Delete the local and remote branch after close</dd>
+	<dd>关闭 PR 之后，删除本地与远程的分支</dd>
 </dl>
 
 

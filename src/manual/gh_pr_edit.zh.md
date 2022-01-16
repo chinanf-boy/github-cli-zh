@@ -17,7 +17,7 @@ gh pr edit [<number> | <url> | <branch>] [flags]
 	<dd>Add assigned users by their login. Use &#34;@me&#34; to assign yourself.</dd>
 
 <dt><code>--add-label &lt;name&gt;</code></dt>
-<dd>Add labels by name</dd>
+<dd>通过 name，添加标签</dd>
 
 <dt><code>--add-project &lt;name&gt;</code></dt>
 <dd>Add the pull request to projects by name</dd>
@@ -32,13 +32,13 @@ gh pr edit [<number> | <url> | <branch>] [flags]
 <dd>Set the new body.</dd>
 
 <dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
+<dd>文件读取主体内容 (用&#34;-&#34; 的话，就从标准输入读取)</dd>
 
 <dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
 <dd>Edit the milestone the pull request belongs to by name</dd>
 
 <dt><code>--remove-assignee &lt;login&gt;</code></dt>
-<dd>Remove assigned users by their login. Use &#34;@me&#34; to unassign yourself.</dd>
+<dd>移除 login 的人员配置. 使用 &#34;@me&#34; 就移除自己</dd>
 
 <dt><code>--remove-label &lt;name&gt;</code></dt>
 <dd>Remove labels by name</dd>
@@ -58,7 +58,7 @@ gh pr edit [<number> | <url> | <branch>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### Examples

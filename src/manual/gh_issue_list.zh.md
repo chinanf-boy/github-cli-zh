@@ -1,8 +1,6 @@
-
-
 ## gh issue list
 
-列出并筛选此存储库中的问题
+列出，并筛选此存储库中的问题
 
 ```
 gh issue list [flags]
@@ -53,16 +51,22 @@ gh issue list [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### Examples
 
 ```bash
-$gh问题列表-l“bug”-l“需要帮助”$gh问题列表-蒙娜丽莎$gh问题列表-A“@me”$gh问题列表-web$gh问题列表-里程碑“大1.0”$gh问题列表-搜索”错误号：受让人排序：已创建asc“
+$ gh issue list -l "bug" -l "help wanted"
+$ gh issue list -A monalisa
+$ gh issue list -a "@me"
+$ gh issue list --web
+$ gh issue list --milestone "The big 1.0"
+$ gh issue list --search "error no:assignee sort:created-asc"
 ```
+
 ”
 
 ### See also
 
--   [gh issue](./gh_issue.zh.md)
+- [gh issue](./gh_issue.zh.md)
