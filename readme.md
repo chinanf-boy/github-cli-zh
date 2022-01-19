@@ -15,6 +15,7 @@ Github 官方命令行，中文文档
 
 [last]: https://img.shields.io/github/last-commit/cli/cli.svg
 [commit]: https://github.com/cli/cli/tree/eaa64df80193f4f632d574f25729460d8b657819
+[translate-list]: https://github.com/chinanf-boy/chinese-translate-list
 
 <!-- doc-templite END generated -->
 
