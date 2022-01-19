@@ -17,13 +17,13 @@ latest release in the project. In this case, '--pattern' is required.
 
 <dl class="flags">
 	<dt><code>-A</code>, <code>--archive &lt;format&gt;</code></dt>
-	<dd>Download the source code archive in the specified format (zip or tar.gz)</dd>
+	<dd>下载的格式 (zip or tar.gz)</dd>
 
 	<dt><code>-D</code>, <code>--dir &lt;string&gt;</code></dt>
-	<dd>The directory to download files into</dd>
+	<dd>下载的位置</dd>
 
 	<dt><code>-p</code>, <code>--pattern &lt;stringArray&gt;</code></dt>
-	<dd>Download only assets that match a glob pattern</dd>
+	<dd>只下载符合 glob 匹配模式的资源</dd>
 </dl>
 
 

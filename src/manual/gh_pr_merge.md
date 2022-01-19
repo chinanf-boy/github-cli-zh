@@ -17,34 +17,34 @@ is selected.
 
 <dl class="flags">
 	<dt><code>--admin</code></dt>
-	<dd>Use administrator privileges to merge a pull request that does not meet requirements</dd>
+	<dd>即便条件不达标，用管理员权限合并</dd>
 
 	<dt><code>--auto</code></dt>
-	<dd>Automatically merge only after necessary requirements are met</dd>
+	<dd>条件符合，自动合并</dd>
 
 	<dt><code>-b</code>, <code>--body &lt;text&gt;</code></dt>
-	<dd>Body text for the merge commit</dd>
+	<dd>合并的主体内容</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
 	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-d</code>, <code>--delete-branch</code></dt>
-	<dd>Delete the local and remote branch after merge</dd>
+	<dd>合并后，删除本地与远程分支</dd>
 
 	<dt><code>--disable-auto</code></dt>
-	<dd>Disable auto-merge for this pull request</dd>
+	<dd>禁止自动合并</dd>
 
 	<dt><code>-m</code>, <code>--merge</code></dt>
-	<dd>Merge the commits with the base branch</dd>
+	<dd>合并</dd>
 
 	<dt><code>-r</code>, <code>--rebase</code></dt>
-	<dd>Rebase the commits onto the base branch</dd>
+	<dd>变基</dd>
 
 	<dt><code>-s</code>, <code>--squash</code></dt>
-	<dd>Squash the commits into one commit and merge it into the base branch</dd>
+	<dd>将多个提交变成一个，再合并</dd>
 
 	<dt><code>-t</code>, <code>--subject &lt;text&gt;</code></dt>
-	<dd>Subject text for the merge commit</dd>
+	<dd>合并提交的主题</dd>
 </dl>
 
 

@@ -1,16 +1,14 @@
-
-
 ## gh pr comment
 
 ```
 gh pr comment [<number> | <url> | <branch>] [flags]
 ```
 
-创建新的公关评论。
+创建新的 PR 评论。
 
-在没有参数的情况下，将选择属于当前分支的请求。			
+在没有参数的情况下，将选择属于当前分支的请求。
 
-使用“--web”，在web浏览器中对请求进行注释。
+使用"--web"，开在 web 浏览器。
 
 ### Options
 
@@ -39,10 +37,9 @@ gh pr comment [<number> | <url> | <branch>] [flags]
 ### Examples
 
 ```bash
-$gh pr comment 22--body“这看起来很棒，让我们部署它吧。”
+$ gh pr comment 22 --body "This looks great, lets get it deployed."
 ```
-
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

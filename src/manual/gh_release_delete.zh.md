@@ -1,8 +1,6 @@
-
-
 ## gh release delete
 
-删除发布
+删除 release
 
 ```
 gh release delete <tag> [flags]
@@ -12,7 +10,7 @@ gh release delete <tag> [flags]
 
 <dl class="flags">
 	<dt><code>-y</code>, <code>--yes</code></dt>
-	<dd>Skip the confirmation prompt</dd>
+	<dd>跳过提示</dd>
 </dl>
 
 ### Options inherited from parent commands
@@ -24,4 +22,4 @@ gh release delete <tag> [flags]
 
 ### See also
 
--   [gh release](./gh_release)
+- [gh release](./gh_release.zh.md)

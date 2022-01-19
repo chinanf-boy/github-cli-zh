@@ -1,5 +1,3 @@
-
-
 ## gh repo edit
 
 编辑存储库设置
@@ -63,4 +61,4 @@ gh repo edit [<repository>] [flags]
 
 ### See also
 
--   [gh repo](./gh_repo.zh.md)
+- [gh repo](./gh_repo.zh.md)

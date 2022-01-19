@@ -13,7 +13,7 @@ gh issue edit {<number> | <url>} [flags]
 
 <dl class="flags">
 	<dt><code>--add-assignee &lt;login&gt;</code></dt>
-	<dd>Add assigned users by their login. Use &#34;@me&#34; to assign yourself.</dd>
+	<dd>通过 login，添加 关联的用户。使用 &#34;@me&#34; 关联自己.</dd>
 
 	<dt><code>--add-label &lt;name&gt;</code></dt>
 	<dd>Add labels by name</dd>
@@ -22,7 +22,7 @@ gh issue edit {<number> | <url>} [flags]
 	<dd>Add the issue to projects by name</dd>
 
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
-	<dd>Set the new body.</dd>
+	<dd>设置新的主体内容.</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
 	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
@@ -34,13 +34,13 @@ gh issue edit {<number> | <url>} [flags]
 	<dd>移除 login 的人员配置. 使用 &#34;@me&#34; 就移除自己</dd>
 
 	<dt><code>--remove-label &lt;name&gt;</code></dt>
-	<dd>Remove labels by name</dd>
+	<dd>移除 name 标签</dd>
 
 	<dt><code>--remove-project &lt;name&gt;</code></dt>
 	<dd>移除 name 项目</dd>
 
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Set the new title.</dd>
+	<dd>设置新的标题.</dd>
 </dl>
 
 

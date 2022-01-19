@@ -1,12 +1,10 @@
-
-
 ## gh release view
 
 ```
 gh release view [<tag>] [flags]
 ```
 
-查看有关GitHub发行版的信息。
+查看有关 GitHub Release 的信息。
 
 在没有显式标记名参数的情况下，将显示项目中的最新版本。
 
@@ -23,7 +21,7 @@ gh release view [<tag>] [flags]
 <dd>模板化输出</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
-<dd>Open the release in the browser</dd>
+<dd>浏览器打开</dd>
 
 </dl>
 
@@ -36,4 +34,4 @@ gh release view [<tag>] [flags]
 
 ### See also
 
--   [gh release](./gh_release)
+- [gh release](./gh_release.zh.md)

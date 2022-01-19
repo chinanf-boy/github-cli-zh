@@ -19,7 +19,7 @@ With '--web', open the pull request in a web browser instead.
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--comments</code></dt>
-	<dd>View pull request comments</dd>
+	<dd>查看 pull request 评论</dd>
 
 	<dt><code>-q</code>, <code>--jq &lt;expression&gt;</code></dt>
 	<dd>jq 表达式，过滤 JSON 输出</dd>
@@ -31,7 +31,7 @@ With '--web', open the pull request in a web browser instead.
 	<dd>模板化输出</dd>
 
 	<dt><code>-w</code>, <code>--web</code></dt>
-	<dd>Open a pull request in the browser</dd>
+	<dd>浏览器打开</dd>
 </dl>
 
 

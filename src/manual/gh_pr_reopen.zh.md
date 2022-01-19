@@ -1,5 +1,3 @@
-
-
 ## gh pr reopen
 
 重新打开拉取请求
@@ -17,4 +15,4 @@ gh pr reopen {<number> | <url> | <branch>}
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

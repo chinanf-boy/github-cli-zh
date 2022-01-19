@@ -58,7 +58,7 @@ head branch of the pull request. Disable this with `--no-maintainer-edit`.
 	<dd>Disable maintainer&#39;s ability to modify pull request</dd>
 
 	<dt><code>-p</code>, <code>--project &lt;name&gt;</code></dt>
-	<dd>Add the pull request to projects by name</dd>
+	<dd>将 pull request 添加到 name 项目</dd>
 
 	<dt><code>--recover &lt;string&gt;</code></dt>
 	<dd>Recover input from a failed run of create</dd>

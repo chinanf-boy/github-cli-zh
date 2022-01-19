@@ -1,5 +1,3 @@
-
-
 ## gh pr diff
 
 ```
@@ -14,10 +12,10 @@ gh pr diff [<number> | <url> | <branch>] [flags]
 
 <dl class="flags">
 	<dt><code>--color &lt;string&gt;</code></dt>
-	<dd>Use color in diff output: {always|never|auto}</dd>
+	<dd>在 diff 输出中，使用颜色: {always|never|auto}</dd>
 
 <dt><code>--patch</code></dt>
-<dd>Display diff in patch format</dd>
+<dd>以 patch 格式，展示 diff </dd>
 
 </dl>
 
@@ -30,4 +28,4 @@ gh pr diff [<number> | <url> | <branch>] [flags]
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

@@ -18,8 +18,8 @@ To fetch the new tag locally after the release, do `git fetch --tags origin`.
 To create a release from an annotated git tag, first create one locally with
 git, push the tag to GitHub, then run this command.
 
-When using automatically generated release notes, a release title will also be automatically
-generated unless a title was explicitly passed. Additional release notes can be prepended to
+When using automatically generated Release 笔记, a Release 标题 will also be automatically
+generated unless a title was explicitly passed. Additional Release 笔记 can be prepended to
 automatically generated notes by using the notes parameter.
 
 
@@ -28,28 +28,28 @@ automatically generated notes by using the notes parameter.
 
 <dl class="flags">
 	<dt><code>--discussion-category &lt;string&gt;</code></dt>
-	<dd>Start a discussion of the specified category</dd>
+	<dd>开始指定主题分类的讨论</dd>
 
 	<dt><code>-d</code>, <code>--draft</code></dt>
-	<dd>Save the release as a draft instead of publishing it</dd>
+	<dd>一个草稿版本</dd>
 
 	<dt><code>--generate-notes</code></dt>
-	<dd>Automatically generate title and notes for the release</dd>
+	<dd>自动生成，release 的 标题与笔记</dd>
 
 	<dt><code>-n</code>, <code>--notes &lt;string&gt;</code></dt>
-	<dd>Release notes</dd>
+	<dd>Release 笔记</dd>
 
 	<dt><code>-F</code>, <code>--notes-file &lt;file&gt;</code></dt>
-	<dd>Read release notes from file (use &#34;-&#34; to read from standard input)</dd>
+	<dd>用文件，读笔记 (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-p</code>, <code>--prerelease</code></dt>
-	<dd>Mark the release as a prerelease</dd>
+	<dd>预览版</dd>
 
 	<dt><code>--target &lt;branch&gt;</code></dt>
-	<dd>Target branch or full commit SHA (default: main branch)</dd>
+	<dd>指定的分支或是完整的 commit SHA (default: main branch)</dd>
 
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Release title</dd>
+	<dd>Release 标题</dd>
 </dl>
 
 
@@ -74,10 +74,10 @@ $ gh release create v1.2.3
 Non-interactively create a release
 $ gh release create v1.2.3 --notes "bugfix release"
 
-Use automatically generated release notes
+Use automatically generated Release 笔记
 $ gh release create v1.2.3 --generate-notes
 
-Use release notes from a file
+Use Release 笔记 from a file
 $ gh release create v1.2.3 -F changelog.md
 
 Upload all tarballs in a directory as release assets

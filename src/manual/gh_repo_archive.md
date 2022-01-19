@@ -15,7 +15,7 @@ With no argument, archives the current repository.
 
 <dl class="flags">
 	<dt><code>-y</code>, <code>--confirm</code></dt>
-	<dd>Skip the confirmation prompt</dd>
+	<dd>跳过提示</dd>
 </dl>
 
 

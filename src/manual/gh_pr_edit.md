@@ -17,43 +17,43 @@ is selected.
 
 <dl class="flags">
 	<dt><code>--add-assignee &lt;login&gt;</code></dt>
-	<dd>Add assigned users by their login. Use &#34;@me&#34; to assign yourself.</dd>
+	<dd>通过 login，添加 关联的用户。使用 &#34;@me&#34; 关联自己.</dd>
 
 	<dt><code>--add-label &lt;name&gt;</code></dt>
 	<dd>Add labels by name</dd>
 
 	<dt><code>--add-project &lt;name&gt;</code></dt>
-	<dd>Add the pull request to projects by name</dd>
+	<dd>将 pull request 添加到 name 项目</dd>
 
 	<dt><code>--add-reviewer &lt;login&gt;</code></dt>
-	<dd>Add reviewers by their login.</dd>
+	<dd>通过 login ，添加审查人员.</dd>
 
 	<dt><code>-B</code>, <code>--base &lt;branch&gt;</code></dt>
-	<dd>Change the base branch for this pull request</dd>
+	<dd>更改 PR 的基分支</dd>
 
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
-	<dd>Set the new body.</dd>
+	<dd>设置新的主体内容.</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
 	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
-	<dd>Edit the milestone the pull request belongs to by name</dd>
+	<dd>编辑 name 里程牌</dd>
 
 	<dt><code>--remove-assignee &lt;login&gt;</code></dt>
 	<dd>移除 login 的人员配置. 使用 &#34;@me&#34; 就移除自己</dd>
 
 	<dt><code>--remove-label &lt;name&gt;</code></dt>
-	<dd>Remove labels by name</dd>
+	<dd>移除 name 标签</dd>
 
 	<dt><code>--remove-project &lt;name&gt;</code></dt>
-	<dd>Remove the pull request from projects by name</dd>
+	<dd>移除 name 项目的 PR</dd>
 
 	<dt><code>--remove-reviewer &lt;login&gt;</code></dt>
-	<dd>Remove reviewers by their login.</dd>
+	<dd>通过 login ，移除审查人员.</dd>
 
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Set the new title.</dd>
+	<dd>设置新的标题.</dd>
 </dl>
 
 

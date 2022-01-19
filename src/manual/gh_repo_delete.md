@@ -18,7 +18,7 @@ To authorize, run "gh auth refresh -s delete_repo"
 
 <dl class="flags">
 	<dt><code>--confirm</code></dt>
-	<dd>confirm deletion without prompting</dd>
+	<dd>直接通过提示</dd>
 </dl>
 
 

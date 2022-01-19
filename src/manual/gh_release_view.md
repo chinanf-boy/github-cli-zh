@@ -26,7 +26,7 @@ is shown.
 	<dd>模板化输出</dd>
 
 	<dt><code>-w</code>, <code>--web</code></dt>
-	<dd>Open the release in the browser</dd>
+	<dd>浏览器打开</dd>
 </dl>
 
 

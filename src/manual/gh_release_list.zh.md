@@ -1,8 +1,6 @@
-
-
 ## gh release list
 
-在存储库中列出发布
+列出 Release
 
 ```
 gh release list [flags]
@@ -24,4 +22,4 @@ gh release list [flags]
 
 ### See also
 
--   [gh release](./gh_release)
+- [gh release](./gh_release.zh.md)

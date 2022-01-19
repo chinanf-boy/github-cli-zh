@@ -394,13 +394,13 @@ SSH 到一个代码空间
     --add-assignee login      Add assigned users by their login. Use "@me" to assign yourself.
     --add-label name          Add labels by name
     --add-project name        Add the issue to projects by name
--b, --body string             Set the new body.
+-b, --body string             设置新的主体内容.
 -F, --body-file file          Read body text from file (use "-" to read from standard input)
 -m, --milestone name          Edit the milestone the issue belongs to by name
     --remove-assignee login   Remove assigned users by their login. Use "@me" to unassign yourself.
-    --remove-label name       Remove labels by name
+    --remove-label name       移除 name 标签
     --remove-project name     Remove the issue from projects by name
--t, --title string            Set the new title.
+-t, --title string            设置新的标题.
 ```
 
 ### `gh issue list [flags]`
@@ -469,7 +469,7 @@ SSH 到一个代码空间
 
 ### `gh pr checks [<number> | <url> | <branch>] [flags]`
 
-显示单个PR的 CI 状态
+显示单个 PR 的 CI 状态
 
 ```
 -w, --web   Open the web browser to show details about checks
@@ -485,7 +485,7 @@ SSH 到一个代码空间
 
 ### `gh pr comment [<number> | <url> | <branch>] [flags]`
 
-创建新的公关评论
+创建新的PR评论
 
 ```
 -b, --body string      Supply a body. Will prompt for one otherwise.
@@ -509,7 +509,7 @@ SSH 到一个代码空间
 -l, --label name           Add labels by name
 -m, --milestone name       Add the pull request to a milestone by name
     --no-maintainer-edit   Disable maintainer's ability to modify pull request
--p, --project name         Add the pull request to projects by name
+-p, --project name         将 pull request 添加到 name 项目
     --recover string       Recover input from a failed run of create
 -r, --reviewer handle      Request reviews from people or teams by their handle
 -t, --title string         Title for the pull request
@@ -521,8 +521,8 @@ SSH 到一个代码空间
 查看拉取请求中的更改
 
 ```
---color string   Use color in diff output: {always|never|auto} (default "auto")
---patch          Display diff in patch format
+--color string   在 diff 输出中，使用颜色: {always|never|auto} (default "auto")
+--patch          以 patch 格式，展示 diff 
 ```
 
 ### `gh pr edit [<number> | <url> | <branch>] [flags]`
@@ -532,17 +532,17 @@ SSH 到一个代码空间
 ```
     --add-assignee login      Add assigned users by their login. Use "@me" to assign yourself.
     --add-label name          Add labels by name
-    --add-project name        Add the pull request to projects by name
-    --add-reviewer login      Add reviewers by their login.
--B, --base branch             Change the base branch for this pull request
--b, --body string             Set the new body.
+    --add-project name        将 pull request 添加到 name 项目
+    --add-reviewer login      通过 login ，添加审查人员.
+-B, --base branch             更改 PR 的基分支
+-b, --body string             设置新的主体内容.
 -F, --body-file file          Read body text from file (use "-" to read from standard input)
--m, --milestone name          Edit the milestone the pull request belongs to by name
+-m, --milestone name          编辑 name 里程牌
     --remove-assignee login   Remove assigned users by their login. Use "@me" to unassign yourself.
-    --remove-label name       Remove labels by name
-    --remove-project name     Remove the pull request from projects by name
-    --remove-reviewer login   Remove reviewers by their login.
--t, --title string            Set the new title.
+    --remove-label name       移除 name 标签
+    --remove-project name     移除 name 项目的 PR
+    --remove-reviewer login   通过 login ，移除审查人员.
+-t, --title string            设置新的标题.
 ```
 
 ### `gh pr list [flags]`
@@ -570,21 +570,21 @@ SSH 到一个代码空间
 合并拉取请求
 
 ```
-    --admin            Use administrator privileges to merge a pull request that does not meet requirements
-    --auto             Automatically merge only after necessary requirements are met
--b, --body text        Body text for the merge commit
+    --admin            即便条件不达标，用管理员权限合并
+    --auto             条件符合，自动合并
+-b, --body text        合并的主体内容
 -F, --body-file file   Read body text from file (use "-" to read from standard input)
--d, --delete-branch    Delete the local and remote branch after merge
-    --disable-auto     Disable auto-merge for this pull request
--m, --merge            Merge the commits with the base branch
--r, --rebase           Rebase the commits onto the base branch
--s, --squash           Squash the commits into one commit and merge it into the base branch
--t, --subject text     Subject text for the merge commit
+-d, --delete-branch    合并后，删除本地与远程分支
+    --disable-auto     禁止自动合并
+-m, --merge            合并
+-r, --rebase           变基
+-s, --squash           将多个提交变成一个，再合并
+-t, --subject text     合并提交的主题
 ```
 
 ### `gh pr ready [<number> | <url> | <branch>]`
 
-将PR标记为已准备好进行审查
+将 PR 标记为已准备好进行审查
 
 ### `gh pr reopen {<number> | <url> | <branch>}`
 
@@ -595,11 +595,11 @@ SSH 到一个代码空间
 向拉取请求添加审阅
 
 ```
--a, --approve           Approve pull request
--b, --body string       Specify the body of a review
+-a, --approve           批准 pull request
+-b, --body string       指定一个审查的主体内容
 -F, --body-file file    Read body text from file (use "-" to read from standard input)
--c, --comment           Comment on a pull request
--r, --request-changes   Request changes on a pull request
+-c, --comment           给出评论
+-r, --request-changes   要求 PR 修改
 ```
 
 ### `gh pr status [flags]`
@@ -617,11 +617,11 @@ SSH 到一个代码空间
 查看拉取请求
 
 ```
--c, --comments          View pull request comments
+-c, --comments          查看 pull request 评论
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
 -t, --template string   模板化输出
--w, --web               Open a pull request in the browser
+-w, --web               浏览器打开
 ```
 
 ## `gh release <command>`
@@ -633,14 +633,14 @@ SSH 到一个代码空间
 创建一个新版本
 
 ```
-    --discussion-category string   Start a discussion of the specified category
--d, --draft                        Save the release as a draft instead of publishing it
-    --generate-notes               Automatically generate title and notes for the release
--n, --notes string                 Release notes
--F, --notes-file file              Read release notes from file (use "-" to read from standard input)
--p, --prerelease                   Mark the release as a prerelease
-    --target branch                Target branch or full commit SHA (default: main branch)
--t, --title string                 Release title
+    --discussion-category string   开始指定主题分类的讨论
+-d, --draft                        一个草稿版本
+    --generate-notes               自动生成，release 的 标题与笔记
+-n, --notes string                 Release 笔记
+-F, --notes-file file              用文件，读笔记 (use "-" to read from standard input)
+-p, --prerelease                   预览版
+    --target branch                指定的分支或是完整的 commit SHA (default: main branch)
+-t, --title string                 Release 标题
 ```
 
 ### `gh release delete <tag> [flags]`
@@ -648,7 +648,7 @@ SSH 到一个代码空间
 删除发布
 
 ```
--y, --yes   Skip the confirmation prompt
+-y, --yes   跳过提示
 ```
 
 ### `gh release download [<tag>] [flags]`
@@ -656,9 +656,9 @@ SSH 到一个代码空间
 下载发布资产
 
 ```
--A, --archive format        Download the source code archive in the specified format (zip or tar.gz)
--D, --dir string            The directory to download files into (default ".")
--p, --pattern stringArray   Download only assets that match a glob pattern
+-A, --archive format        下载的格式 (zip or tar.gz)
+-D, --dir string            下载的位置 (default ".")
+-p, --pattern stringArray   只下载符合 glob 匹配模式的资源
 ```
 
 ### `gh release list [flags]`
@@ -674,7 +674,7 @@ SSH 到一个代码空间
 将资产上载到发布
 
 ```
---clobber   Overwrite existing assets of the same name
+--clobber   覆盖同名资源
 ```
 
 ### `gh release view [<tag>] [flags]`
@@ -685,7 +685,7 @@ SSH 到一个代码空间
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
 -t, --template string   模板化输出
--w, --web               Open the release in the browser
+-w, --web               浏览器打开
 ```
 
 ## `gh repo <command>`
@@ -697,7 +697,7 @@ SSH 到一个代码空间
 归档存储库
 
 ```
--y, --confirm   Skip the confirmation prompt
+-y, --confirm   跳过提示
 ```
 
 ### `gh repo clone <repository> [<directory>] [-- <gitflags>...]`
@@ -731,7 +731,7 @@ SSH 到一个代码空间
 删除存储库
 
 ```
---confirm   confirm deletion without prompting
+--confirm   直接通过提示
 ```
 
 ### `gh repo edit [<repository>] [flags]`
@@ -974,4 +974,4 @@ SSH 到一个代码空间
 
 ### See also
 
-- [gh](./gh)
+- [gh](./gh.zh.md)

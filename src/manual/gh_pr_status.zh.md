@@ -1,5 +1,3 @@
-
-
 ## gh pr status
 
 显示相关拉取请求的状态
@@ -31,4 +29,4 @@ gh pr status [flags]
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

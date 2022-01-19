@@ -1,5 +1,3 @@
-
-
 ## gh pr list
 
 列出并筛选此存储库中的请求
@@ -62,18 +60,22 @@ gh pr list [flags]
 ### Examples
 
 ```bash
-列表PRs由您编写$gh pr List--作者“@me”
+# 列出 PRs，作者是你
+$ gh pr list --author "@me"
 
-分配给您的列表PRs$gh pr列表--受让人“@me”
+# 列出 PRs，关联你的
+$ gh pr list --assignee "@me"
 
-按标签列出PRs，将多个标签与$gh pr列表相结合--标签错误--标签“优先级1”
+# 列出 PRs ，bug 标签, 多个标签组合
+$ gh pr list --label bug --label "priority 1"
 
-使用搜索语法列出PRs$gh pr List--搜索“状态：成功审核：必需”
+# 列出 PRs，使用 search 语法
+$ gh pr list --search "status:success review:required"
 
-在web浏览器中打开PRs列表$gh pr list--web
+# 浏览器打开
+$ gh pr list --web
 ```
-
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

@@ -16,19 +16,19 @@ Without an argument, the pull request that belongs to the current branch is revi
 
 <dl class="flags">
 	<dt><code>-a</code>, <code>--approve</code></dt>
-	<dd>Approve pull request</dd>
+	<dd>批准 pull request</dd>
 
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
-	<dd>Specify the body of a review</dd>
+	<dd>指定一个审查的主体内容</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
 	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-c</code>, <code>--comment</code></dt>
-	<dd>Comment on a pull request</dd>
+	<dd>给出评论</dd>
 
 	<dt><code>-r</code>, <code>--request-changes</code></dt>
-	<dd>Request changes on a pull request</dd>
+	<dd>要求 PR 修改</dd>
 </dl>
 
 

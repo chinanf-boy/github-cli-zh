@@ -1,20 +1,18 @@
-
-
 ## gh release upload
 
 ```
 gh release upload <tag> <files>... [flags]
 ```
 
-将资产文件上载到GitHub版本。
+将资产文件上载到 GitHub 版本。
 
-要定义资源的显示标签，请在文件名后附加以“#”开头的文本。
+要定义资源的显示标签，请在文件名后附加以`#`开头的文本。
 
 ### Options
 
 <dl class="flags">
 	<dt><code>--clobber</code></dt>
-	<dd>Overwrite existing assets of the same name</dd>
+	<dd>覆盖同名资源</dd>
 </dl>
 
 ### Options inherited from parent commands
@@ -26,4 +24,4 @@ gh release upload <tag> <files>... [flags]
 
 ### See also
 
--   [gh release](./gh_release)
+- [gh release](./gh_release.zh.md)

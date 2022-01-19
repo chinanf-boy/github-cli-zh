@@ -1,14 +1,12 @@
-
-
 ## gh pr ready
 
 ```
 gh pr ready [<number> | <url> | <branch>]
 ```
 
-将PR标记为已准备好进行审查
+将 PR 标记为已准备好，进行审查
 
-在没有参数的情况下，属于当前分支的请求被标记为就绪。
+在没有参数的情况下，属于当前分支的请求被标记为 ready。
 
 ### Options inherited from parent commands
 
@@ -19,4 +17,4 @@ gh pr ready [<number> | <url> | <branch>]
 
 ### See also
 
--   [gh pr](./gh_pr.zh.md)
+- [gh pr](./gh_pr.zh.md)

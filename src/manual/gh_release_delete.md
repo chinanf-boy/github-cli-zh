@@ -13,7 +13,7 @@ gh release delete <tag> [flags]
 
 <dl class="flags">
 	<dt><code>-y</code>, <code>--yes</code></dt>
-	<dd>Skip the confirmation prompt</dd>
+	<dd>跳过提示</dd>
 </dl>
 
 

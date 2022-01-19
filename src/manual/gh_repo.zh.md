@@ -18,7 +18,9 @@
 ### Examples
 
 ```bash
-$gh repo创建$gh repo克隆cli/cli$gh repo视图--web
+$ gh repo create
+$ gh repo clone cli/cli
+$ gh repo view --web
 ```
 
 ### See also

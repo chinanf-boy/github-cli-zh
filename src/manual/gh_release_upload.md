@@ -17,7 +17,7 @@ file name.
 
 <dl class="flags">
 	<dt><code>--clobber</code></dt>
-	<dd>Overwrite existing assets of the same name</dd>
+	<dd>覆盖同名资源</dd>
 </dl>
 
 
