@@ -25,10 +25,10 @@ Additional 'git clone' flags can be passed in by listing them after '--'.
 	<dd>Clone the fork {true|false}</dd>
 
 	<dt><code>--org &lt;string&gt;</code></dt>
-	<dd>Create the fork in an organization</dd>
+	<dd>在一个组织内，创建副本</dd>
 
 	<dt><code>--remote</code></dt>
-	<dd>Add remote for fork {true|false}</dd>
+	<dd>要添加远程（上级）存储库吗 {true|false}</dd>
 
 	<dt><code>--remote-name &lt;string&gt;</code></dt>
 	<dd>Specify a name for a fork&#39;s new remote.</dd>

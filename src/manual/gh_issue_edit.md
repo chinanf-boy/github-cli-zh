@@ -16,7 +16,7 @@ gh issue edit {<number> | <url>} [flags]
 	<dd>通过 login，添加 关联的用户。使用 &#34;@me&#34; 关联自己.</dd>
 
 	<dt><code>--add-label &lt;name&gt;</code></dt>
-	<dd>Add labels by name</dd>
+	<dd>添加标签</dd>
 
 	<dt><code>--add-project &lt;name&gt;</code></dt>
 	<dd>Add the issue to projects by name</dd>
@@ -25,7 +25,7 @@ gh issue edit {<number> | <url>} [flags]
 	<dd>设置新的主体内容.</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
+	<dd>读取文件，输入主体内容 (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
 	<dd>用 name，编辑下里程碑</dd>
@@ -49,7 +49,7 @@ gh issue edit {<number> | <url>} [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

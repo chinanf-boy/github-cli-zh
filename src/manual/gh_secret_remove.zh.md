@@ -1,5 +1,3 @@
-
-
 ## gh secret remove
 
 ```
@@ -8,22 +6,22 @@ gh secret remove <secret-name> [flags]
 
 删除以下级别之一的机密：
 
--   存储库（默认）：可用于存储库中运行的操作
--   环境：可用于存储库中部署环境的操作运行
--   组织：可用于组织内运行的操作
--   用户：可用于您的用户的代码空间
+- repository（默认）：可用于 存储库
+- environment：部署环境的操作
+- organization：组织内
+- user：代码空间
 
 ### Options
 
 <dl class="flags">
 	<dt><code>-e</code>, <code>--env &lt;string&gt;</code></dt>
-	<dd>Remove a secret for an environment</dd>
+	<dd>移除环境的机密</dd>
 
 <dt><code>-o</code>, <code>--org &lt;string&gt;</code></dt>
-<dd>Remove a secret for an organization</dd>
+<dd>移除组织的机密</dd>
 
 <dt><code>-u</code>, <code>--user</code></dt>
-<dd>Remove a secret for your user</dd>
+<dd>移除用户的机密</dd>
 
 </dl>
 
@@ -36,4 +34,4 @@ gh secret remove <secret-name> [flags]
 
 ### See also
 
--   [gh secret](./gh_secret.zh.md)
+- [gh secret](./gh_secret.zh.md)

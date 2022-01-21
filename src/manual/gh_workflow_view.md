@@ -16,10 +16,10 @@ gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]
 	<dd>The branch or tag name which contains the version of the workflow file you&#39;d like to view</dd>
 
 	<dt><code>-w</code>, <code>--web</code></dt>
-	<dd>Open workflow in the browser</dd>
+	<dd>浏览器打开</dd>
 
 	<dt><code>-y</code>, <code>--yaml</code></dt>
-	<dd>View the workflow yaml file</dd>
+	<dd>查看工作流的 yaml 文件</dd>
 </dl>
 
 
@@ -28,7 +28,7 @@ gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

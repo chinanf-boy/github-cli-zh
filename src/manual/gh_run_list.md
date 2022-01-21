@@ -25,7 +25,7 @@ gh run list [flags]
 	<dd>模板化输出</dd>
 
 	<dt><code>-w</code>, <code>--workflow &lt;string&gt;</code></dt>
-	<dd>Filter runs by workflow</dd>
+	<dd>工作流的过滤</dd>
 </dl>
 
 
@@ -34,7 +34,7 @@ gh run list [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

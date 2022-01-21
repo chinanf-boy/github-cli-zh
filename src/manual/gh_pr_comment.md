@@ -22,7 +22,7 @@ With '--web', comment on the pull request in a web browser instead.
 	<dd>Supply a body. Will prompt for one otherwise.</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-	<dd>Read body text from file (use &#34;-&#34; to read from standard input)</dd>
+	<dd>读取文件，输入主体内容 (use &#34;-&#34; to read from standard input)</dd>
 
 	<dt><code>-e</code>, <code>--editor</code></dt>
 	<dd>Add body using editor</dd>
@@ -37,7 +37,7 @@ With '--web', comment on the pull request in a web browser instead.
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

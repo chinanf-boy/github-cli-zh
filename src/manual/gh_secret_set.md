@@ -23,28 +23,28 @@ Secret values are locally encrypted before being sent to GitHub.
 
 <dl class="flags">
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
-	<dd>The value for the secret (reads from standard input if not specified)</dd>
+	<dd>机密内容 (reads from standard input if not specified)</dd>
 
 	<dt><code>-e</code>, <code>--env &lt;environment&gt;</code></dt>
-	<dd>Set deployment environment secret</dd>
+	<dd>设置发布环境的机密</dd>
 
 	<dt><code>-f</code>, <code>--env-file &lt;file&gt;</code></dt>
-	<dd>Load secret names and values from a dotenv-formatted file</dd>
+	<dd>加载 secret 名与值 (dotenv 格式文件）</dd>
 
 	<dt><code>--no-store</code></dt>
-	<dd>Print the encrypted, base64-encoded value instead of storing it on Github</dd>
+	<dd>打印 encrypted, base64-encoded 值，而不是在 Github 上存储</dd>
 
 	<dt><code>-o</code>, <code>--org &lt;organization&gt;</code></dt>
-	<dd>Set organization secret</dd>
+	<dd>设置组织的机密</dd>
 
 	<dt><code>-r</code>, <code>--repos &lt;repositories&gt;</code></dt>
-	<dd>List of repositories that can access an organization or user secret</dd>
+	<dd>能访问到一个组织或用户机密，列出这样的存储库</dd>
 
 	<dt><code>-u</code>, <code>--user</code></dt>
-	<dd>Set a secret for your user</dd>
+	<dd>设置用户的机密</dd>
 
 	<dt><code>-v</code>, <code>--visibility &lt;{all|private|selected}&gt;</code></dt>
-	<dd>Set visibility for an organization secret: {all|private|selected}</dd>
+	<dd>设置一个组织机密的可见性: {all|private|selected}</dd>
 </dl>
 
 
@@ -53,7 +53,7 @@ Secret values are locally encrypted before being sent to GitHub.
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

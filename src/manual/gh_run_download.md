@@ -18,10 +18,10 @@ the current directory.
 
 <dl class="flags">
 	<dt><code>-D</code>, <code>--dir &lt;string&gt;</code></dt>
-	<dd>The directory to download artifacts into</dd>
+	<dd>下载的目录</dd>
 
 	<dt><code>-n</code>, <code>--name &lt;stringArray&gt;</code></dt>
-	<dd>Only download artifacts that match any of the given names</dd>
+	<dd>仅下载匹配文件名的工件</dd>
 </dl>
 
 
@@ -30,7 +30,7 @@ the current directory.
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

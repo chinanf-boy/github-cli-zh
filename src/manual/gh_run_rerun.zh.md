@@ -1,8 +1,6 @@
-
-
 ## gh run rerun
 
-重新运行失败的运行
+重新运行
 
 ```
 gh run rerun [<run-id>]
@@ -17,4 +15,4 @@ gh run rerun [<run-id>]
 
 ### See also
 
--   [gh run](./gh_run.zh.md)
+- [gh run](./gh_run.zh.md)

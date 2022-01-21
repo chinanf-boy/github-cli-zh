@@ -13,52 +13,52 @@ gh repo edit [<repository>] [flags]
 
 <dl class="flags">
 	<dt><code>--add-topic &lt;strings&gt;</code></dt>
-	<dd>Add repository topic</dd>
+	<dd>添加 存储库 标签主题</dd>
 
 	<dt><code>--allow-forking</code></dt>
-	<dd>Allow forking of an organization repository</dd>
+	<dd>允许被 fork</dd>
 
 	<dt><code>--default-branch &lt;name&gt;</code></dt>
-	<dd>Set the default branch name for the repository</dd>
+	<dd>设置默认的分支</dd>
 
 	<dt><code>--delete-branch-on-merge</code></dt>
-	<dd>Delete head branch when pull requests are merged</dd>
+	<dd>当 pull requests 被合并，删除 HEAD 分支</dd>
 
 	<dt><code>-d</code>, <code>--description &lt;string&gt;</code></dt>
-	<dd>Description of the repository</dd>
+	<dd>存储库的描述</dd>
 
 	<dt><code>--enable-auto-merge</code></dt>
-	<dd>Enable auto-merge functionality</dd>
+	<dd>启动 auto-merge（自动合并） 功能</dd>
 
 	<dt><code>--enable-issues</code></dt>
-	<dd>Enable issues in the repository</dd>
+	<dd>启用 issues</dd>
 
 	<dt><code>--enable-merge-commit</code></dt>
-	<dd>Enable merging pull requests via merge commit</dd>
+	<dd>可以用 merge commit，合并 PR</dd>
 
 	<dt><code>--enable-projects</code></dt>
-	<dd>Enable projects in the repository</dd>
+	<dd>启用 projects</dd>
 
 	<dt><code>--enable-rebase-merge</code></dt>
-	<dd>Enable merging pull requests via rebase</dd>
+	<dd>可用变基（rebase）的方式合并 PR</dd>
 
 	<dt><code>--enable-squash-merge</code></dt>
-	<dd>Enable merging pull requests via squashed commit</dd>
+	<dd>可用，将多个commit变为一个的方式，合并PR</dd>
 
 	<dt><code>--enable-wiki</code></dt>
-	<dd>Enable wiki in the repository</dd>
+	<dd>启用 wiki</dd>
 
 	<dt><code>-h</code>, <code>--homepage &lt;URL&gt;</code></dt>
-	<dd>Repository home page URL</dd>
+	<dd>主页URL</dd>
 
 	<dt><code>--remove-topic &lt;strings&gt;</code></dt>
-	<dd>Remove repository topic</dd>
+	<dd>移除存储库的标签主题</dd>
 
 	<dt><code>--template</code></dt>
-	<dd>Make the repository available as a template repository</dd>
+	<dd>可将存储库当成，模板存储库</dd>
 
 	<dt><code>--visibility &lt;string&gt;</code></dt>
-	<dd>Change the visibility of the repository to {public,private,internal}</dd>
+	<dd>将存储库的可见性改为 {public,private,internal}</dd>
 </dl>
 
 

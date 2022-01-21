@@ -363,7 +363,7 @@ Create a new issue comment
 
 ```
 -b, --body string      Supply a body. Will prompt for one otherwise.
--F, --body-file file   Read body text from file (use "-" to read from standard input)
+-F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
 -e, --editor           Add body using editor
 -w, --web              Add body in browser
 ````
@@ -375,8 +375,8 @@ Create a new issue
 ```
 -a, --assignee login   Assign people by their login. Use "@me" to self-assign.
 -b, --body string      Supply a body. Will prompt for one otherwise.
--F, --body-file file   Read body text from file (use "-" to read from standard input)
--l, --label name       Add labels by name
+-F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
+-l, --label name       添加标签
 -m, --milestone name   Add the issue to a milestone by name
 -p, --project name     Add the issue to projects by name
     --recover string   Recover input from a failed run of create
@@ -394,10 +394,10 @@ Edit an issue
 
 ```
     --add-assignee login      Add assigned users by their login. Use "@me" to assign yourself.
-    --add-label name          Add labels by name
+    --add-label name          添加标签
     --add-project name        Add the issue to projects by name
 -b, --body string             设置新的主体内容.
--F, --body-file file          Read body text from file (use "-" to read from standard input)
+-F, --body-file file          读取文件，输入主体内容 (use "-" to read from standard input)
 -m, --milestone name          Edit the milestone the issue belongs to by name
     --remove-assignee login   Remove assigned users by their login. Use "@me" to unassign yourself.
     --remove-label name       移除 name 标签
@@ -491,7 +491,7 @@ Create a new pr comment
 
 ```
 -b, --body string      Supply a body. Will prompt for one otherwise.
--F, --body-file file   Read body text from file (use "-" to read from standard input)
+-F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
 -e, --editor           Add body using editor
 -w, --web              Add body in browser
 ````
@@ -502,20 +502,20 @@ Create a pull request
 
 ```
 -a, --assignee login       Assign people by their login. Use "@me" to self-assign.
--B, --base branch          The branch into which you want your code merged
--b, --body string          Body for the pull request
--F, --body-file file       Read body text from file
--d, --draft                Mark pull request as a draft
--f, --fill                 Do not prompt for title/body and just use commit info
--H, --head branch          The branch that contains commits for your pull request (default: current branch)
--l, --label name           Add labels by name
+-B, --base branch          要合并到的分支
+-b, --body string          PR 的主体内容
+-F, --body-file file       读取文件，输入主体内容
+-d, --draft                草稿版
+-f, --fill                 不用提示，使用 commit 的信息填入 title/body
+-H, --head branch          包含你 commits 的分支 (default: current branch)
+-l, --label name           添加标签
 -m, --milestone name       Add the pull request to a milestone by name
     --no-maintainer-edit   Disable maintainer's ability to modify pull request
 -p, --project name         将 pull request 添加到 name 项目
     --recover string       Recover input from a failed run of create
--r, --reviewer handle      Request reviews from people or teams by their handle
--t, --title string         Title for the pull request
--w, --web                  Open the web browser to create a pull request
+-r, --reviewer handle      PR 审查人员
+-t, --title string         添加 标题
+-w, --web                  浏览器打开
 ````
 
 ### `gh pr diff [<number> | <url> | <branch>] [flags]`
@@ -533,12 +533,12 @@ Edit a pull request
 
 ```
     --add-assignee login      Add assigned users by their login. Use "@me" to assign yourself.
-    --add-label name          Add labels by name
+    --add-label name          添加标签
     --add-project name        将 pull request 添加到 name 项目
     --add-reviewer login      通过 login ，添加审查人员.
 -B, --base branch             更改 PR 的基分支
 -b, --body string             设置新的主体内容.
--F, --body-file file          Read body text from file (use "-" to read from standard input)
+-F, --body-file file          读取文件，输入主体内容 (use "-" to read from standard input)
 -m, --milestone name          编辑 name 里程牌
     --remove-assignee login   Remove assigned users by their login. Use "@me" to unassign yourself.
     --remove-label name       移除 name 标签
@@ -575,7 +575,7 @@ Merge a pull request
     --admin            即便条件不达标，用管理员权限合并
     --auto             条件符合，自动合并
 -b, --body text        合并的主体内容
--F, --body-file file   Read body text from file (use "-" to read from standard input)
+-F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
 -d, --delete-branch    合并后，删除本地与远程分支
     --disable-auto     禁止自动合并
 -m, --merge            合并
@@ -599,7 +599,7 @@ Add a review to a pull request
 ```
 -a, --approve           批准 pull request
 -b, --body string       指定一个审查的主体内容
--F, --body-file file    Read body text from file (use "-" to read from standard input)
+-F, --body-file file    读取文件，输入主体内容 (use "-" to read from standard input)
 -c, --comment           给出评论
 -r, --request-changes   要求 PR 修改
 ````
@@ -712,11 +712,11 @@ Create a new repository
 
 ```
 -c, --clone                 Clone the new repository to the current directory
--d, --description string    Description of the repository
+-d, --description string    存储库的描述
     --disable-issues        Disable issues in the new repository
     --disable-wiki          Disable wiki in the new repository
 -g, --gitignore string      Specify a gitignore template for the repository
--h, --homepage URL          Repository home page URL
+-h, --homepage URL          主页URL
     --internal              Make the new repository internal
 -l, --license string        Specify an Open Source License for the repository
     --private               Make the new repository private
@@ -741,22 +741,22 @@ Delete a repository
 Edit repository settings
 
 ```
-    --add-topic strings        Add repository topic
-    --allow-forking            Allow forking of an organization repository
-    --default-branch name      Set the default branch name for the repository
-    --delete-branch-on-merge   Delete head branch when pull requests are merged
--d, --description string       Description of the repository
-    --enable-auto-merge        Enable auto-merge functionality
-    --enable-issues            Enable issues in the repository
-    --enable-merge-commit      Enable merging pull requests via merge commit
-    --enable-projects          Enable projects in the repository
-    --enable-rebase-merge      Enable merging pull requests via rebase
-    --enable-squash-merge      Enable merging pull requests via squashed commit
-    --enable-wiki              Enable wiki in the repository
--h, --homepage URL             Repository home page URL
-    --remove-topic strings     Remove repository topic
-    --template                 Make the repository available as a template repository
-    --visibility string        Change the visibility of the repository to {public,private,internal}
+    --add-topic strings        添加 存储库 标签主题
+    --allow-forking            允许被 fork
+    --default-branch name      设置默认的分支
+    --delete-branch-on-merge   当 pull requests 被合并，删除 HEAD 分支
+-d, --description string       存储库的描述
+    --enable-auto-merge        启动 auto-merge（自动合并） 功能
+    --enable-issues            启用 issues
+    --enable-merge-commit      可以用 merge commit，合并 PR
+    --enable-projects          启用 projects
+    --enable-rebase-merge      可用变基（rebase）的方式合并 PR
+    --enable-squash-merge      可用，将多个commit变为一个的方式，合并PR
+    --enable-wiki              启用 wiki
+-h, --homepage URL             主页URL
+    --remove-topic strings     移除存储库的标签主题
+    --template                 可将存储库当成，模板存储库
+    --visibility string        将存储库的可见性改为 {public,private,internal}
 ````
 
 ### `gh repo fork [<repository>] [-- <gitflags>...] [flags]`
@@ -765,8 +765,8 @@ Create a fork of a repository
 
 ```
 --clone                Clone the fork {true|false}
---org string           Create the fork in an organization
---remote               Add remote for fork {true|false}
+--org string           在一个组织内，创建副本
+--remote               要添加远程（上级）存储库吗 {true|false}
 --remote-name string   Specify a name for a fork's new remote. (default "origin")
 ````
 
@@ -775,18 +775,18 @@ Create a fork of a repository
 List repositories owned by user or organization
 
 ```
-    --archived          Show only archived repositories
-    --fork              Show only forks
+    --archived          仅展示存档的存储库
+    --fork              仅展示副本存储库
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
--l, --language string   Filter by primary coding language
+-l, --language string   主编程语言的过滤
 -L, --limit int         Maximum number of repositories to list (default 30)
-    --no-archived       Omit archived repositories
-    --private           Show only private repositories
-    --public            Show only public repositories
-    --source            Show only non-forks
+    --no-archived       不要存档的存储库
+    --private           仅展示私有存储库
+    --public            仅展示公开的存储库
+    --source            仅展示非副本的存储库
 -t, --template string   模板化输出
-    --topic string      Filter by topic
+    --topic string      标题主题的过滤
 ````
 
 ### `gh repo rename [<new-name>] [flags]`
@@ -794,7 +794,7 @@ List repositories owned by user or organization
 Rename a repository
 
 ```
--y, --confirm   skip confirmation prompt
+-y, --confirm   跳过提示，直接确定
 ````
 
 ### `gh repo sync [<destination-repository>] [flags]`
@@ -812,11 +812,11 @@ Sync a repository
 View a repository
 
 ```
--b, --branch string     View a specific branch of the repository
+-b, --branch string     显示特定分支
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
 -t, --template string   模板化输出
--w, --web               Open a repository in the browser
+-w, --web               浏览器打开
 ````
 
 ## `gh run <command>`
@@ -832,8 +832,8 @@ Cancel a workflow run
 Download artifacts generated by a workflow run
 
 ```
--D, --dir string         The directory to download artifacts into (default ".")
--n, --name stringArray   Only download artifacts that match any of the given names
+-D, --dir string         下载的目录 (default ".")
+-n, --name stringArray   仅下载匹配文件名的工件
 ````
 
 ### `gh run list [flags]`
@@ -845,7 +845,7 @@ List recent workflow runs
     --json fields       JSON 输出特殊字段
 -L, --limit int         Maximum number of runs to fetch (default 20)
 -t, --template string   模板化输出
--w, --workflow string   Filter runs by workflow
+-w, --workflow string   工作流的过滤
 ````
 
 ### `gh run rerun [<run-id>]`
@@ -858,14 +858,14 @@ View a summary of a workflow run
 
 ```
     --exit-status       Exit with non-zero status if run failed
--j, --job string        View a specific job ID from a run
+-j, --job string        查看一个特定的 job ID
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
-    --log               View full log for either a run or specific job
+    --log               查看 完整的日志
     --log-failed        View the log for any failed steps in a run or specific job
 -t, --template string   模板化输出
--v, --verbose           Show job steps
--w, --web               Open run in the browser
+-v, --verbose           展示 job 步骤
+-w, --web               浏览器打开
 ````
 
 ### `gh run watch <run-id> [flags]`
@@ -873,8 +873,8 @@ View a summary of a workflow run
 Watch a run until it completes, showing its progress
 
 ```
-    --exit-status    Exit with non-zero status if run fails
--i, --interval int   Refresh interval in seconds (default 3)
+    --exit-status    运行失败，退出代码 非零
+-i, --interval int   刷新的时间间隙 (default 3)
 ````
 
 ## `gh secret <command>`
@@ -886,9 +886,9 @@ Manage GitHub secrets
 List secrets
 
 ```
--e, --env string   List secrets for an environment
--o, --org string   List secrets for an organization
--u, --user         List a secret for your user
+-e, --env string   环境的机密
+-o, --org string   组织的机密
+-u, --user         用户的机密
 ````
 
 ### `gh secret remove <secret-name> [flags]`
@@ -896,9 +896,9 @@ List secrets
 Remove secrets
 
 ```
--e, --env string   Remove a secret for an environment
--o, --org string   Remove a secret for an organization
--u, --user         Remove a secret for your user
+-e, --env string   移除环境的机密
+-o, --org string   移除组织的机密
+-u, --user         移除用户的机密
 ````
 
 ### `gh secret set <secret-name> [flags]`
@@ -906,14 +906,14 @@ Remove secrets
 Create or update secrets
 
 ```
--b, --body string                         The value for the secret (reads from standard input if not specified)
--e, --env environment                     Set deployment environment secret
--f, --env-file file                       Load secret names and values from a dotenv-formatted file
-    --no-store                            Print the encrypted, base64-encoded value instead of storing it on Github
--o, --org organization                    Set organization secret
--r, --repos repositories                  List of repositories that can access an organization or user secret
--u, --user                                Set a secret for your user
--v, --visibility {all|private|selected}   Set visibility for an organization secret: {all|private|selected} (default "private")
+-b, --body string                         机密内容 (reads from standard input if not specified)
+-e, --env environment                     设置发布环境的机密
+-f, --env-file file                       加载 secret 名与值 (dotenv 格式文件）
+    --no-store                            打印 encrypted, base64-encoded 值，而不是在 Github 上存储
+-o, --org organization                    设置组织的机密
+-r, --repos repositories                  能访问到一个组织或用户机密，列出这样的存储库
+-u, --user                                设置用户的机密
+-v, --visibility {all|private|selected}   设置一个组织机密的可见性: {all|private|selected} (default "private")
 ````
 
 ## `gh ssh-key <command>`
@@ -925,7 +925,7 @@ Manage SSH keys
 Add an SSH key to your GitHub account
 
 ```
--t, --title string   Title for the new key
+-t, --title string   密钥的 标题
 ````
 
 ### `gh ssh-key list`
@@ -949,7 +949,7 @@ Enable a workflow
 List workflows
 
 ```
--a, --all         Show all workflows, including disabled workflows
+-a, --all         展示所有，即便是禁用的工作流
 -L, --limit int   Maximum number of workflows to fetch (default 50)
 ````
 
@@ -970,8 +970,8 @@ View the summary of a workflow
 
 ```
 -r, --ref string   The branch or tag name which contains the version of the workflow file you'd like to view
--w, --web          Open workflow in the browser
--y, --yaml         View the workflow yaml file
+-w, --web          浏览器打开
+-y, --yaml         查看工作流的 yaml 文件
 ````
 
 

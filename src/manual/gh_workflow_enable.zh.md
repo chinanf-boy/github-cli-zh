@@ -1,12 +1,10 @@
-
-
 ## gh workflow enable
 
 ```
 gh workflow enable [<workflow-id> | <workflow-name>]
 ```
 
-启用工作流，允许它在列出工作流时运行和显示。
+启用工作流，允许它在列出工作流时，运行和显示。
 
 ### Options inherited from parent commands
 
@@ -17,4 +15,4 @@ gh workflow enable [<workflow-id> | <workflow-name>]
 
 ### See also
 
--   [gh workflow](./gh_workflow.zh.md)
+- [gh workflow](./gh_workflow.zh.md)

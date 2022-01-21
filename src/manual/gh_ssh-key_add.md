@@ -13,7 +13,7 @@ gh ssh-key add [<key-file>] [flags]
 
 <dl class="flags">
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Title for the new key</dd>
+	<dd>密钥的 标题</dd>
 </dl>
 
 

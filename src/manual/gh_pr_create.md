@@ -31,25 +31,25 @@ head branch of the pull request. Disable this with `--no-maintainer-edit`.
 	<dd>Assign people by their login. Use &#34;@me&#34; to self-assign.</dd>
 
 	<dt><code>-B</code>, <code>--base &lt;branch&gt;</code></dt>
-	<dd>The branch into which you want your code merged</dd>
+	<dd>要合并到的分支</dd>
 
 	<dt><code>-b</code>, <code>--body &lt;string&gt;</code></dt>
-	<dd>Body for the pull request</dd>
+	<dd>PR 的主体内容</dd>
 
 	<dt><code>-F</code>, <code>--body-file &lt;file&gt;</code></dt>
-	<dd>Read body text from file</dd>
+	<dd>读取文件，输入主体内容</dd>
 
 	<dt><code>-d</code>, <code>--draft</code></dt>
-	<dd>Mark pull request as a draft</dd>
+	<dd>草稿版</dd>
 
 	<dt><code>-f</code>, <code>--fill</code></dt>
-	<dd>Do not prompt for title/body and just use commit info</dd>
+	<dd>不用提示，使用 commit 的信息填入 title/body</dd>
 
 	<dt><code>-H</code>, <code>--head &lt;branch&gt;</code></dt>
-	<dd>The branch that contains commits for your pull request (default: current branch)</dd>
+	<dd>包含你 commits 的分支 (default: current branch)</dd>
 
 	<dt><code>-l</code>, <code>--label &lt;name&gt;</code></dt>
-	<dd>Add labels by name</dd>
+	<dd>添加标签</dd>
 
 	<dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
 	<dd>Add the pull request to a milestone by name</dd>
@@ -64,13 +64,13 @@ head branch of the pull request. Disable this with `--no-maintainer-edit`.
 	<dd>Recover input from a failed run of create</dd>
 
 	<dt><code>-r</code>, <code>--reviewer &lt;handle&gt;</code></dt>
-	<dd>Request reviews from people or teams by their handle</dd>
+	<dd>PR 审查人员</dd>
 
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Title for the pull request</dd>
+	<dd>添加 标题</dd>
 
 	<dt><code>-w</code>, <code>--web</code></dt>
-	<dd>Open the web browser to create a pull request</dd>
+	<dd>浏览器打开</dd>
 </dl>
 
 
@@ -79,7 +79,7 @@ head branch of the pull request. Disable this with `--no-maintainer-edit`.
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

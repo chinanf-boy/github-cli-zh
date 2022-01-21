@@ -18,13 +18,13 @@ List secrets on one of the following levels:
 
 <dl class="flags">
 	<dt><code>-e</code>, <code>--env &lt;string&gt;</code></dt>
-	<dd>List secrets for an environment</dd>
+	<dd>环境的机密</dd>
 
 	<dt><code>-o</code>, <code>--org &lt;string&gt;</code></dt>
-	<dd>List secrets for an organization</dd>
+	<dd>组织的机密</dd>
 
 	<dt><code>-u</code>, <code>--user</code></dt>
-	<dd>List a secret for your user</dd>
+	<dd>用户的机密</dd>
 </dl>
 
 
@@ -33,7 +33,7 @@ List secrets on one of the following levels:
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

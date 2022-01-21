@@ -1,5 +1,3 @@
-
-
 ## gh run cancel
 
 取消工作流运行
@@ -17,4 +15,4 @@ gh run cancel [<run-id>]
 
 ### See also
 
--   [gh run](./gh_run.zh.md)
+- [gh run](./gh_run.zh.md)

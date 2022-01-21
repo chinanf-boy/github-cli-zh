@@ -10,7 +10,7 @@ List workflow files, hiding disabled workflows by default.
 
 <dl class="flags">
 	<dt><code>-a</code>, <code>--all</code></dt>
-	<dd>Show all workflows, including disabled workflows</dd>
+	<dd>展示所有，即便是禁用的工作流</dd>
 
     <dt><code>-L</code>, <code>--limit &lt;int&gt;</code></dt>
     <dd>Maximum number of workflows to fetch</dd>
@@ -21,7 +21,7 @@ List workflow files, hiding disabled workflows by default.
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 ### See also

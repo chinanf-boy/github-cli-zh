@@ -1,8 +1,6 @@
-
-
 ## gh run watch
 
-观察跑步直到完成，并显示其进度
+观察 run，直到完成，并显示其进度
 
 ```
 gh run watch <run-id> [flags]
@@ -12,10 +10,10 @@ gh run watch <run-id> [flags]
 
 <dl class="flags">
 	<dt><code>--exit-status</code></dt>
-	<dd>Exit with non-zero status if run fails</dd>
+	<dd>运行失败，退出代码 非零</dd>
 
 <dt><code>-i</code>, <code>--interval &lt;int&gt;</code></dt>
-<dd>Refresh interval in seconds</dd>
+<dd>刷新的时间间隙</dd>
 
 </dl>
 
@@ -29,18 +27,13 @@ gh run watch <run-id> [flags]
 ### Examples
 
 ```bash
+# 终端一直观察，直到 run 完成
+gh run watch
 
-
-# Watch a run until it's done
-
-长跑表
-
-# Run some other command when the run is finished
-
-gh运行监视和通知发送“运行完成！”
+# 然后，试试运行其他命令
+gh run watch && notify-send "run is done!"
 ```
-
 
 ### See also
 
--   [gh run](./gh_run.zh.md)
+- [gh run](./gh_run.zh.md)

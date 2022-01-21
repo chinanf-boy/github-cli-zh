@@ -1,8 +1,6 @@
-
-
 ## gh ssh-key add
 
-向GitHub帐户添加SSH密钥
+向 GitHub 帐户，添加 SSH 密钥
 
 ```
 gh ssh-key add [<key-file>] [flags]
@@ -12,9 +10,9 @@ gh ssh-key add [<key-file>] [flags]
 
 <dl class="flags">
 	<dt><code>-t</code>, <code>--title &lt;string&gt;</code></dt>
-	<dd>Title for the new key</dd>
+	<dd>密钥的 标题</dd>
 </dl>
 
 ### See also
 
--   [gh ssh-key](./gh_ssh-key.zh.md)
+- [gh ssh-key](./gh_ssh-key.zh.md)

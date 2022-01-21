@@ -16,7 +16,7 @@ gh run view [<run-id>] [flags]
 	<dd>Exit with non-zero status if run failed</dd>
 
 	<dt><code>-j</code>, <code>--job &lt;string&gt;</code></dt>
-	<dd>View a specific job ID from a run</dd>
+	<dd>查看一个特定的 job ID</dd>
 
 	<dt><code>-q</code>, <code>--jq &lt;expression&gt;</code></dt>
 	<dd>jq 表达式，过滤 JSON 输出</dd>
@@ -25,7 +25,7 @@ gh run view [<run-id>] [flags]
 	<dd>JSON 输出特殊字段</dd>
 
 	<dt><code>--log</code></dt>
-	<dd>View full log for either a run or specific job</dd>
+	<dd>查看 完整的日志</dd>
 
 	<dt><code>--log-failed</code></dt>
 	<dd>View the log for any failed steps in a run or specific job</dd>
@@ -34,10 +34,10 @@ gh run view [<run-id>] [flags]
 	<dd>模板化输出</dd>
 
 	<dt><code>-v</code>, <code>--verbose</code></dt>
-	<dd>Show job steps</dd>
+	<dd>展示 job 步骤</dd>
 
 	<dt><code>-w</code>, <code>--web</code></dt>
-	<dd>Open run in the browser</dd>
+	<dd>浏览器打开</dd>
 </dl>
 
 
@@ -46,7 +46,7 @@ gh run view [<run-id>] [flags]
 
 <dl class="flags">
 	<dt><code>-R</code>, <code>--repo &lt;[HOST/]OWNER/REPO&gt;</code></dt>
-	<dd>Select another repository using the [HOST/]OWNER/REPO format</dd>
+	<dd>使用 [HOST/]OWNER/REPO 格式，选择另一存储库</dd>
 </dl>
 
 

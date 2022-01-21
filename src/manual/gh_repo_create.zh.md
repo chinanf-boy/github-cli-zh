@@ -1,25 +1,18 @@
-
-
 ## gh repo create
 
 ```
 gh repo create [<name>] [flags]
 ```
 
-Create a new GitHub repository.
+创建一个新的 GitHub 存储库。
 
-To create a repository interactively, use `gh repo create` with no arguments.
+要以交互方式创建存储库，请使用`gh repo create`，不带参数。
 
-To create a remote repository non-interactively, supply the repository name and one of `--public`, `--private`, or `--internal`.
-Pass `--clone` to clone the new repository locally.
+要以非交互方式创建远程存储库，请提供存储库名称和`--public`, `--private`或`--internal`，通过`--clone`在本地克隆新存储库。
 
-To create a remote repository from an existing local repository, specify the source directory with `--source`. 
-By default, the remote repository name will be the name of the source directory. 
-Pass `--push` to push any local commits to the new repository.
-
+要从现有本地存储库创建远程存储库，请使用`--source`。默认情况下，远程存储库名称将是源目录的名称。通过`--push`将任何本地提交推送到新存储库。
 
 ### Options
-
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--clone</code></dt>
@@ -68,10 +61,10 @@ Pass `--push` to push any local commits to the new repository.
 <dd>Make the new repository based on a template repository</dd>
 </dl>
 
-
 ### Examples
 
-{% highlight bash %}{% raw %}
+```bash
+
 # create a repository interactively 
 gh repo create
 
@@ -80,8 +73,8 @@ gh repo create my-project --public --clone
 
 # create a remote repository from the current directory
 gh repo create my-project --private --source=. --remote=upstream
-{% endraw %}{% endhighlight %}
+```
 
 ### See also
 
-* [gh repo](./gh_repo)
+- [gh repo](./gh_repo.zh.md)

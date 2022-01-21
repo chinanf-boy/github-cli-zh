@@ -1,5 +1,3 @@
-
-
 ## gh workflow list
 
 ```
@@ -12,7 +10,7 @@ gh workflow list [flags]
 
 <dl class="flags">
 	<dt><code>-a</code>, <code>--all</code></dt>
-	<dd>Show all workflows, including disabled workflows</dd>
+	<dd>展示所有，即便是禁用的工作流</dd>
 
 <dt><code>-L</code>, <code>--limit &lt;int&gt;</code></dt>
 <dd>Maximum number of workflows to fetch</dd>
@@ -28,4 +26,4 @@ gh workflow list [flags]
 
 ### See also
 
--   [gh workflow](./gh_workflow.zh.md)
+- [gh workflow](./gh_workflow.zh.md)

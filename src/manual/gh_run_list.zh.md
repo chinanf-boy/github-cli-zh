@@ -1,5 +1,3 @@
-
-
 ## gh run list
 
 列出最近的工作流运行
@@ -24,7 +22,7 @@ gh run list [flags]
 <dd>模板化输出</dd>
 
 <dt><code>-w</code>, <code>--workflow &lt;string&gt;</code></dt>
-<dd>Filter runs by workflow</dd>
+<dd>工作流的过滤</dd>
 
 </dl>
 
@@ -37,4 +35,4 @@ gh run list [flags]
 
 ### See also
 
--   [gh run](./gh_run.zh.md)
+- [gh run](./gh_run.zh.md)

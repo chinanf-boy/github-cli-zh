@@ -1,5 +1,3 @@
-
-
 ## gh workflow view
 
 查看工作流摘要
@@ -12,13 +10,13 @@ gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]
 
 <dl class="flags">
 	<dt><code>-r</code>, <code>--ref &lt;string&gt;</code></dt>
-	<dd>The branch or tag name which contains the version of the workflow file you&#39;d like to view</dd>
+	<dd>想要查看的 分支与 tag 下的工作流文件</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
-<dd>Open workflow in the browser</dd>
+<dd>浏览器打开</dd>
 
 <dt><code>-y</code>, <code>--yaml</code></dt>
-<dd>View the workflow yaml file</dd>
+<dd>查看工作流的 yaml 文件</dd>
 
 </dl>
 
@@ -32,18 +30,13 @@ gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]
 ### Examples
 
 ```bash
+# 交互式选择
+$ gh workflow view
 
-
-# Interactively select a workflow to view
-
-$gh工作流视图
-
-# View a specific workflow
-
-$gh工作流视图0451
+# 查看一个特定的工作流
+$ gh workflow view 0451
 ```
-
 
 ### See also
 
--   [gh workflow](./gh_workflow.zh.md)
+- [gh workflow](./gh_workflow.zh.md)

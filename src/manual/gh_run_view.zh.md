@@ -1,5 +1,3 @@
-
-
 ## gh run view
 
 查看工作流运行的摘要
@@ -15,7 +13,7 @@ gh run view [<run-id>] [flags]
 	<dd>Exit with non-zero status if run failed</dd>
 
 <dt><code>-j</code>, <code>--job &lt;string&gt;</code></dt>
-<dd>View a specific job ID from a run</dd>
+<dd>查看一个特定的 job ID</dd>
 
 <dt><code>-q</code>, <code>--jq &lt;expression&gt;</code></dt>
 <dd>jq 表达式，过滤 JSON 输出</dd>
@@ -24,7 +22,7 @@ gh run view [<run-id>] [flags]
 <dd>JSON 输出特殊字段</dd>
 
 <dt><code>--log</code></dt>
-<dd>View full log for either a run or specific job</dd>
+<dd>查看 完整的日志</dd>
 
 <dt><code>--log-failed</code></dt>
 <dd>View the log for any failed steps in a run or specific job</dd>
@@ -33,10 +31,10 @@ gh run view [<run-id>] [flags]
 <dd>模板化输出</dd>
 
 <dt><code>-v</code>, <code>--verbose</code></dt>
-<dd>Show job steps</dd>
+<dd>展示 job 步骤</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
-<dd>Open run in the browser</dd>
+<dd>浏览器打开</dd>
 
 </dl>
 
@@ -50,30 +48,22 @@ gh run view [<run-id>] [flags]
 ### Examples
 
 ```bash
+# 交互式查看
+$ gh run view
 
+# 查看特定的 run
+$ gh run view 12345
 
-# Interactively select a run to view, optionally selecting a single job
+# 查看特定的 job within a run
+$ gh run view --job 456789
 
-$gh运行视图
+# 查看 job 的完整日志
+$ gh run view --log --job 456789
 
-# View a specific run
-
-$gh运行视图12345
-
-# View a specific job within a run
-
-$gh运行视图--作业456789
-
-# View the full log for a specific job
-
-$gh运行视图--日志--作业456789
-
-# Exit non-zero if a run failed
-
-$gh run view 0451--退出状态&&echo“运行挂起或通过”
+# 若是 非零 返回，说明运行失败
+$ gh run view 0451 --exit-status && echo "run pending or passed"
 ```
-
 
 ### See also
 
--   [gh run](./gh_run.zh.md)
+- [gh run](./gh_run.zh.md)
