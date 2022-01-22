@@ -2,7 +2,7 @@
 
 Github 官方命令行，中文文档
 
-## 校对 ✔，未上传
+## 校对 ✔，已上传
 
 <!-- doc-templite START generated -->
 <!-- repo = 'cli/cli' -->
