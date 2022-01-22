@@ -1,6 +1,6 @@
 ## gh secret
 
-机密(Secrets) 可以在**存储库**、**环境**或**组织**级别设置，以便在 GitHub 操作中使用。用户的机密可以设置为，还能在 GitHub 代码空间中使用。运行`gh help secret set`学习如何开始。
+机密(Secrets) 可以在**存储库**、**环境**或**组织**级别设置，以便在 GitHub Actions中使用。用户的机密可以设置为，还能在 GitHub 代码空间中使用。运行`gh help secret set`学习如何开始。
 
 ### Commands
 

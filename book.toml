@@ -1,7 +1,7 @@
 
 [book]
 title = "Github Cli 中文文档（非官方翻译)"
-description = "Cargo "
+description = "Github Cli 中文文档 2022 新开始，新年快乐，祝大家，万事如意，身体健康，合家安康 "
 authors = ["译文: Yobrave Lee"]
 multilingual = false
 src = "src"
@@ -18,7 +18,7 @@ use-default-preprocessors = false
 mathjax-support = false
 theme = "theme"
 curly-quotes = true
-google-analytics = "UA-128555056-1"
+# google-analytics = "UA-128555056-1"
 # additional-css = ["theme/custom.css"]
 git_repository_url = "https://github.com/chinanf-boy/github-cli-zh"
 git_repository_icon = "fa-github"

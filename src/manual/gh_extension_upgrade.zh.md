@@ -10,10 +10,10 @@ gh extension upgrade {<name> | --all} [flags]
 
 <dl class="flags">
 	<dt><code>--all</code></dt>
-	<dd>Upgrade all extensions</dd>
+	<dd>更新所有</dd>
 
 <dt><code>--force</code></dt>
-<dd>Force upgrade extension</dd>
+<dd>强制更新</dd>
 
 </dl>
 

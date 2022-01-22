@@ -4,32 +4,30 @@
 gh workflow run [<workflow-id> | <workflow-name>] [flags]
 ```
 
-为给定工作流创建工作流\\u 分派事件。
+为给定工作流，创建 `workflow_dispatch` 事件。
 
-此命令将触发 GitHub 操作以运行给定的工作流文件。给定的工作流文件必须支持工作流调度“on”触发器才能以这种方式运行。
+此命令将触发 GitHub Actions，去运行给定的工作流文件。给定的工作流文件必须支持 `workflow_dispatch`上的（`on`）触发器，才能以这种方式运行。
 
 如果工作流文件支持输入，可以通过以下几种方式指定输入：
 
-- 交互地
-- 通过-f 或-f 标志
-- 作为 JSON，通过 STDIN
+- 交互式的
+- 通过 `-f` 或 `-F`
+- 作为 JSON，通过 STDIN 输入
 
 ### Options
 
 <dl class="flags">
 	<dt><code>-F</code>, <code>--field &lt;key=value&gt;</code></dt>
-	<dd>Add a string parameter in key=value format, respecting @ syntax</dd>
+	<dd>key=value 模式的字符串参数，遵守 @ 语法</dd>
 
-```
 <dt><code>--json</code></dt>
-<dd>Read workflow inputs as JSON via STDIN</dd>
+<dd>通过 STDIN，读取 JSON 格式的工作流输入</dd>
 
 <dt><code>-f</code>, <code>--raw-field &lt;key=value&gt;</code></dt>
-<dd>Add a string parameter in key=value format</dd>
+<dd>key=value 模式的字符串参数</dd>
 
 <dt><code>-r</code>, <code>--ref &lt;string&gt;</code></dt>
-<dd>The branch or tag name which contains the version of the workflow file you&#39;d like to run</dd>
-```
+<dd>想要运行的 分支与 tag 下的工作流文件</dd>
 
 </dl>
 
@@ -43,22 +41,22 @@ gh workflow run [<workflow-id> | <workflow-name>] [flags]
 ### Examples
 
 ```bash
-# Have gh prompt you for what workflow you'd like to run and interactively collect inputs
+# 交互式
 $ gh workflow run
 
-# Run the workflow file 'triage.yml' at the remote's default branch
+# 运行，默认分支下的 triage 工作流
 $ gh workflow run triage.yml
 
-# Run the workflow file 'triage.yml' at a specified ref
+# 运行，ref 分支下的 triage 工作流
 $ gh workflow run triage.yml --ref my-branch
 
-# Run the workflow file 'triage.yml' with command line inputs
+# 运行，默认分支下的 triage 工作流，带有参数
 $ gh workflow run triage.yml -f name=scully -f greeting=hello
 
-# Run the workflow file 'triage.yml' with JSON via standard input
+# 运行，默认分支下的 triage 工作流，带有参数（JSON 形式）
 $ echo '{"name":"scully", "greeting":"hello"}' | gh workflow run triage.yml --json
 ```
 
 ### See also
 
-- [gh workflow](./gh_workflow)
+- [gh workflow](./gh_workflow.zh.md)

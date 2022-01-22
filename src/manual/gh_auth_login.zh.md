@@ -16,7 +16,7 @@ gh auth login [flags]
 
 <dl class="flags">
 	<dt><code>-h</code>, <code>--hostname &lt;string&gt;</code></dt>
-	<dd>The hostname of the GitHub instance to authenticate with</dd>
+	<dd>身份验证的 GitHub 主址</dd>
 
 <dt><code>-s</code>, <code>--scopes &lt;strings&gt;</code></dt>
 <dd>权限范围</dd>

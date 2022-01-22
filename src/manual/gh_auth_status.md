@@ -20,7 +20,7 @@ report on any issues.
 	<dd>Check a specific hostname&#39;s auth status</dd>
 
 	<dt><code>-t</code>, <code>--show-token</code></dt>
-	<dd>Display the auth token</dd>
+	<dd>展示 身份令牌</dd>
 </dl>
 
 

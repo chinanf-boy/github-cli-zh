@@ -10,7 +10,7 @@ gh gist edit {<id> | <url>} [flags]
 
 <dl class="flags">
 	<dt><code>-a</code>, <code>--add &lt;string&gt;</code></dt>
-	<dd>新增一个文件t</dd>
+	<dd>新增一个文件</dd>
 
 <dt><code>-f</code>, <code>--filename &lt;string&gt;</code></dt>
 <dd>选择一个文件编辑</dd>

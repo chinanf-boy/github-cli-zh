@@ -29,10 +29,10 @@ provided by untrusted users; see <https://lwn.net/Articles/835962/> for discussi
 	<dd>名字</dd>
 
     <dt><code>-e</code>, <code>--expand</code></dt>
-    <dd>Expand remote file names on remote shell</dd>
+    <dd>在远程 shell上，展开远程的（多个）文件名</dd>
 
     <dt><code>-r</code>, <code>--recursive</code></dt>
-    <dd>Recursively copy directories</dd>
+    <dd>递归复制目录</dd>
 
 </dl>
 

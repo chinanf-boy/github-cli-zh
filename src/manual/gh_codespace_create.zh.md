@@ -13,7 +13,7 @@ gh codespace create [flags]
 	<dd>repository 分支</dd>
 
 <dt><code>--idle-timeout &lt;duration&gt;</code></dt>
-<dd>在 codespace 停止之前，运行不活动的时间, e.g. &#34;10m&#34;, &#34;1h&#34;</dd>
+<dd>在 codespace 停止之前，不活动的时间, e.g. &#34;10m&#34;, &#34;1h&#34;</dd>
 
 <dt><code>-m</code>, <code>--machine &lt;string&gt;</code></dt>
 <dd>VM 硬件规格</dd>

@@ -23,13 +23,13 @@ If the workflow file supports inputs, they can be specified in a few ways:
 
 <dl class="flags">
 	<dt><code>-F</code>, <code>--field &lt;key=value&gt;</code></dt>
-	<dd>Add a string parameter in key=value format, respecting @ syntax</dd>
+	<dd>key=value 模式的字符串参数，遵守 @ 语法</dd>
 
 	<dt><code>--json</code></dt>
-	<dd>Read workflow inputs as JSON via STDIN</dd>
+	<dd>通过 STDIN，读取 JSON 格式的工作流输入</dd>
 
 	<dt><code>-f</code>, <code>--raw-field &lt;key=value&gt;</code></dt>
-	<dd>Add a string parameter in key=value format</dd>
+	<dd>key=value 模式的字符串参数</dd>
 
 	<dt><code>-r</code>, <code>--ref &lt;string&gt;</code></dt>
 	<dd>The branch or tag name which contains the version of the workflow file you&#39;d like to run</dd>

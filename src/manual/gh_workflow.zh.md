@@ -1,6 +1,6 @@
 ## gh workflow
 
-在 GitHub 操作中列出、查看和运行工作流。
+在 GitHub Actions中列出、查看和运行工作流。
 
 ### Commands
 

@@ -23,10 +23,10 @@ cp 命令在本地和远程文件系统之间，复制文件。
 	<dd>名字</dd>
 
 <dt><code>-e</code>, <code>--expand</code></dt>
-<dd>Expand remote file names on remote shell</dd>
+<dd>在远程 shell上，展开远程的（多个）文件名</dd>
 
 <dt><code>-r</code>, <code>--recursive</code></dt>
-<dd>Recursively copy directories</dd>
+<dd>递归复制目录</dd>
 
 </dl>
 

@@ -82,7 +82,7 @@ original query accepts an `$endCursor: String` variable and that it fetches the
 	<dd>Opt into GitHub API previews</dd>
 
 	<dt><code>-f</code>, <code>--raw-field &lt;key=value&gt;</code></dt>
-	<dd>Add a string parameter in key=value format</dd>
+	<dd>key=value 模式的字符串参数</dd>
 
 	<dt><code>--silent</code></dt>
 	<dd>Do not print the response body</dd>

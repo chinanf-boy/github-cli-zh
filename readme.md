@@ -2,7 +2,7 @@
 
 Github 官方命令行，中文文档
 
-## 校对 🀄
+## 校对 ✔，未上传
 
 <!-- doc-templite START generated -->
 <!-- repo = 'cli/cli' -->
@@ -77,7 +77,7 @@ Github 官方命令行，中文文档
     - [x] [gh_help_environment.md](src/manual/gh_help_environment.zh.md)
     - [x] [gh_help_formatting.md](src/manual/gh_help_formatting.zh.md)
     - [x] [gh_help_mintty.md](src/manual/gh_help_mintty.zh.md)
-    - [ ] [gh_help_reference.md](src/manual/gh_help_reference.zh.md)
+    - [x] [gh_help_reference.md](src/manual/gh_help_reference.zh.md)
   - [x] [gh_issue.md](src/manual/gh_issue.zh.md)
     - [x] [gh_issue_close.md](src/manual/gh_issue_close.zh.md)
     - [x] [gh_issue_comment.md](src/manual/gh_issue_comment.zh.md)
@@ -114,13 +114,13 @@ Github 官方命令行，中文文档
   - [x] [gh_repo.md](src/manual/gh_repo.zh.md)
     - [x] [gh_repo_archive.md](src/manual/gh_repo_archive.zh.md)
     - [x] [gh_repo_clone.md](src/manual/gh_repo_clone.zh.md)
-    - [ ] [gh_repo_create.md](src/manual/gh_repo_create.zh.md)
+    - [x] [gh_repo_create.md](src/manual/gh_repo_create.zh.md)
     - [x] [gh_repo_delete.md](src/manual/gh_repo_delete.zh.md)
     - [x] [gh_repo_edit.md](src/manual/gh_repo_edit.zh.md)
     - [x] [gh_repo_fork.md](src/manual/gh_repo_fork.zh.md)
     - [x] [gh_repo_list.md](src/manual/gh_repo_list.zh.md)
     - [x] [gh_repo_rename.md](src/manual/gh_repo_rename.zh.md)
-    - [ ] [gh_repo_sync.md](src/manual/gh_repo_sync.zh.md)
+    - [x] [gh_repo_sync.md](src/manual/gh_repo_sync.zh.md)
     - [x] [gh_repo_view.md](src/manual/gh_repo_view.zh.md)
   - [x] [gh_run.md](src/manual/gh_run.zh.md)
     - [x] [gh_run_cancel.md](src/manual/gh_run_cancel.zh.md)
@@ -140,7 +140,7 @@ Github 官方命令行，中文文档
     - [x] [gh_workflow_disable.md](src/manual/gh_workflow_disable.zh.md)
     - [x] [gh_workflow_enable.md](src/manual/gh_workflow_enable.zh.md)
     - [x] [gh_workflow_list.md](src/manual/gh_workflow_list.zh.md)
-    - [ ] [gh_workflow_run.md](src/manual/gh_workflow_run.zh.md)
+    - [x] [gh_workflow_run.md](src/manual/gh_workflow_run.zh.md)
     - [x] [gh_workflow_view.md](src/manual/gh_workflow_view.zh.md)
 
 ## HTML 文章的构建

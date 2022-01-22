@@ -4,7 +4,7 @@
 
 ## `gh actions`
 
-了解如何使用 GitHub 操作
+了解如何使用 GitHub Actions
 
 ## `gh alias <command>`
 
@@ -20,7 +20,7 @@
 
 ### `gh alias set <alias> <expansion> [flags]`
 
-为 gh 命令创建快捷方式
+为 gh 命令，创建快捷方式
 
 ```
 -s, --shell   定义个 alias 传递给 shell 解释器，r
@@ -31,19 +31,19 @@
 发出，经过身份验证的 GitHub API 请求
 
 ```
-    --cache duration        Cache the response, e.g. "3600s", "60m", "1h"
--F, --field key=value       Add a typed parameter in key=value format
--H, --header key:value      Add a HTTP request header 格式是 key=value
-    --hostname string       The GitHub hostname for the request (default "github.com")
--i, --include               Include HTTP response headers in the output
-    --input file            The file to use as body for the HTTP request (use "-" to read from standard input)
--q, --jq string             Query to select values from the response using jq syntax
--X, --method string         The HTTP method for the request (default "GET")
-    --paginate              Make additional HTTP requests to fetch all pages of results
--p, --preview strings       Opt into GitHub API previews
--f, --raw-field key=value   Add a string parameter in key=value format
-    --silent                Do not print the response body
--t, --template string       Format the response using a Go template
+    --cache duration        缓存一个响应, e.g. "3600s", "60m", "1h"
+-F, --field key=value       添加一个类型参数，格式是 key=value
+-H, --header key:value      添加一个 HTTP 请求头，格式是 key=value
+    --hostname string       请求的 GitHub 主址 (default "github.com")
+-i, --include               将 HTTP 响应头也输出
+    --input file            file 作为 HTTP 请求的主体 (使用 "-" 可以从标准输入读取)
+-q, --jq string             使用 jq 语法，查询响应的值
+-X, --method string         HTTP 方法 (默认 "GET")
+    --paginate              发出额外的 HTTP 请求，获取所有的结果页
+-p, --preview strings       GitHub API 预览版本的功能
+-f, --raw-field key=value   添加一个字符串参数，格式是 key=value
+    --silent                不打印
+-t, --template string       用模板格式化响应
 ```
 
 ## `gh auth <command>`
@@ -55,10 +55,10 @@
 通过 GitHub 主机进行身份验证
 
 ```
--h, --hostname string   The hostname of the GitHub instance to authenticate with
--s, --scopes strings    Additional authentication scopes for gh to have
--w, --web               Open a browser to authenticate
-    --with-token        Read token from standard input
+-h, --hostname string   身份验证的 GitHub 主址
+-s, --scopes strings    权限范围
+-w, --web               打开浏览器，进行身份验证
+    --with-token        从标准输入读取令牌
 ```
 
 ### `gh auth logout [flags]`
@@ -66,7 +66,7 @@
 注销 GitHub 主机
 
 ```
--h, --hostname string   The hostname of the GitHub instance to log out of
+-h, --hostname string   身份登出的 GitHub 主址
 ```
 
 ### `gh auth refresh [flags]`
@@ -74,8 +74,8 @@
 刷新存储的身份验证凭据
 
 ```
--h, --hostname string   The GitHub host to use for authentication
--s, --scopes strings    Additional authentication scopes for gh to have
+-h, --hostname string   身份验证的 GitHub 主址
+-s, --scopes strings    权限范围
 ```
 
 ### `gh auth setup-git [flags]`
@@ -83,7 +83,7 @@
 配置 git，以将 GitHub CLI 用作凭据帮助器
 
 ```
--h, --hostname string   The hostname to configure git for
+-h, --hostname string   配置 git 的 主机网址
 ```
 
 ### `gh auth status [flags]`
@@ -91,8 +91,8 @@
 查看身份验证状态
 
 ```
--h, --hostname string   Check a specific hostname's auth status
--t, --show-token        Display the auth token
+-h, --hostname string   检查的主机
+-t, --show-token        展示 身份令牌
 ```
 
 ## `gh browse [<number> | <path>] [flags]`
@@ -100,12 +100,12 @@
 在浏览器中，打开存储库
 
 ```
--b, --branch string   Select another branch by passing in the branch name
--c, --commit          Open the last commit
--n, --no-browser      Print destination URL instead of opening the browser
--p, --projects        Open repository projects
--s, --settings        Open repository settings
--w, --wiki            Open repository wiki
+-b, --branch string   换分支
+-c, --commit          打开最后的 commit
+-n, --no-browser      给 URL，不打开浏览器
+-p, --projects        打开 projects
+-s, --settings        打开 settings
+-w, --wiki            打开 wiki
 ```
 
 ## `gh codespace`
@@ -127,8 +127,8 @@
 
 ```
 -c, --codespace string   名字
--e, --expand             Expand remote file names on remote shell
--r, --recursive          Recursively copy directories
+-e, --expand             在远程 shell上，展开远程的（多个）文件名
+-r, --recursive          递归复制目录
 ```
 
 ### `gh codespace create [flags]`
@@ -136,11 +136,11 @@
 创建一个代码空间
 
 ```
--b, --branch string           repository branch
-    --idle-timeout duration   allowed inactivity before codespace is stopped, e.g. "10m", "1h"
--m, --machine string          hardware specifications for the VM
--r, --repo string             repository name with owner: user/repo
--s, --status                  show status of post-create command and dotfiles
+-b, --branch string           分支
+    --idle-timeout duration   在 codespace 停止之前，不活动的时间, e.g. "10m", "1h"
+-m, --machine string          VM 硬件规格
+-r, --repo string             拥有者的库名: user/repo
+-s, --status                  展示 post-create 命令和 dotfiles
 ```
 
 ### `gh codespace delete [flags]`
@@ -148,11 +148,11 @@
 删除代码空间
 
 ```
-    --all                Delete all codespaces
+    --all                删除所有
 -c, --codespace string   名字
-    --days N             Delete codespaces older than N days
--f, --force              Skip confirmation for codespaces that contain unsaved changes
--r, --repo repository    Delete codespaces for a repository
+    --days N             删除过去 N 天
+-f, --force              强制删除
+-r, --repo repository    删除一个库
 ```
 
 ### `gh codespace list [flags]`
@@ -199,10 +199,10 @@ SSH 到一个代码空间
 
 ```
 -c, --codespace string    名字
--d, --debug               Log debug data to a file
+-d, --debug               调试数据装入文件
     --debug-file string   文件日志的路径
     --profile string      所使用的 SSH profile 名称
-    --server-port int     SSH server port number (0 => pick unused)
+    --server-port int     SSH 服务器端口号 (0 => pick unused)
 ```
 
 ### `gh codespace stop [flags]`
@@ -230,7 +230,7 @@ SSH 到一个代码空间
 打印给定配置密钥的值
 
 ```
--h, --host string   Get per-host setting
+-h, --host string   获取每个 host 的 setting
 ```
 
 ### `gh config list [flags]`
@@ -238,7 +238,7 @@ SSH 到一个代码空间
 打印配置键和值的列表
 
 ```
--h, --host string   Get per-host configuration
+-h, --host string   获取每个 host 的 configuration
 ```
 
 ### `gh config set <key> <value> [flags]`
@@ -246,7 +246,7 @@ SSH 到一个代码空间
 使用给定密钥的值更新配置
 
 ```
--h, --host string   Set per-host setting
+-h, --host string   设置每个 host 的 setting
 ```
 
 ## `gh extension`
@@ -258,7 +258,7 @@ SSH 到一个代码空间
 创建一个新的扩展名
 
 ```
---precompiled string   Create a precompiled extension. Possible values: go, other
+--precompiled string   预编译扩展。可能的值: go, other
 ```
 
 ### `gh extension install <repository>`
@@ -278,13 +278,13 @@ SSH 到一个代码空间
 升级已安装的扩展
 
 ```
---all     Upgrade all extensions
---force   Force upgrade extension
+--all     更新所有
+--force   强制更新
 ```
 
 ## `gh gist <command>`
 
-管理注册会计师
+与 GitHub gist（要点） 合作
 
 ### `gh gist clone <gist> [<directory>] [-- <gitflags>...]`
 
@@ -295,10 +295,10 @@ SSH 到一个代码空间
 创造一个新的要点
 
 ```
--d, --desc string       A description for this gist
--f, --filename string   Provide a filename to be used when reading from standard input
--p, --public            List the gist publicly (default: secret)
--w, --web               Open the web browser with created gist
+-d, --desc string       描述
+-f, --filename string   标准输入，给个文件名
+-p, --public            公开 (default: secret)
+-w, --web               gist 链接，打开浏览器
 ```
 
 ### `gh gist delete {<id> | <url>}`
@@ -307,16 +307,16 @@ SSH 到一个代码空间
 
 ### `gh gist edit {<id> | <url>} [flags]`
 
-编辑一个 GIST
+编辑一个要点
 
 ```
--a, --add string        Add a new file to the gist
--f, --filename string   Select a file to edit
+-a, --add string        新增一个文件
+-f, --filename string   选择一个文件编辑
 ```
 
 ### `gh gist list [flags]`
 
-列出你的注册医生
+列出你的要点
 
 ```
 -L, --limit int   Maximum number of gists to fetch (default 10)
@@ -329,10 +329,10 @@ SSH 到一个代码空间
 要点
 
 ```
--f, --filename string   Display a single file from the gist
-    --files             List file names from the gist
--r, --raw               Print raw instead of rendered gist contents
--w, --web               Open gist in the browser
+-f, --filename string   展示单个文件
+    --files             列出文件名列表
+-r, --raw               原始内容
+-w, --web               浏览器打开
 ```
 
 ## `gh gpg-key <command>`
@@ -360,10 +360,10 @@ SSH 到一个代码空间
 创建新的问题注释
 
 ```
--b, --body string      Supply a body. Will prompt for one otherwise.
--F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
--e, --editor           Add body using editor
--w, --web              Add body in browser
+-b, --body string      提供主体内容。不填，也会提示
+-F, --body-file file   读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
+-e, --editor           通过 editor 添加主体
+-w, --web              用浏览器打开网络链接，添加主体
 ```
 
 ### `gh issue create [flags]`
@@ -371,15 +371,15 @@ SSH 到一个代码空间
 创刊
 
 ```
--a, --assignee login   Assign people by their login. Use "@me" to self-assign.
--b, --body string      Supply a body. Will prompt for one otherwise.
--F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
+-a, --assignee login   通过 login 分配人员。使用 @me 自我分配。
+-b, --body string      提供主体内容。不填，也会提示
+-F, --body-file file   读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
 -l, --label name       添加标签
--m, --milestone name   Add the issue to a milestone by name
--p, --project name     Add the issue to projects by name
-    --recover string   Recover input from a failed run of create
--t, --title string     Supply a title. Will prompt for one otherwise.
--w, --web              Open the browser to create an issue
+-m, --milestone name   通过 name，添加 issue 到 name 里程牌
+-p, --project name     通过 name，添加 issue 到 name 项目
+    --recover string   一次失败创建，带来的恢复输入
+-t, --title string     提供一个标题。不填，也会提示
+-w, --web              浏览器打开，创建 issue
 ```
 
 ### `gh issue delete {<number> | <url>}`
@@ -391,15 +391,15 @@ SSH 到一个代码空间
 编辑问题
 
 ```
-    --add-assignee login      Add assigned users by their login. Use "@me" to assign yourself.
+    --add-assignee login      通过 login 分配人员。使用 @me 自我分配。
     --add-label name          添加标签
-    --add-project name        Add the issue to projects by name
+    --add-project name        通过 name，添加 issue 到 name 项目
 -b, --body string             设置新的主体内容.
--F, --body-file file          读取文件，输入主体内容 (use "-" to read from standard input)
--m, --milestone name          Edit the milestone the issue belongs to by name
-    --remove-assignee login   Remove assigned users by their login. Use "@me" to unassign yourself.
+-F, --body-file file          读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
+-m, --milestone name          用 name，编辑下里程碑
+    --remove-assignee login   移除 login 的人员配置. 使用 @me 就移除自己
     --remove-label name       移除 name 标签
-    --remove-project name     Remove the issue from projects by name
+    --remove-project name     移除 name 项目
 -t, --title string            设置新的标题.
 ```
 
@@ -408,18 +408,18 @@ SSH 到一个代码空间
 列出并筛选此存储库中的问题
 
 ```
--a, --assignee string    Filter by assignee
--A, --author string      Filter by author
+-a, --assignee string    过滤项：assignee
+-A, --author string      过滤项：author
 -q, --jq expression      jq 表达式，过滤 JSON 输出
     --json fields        JSON 输出特殊字段
--l, --label strings      Filter by labels
+-l, --label strings      过滤项：labels
 -L, --limit int          Maximum number of issues to fetch (default 30)
-    --mention string     Filter by mention
--m, --milestone number   Filter by milestone number or `title`
--S, --search query       Search issues with query
--s, --state string       Filter by state: {open|closed|all} (default "open")
+    --mention string     过滤项：mention
+-m, --milestone number   过滤项：milestone number or `title`
+-S, --search query       query 搜索 issue
+-s, --state string       过滤项：state: {open|closed|all} (default "open")
 -t, --template string    模板化输出
--w, --web                Open the browser to list the issue(s)
+-w, --web                浏览器打开，列出 issue(s)
 ```
 
 ### `gh issue reopen {<number> | <url>}`
@@ -461,10 +461,10 @@ SSH 到一个代码空间
 查看 git 中的 pull 请求
 
 ```
--b, --branch string        Local branch name to use (default: the name of the head branch)
-    --detach               Checkout PR with a detached HEAD
--f, --force                Reset the existing local branch to the latest state of the pull request
-    --recurse-submodules   Update all submodules after checkout
+-b, --branch string        本地分支名 (default: the name of the head branch)
+    --detach               以一种分离 HEAD 的状态，查看 PR
+-f, --force                重设本地分支为最新的PR
+    --recurse-submodules   在 checkout 之后，更新所有的 submodules
 ```
 
 ### `gh pr checks [<number> | <url> | <branch>] [flags]`
@@ -472,7 +472,7 @@ SSH 到一个代码空间
 显示单个 PR 的 CI 状态
 
 ```
--w, --web   Open the web browser to show details about checks
+-w, --web   浏览器打开
 ```
 
 ### `gh pr close {<number> | <url> | <branch>} [flags]`
@@ -480,7 +480,7 @@ SSH 到一个代码空间
 关闭拉取请求
 
 ```
--d, --delete-branch   Delete the local and remote branch after close
+-d, --delete-branch   关闭 PR 之后，删除本地与远程的分支
 ```
 
 ### `gh pr comment [<number> | <url> | <branch>] [flags]`
@@ -488,10 +488,10 @@ SSH 到一个代码空间
 创建新的 PR 评论
 
 ```
--b, --body string      Supply a body. Will prompt for one otherwise.
--F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
--e, --editor           Add body using editor
--w, --web              Add body in browser
+-b, --body string      提供主体内容。不填，也会提示
+-F, --body-file file   读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
+-e, --editor           通过 editor 添加主体
+-w, --web              用浏览器打开网络链接，添加主体
 ```
 
 ### `gh pr create [flags]`
@@ -499,7 +499,7 @@ SSH 到一个代码空间
 创建拉取请求
 
 ```
--a, --assignee login       Assign people by their login. Use "@me" to self-assign.
+-a, --assignee login       通过 login 分配人员。使用 @me 自我分配。
 -B, --base branch          要合并到的分支
 -b, --body string          PR 的主体内容
 -F, --body-file file       读取文件，输入主体内容
@@ -507,10 +507,10 @@ SSH 到一个代码空间
 -f, --fill                 不用提示，使用 commit 的信息填入 title/body
 -H, --head branch          包含你 commits 的分支 (default: current branch)
 -l, --label name           添加标签
--m, --milestone name       Add the pull request to a milestone by name
-    --no-maintainer-edit   Disable maintainer's ability to modify pull request
+-m, --milestone name       通过 name，添加 PR 到 name 里程牌
+    --no-maintainer-edit   禁用维护人员修改 PR 
 -p, --project name         将 pull request 添加到 name 项目
-    --recover string       Recover input from a failed run of create
+    --recover string       一次失败创建，带来的恢复输入
 -r, --reviewer handle      PR 审查人员
 -t, --title string         添加 标题
 -w, --web                  浏览器打开
@@ -530,15 +530,15 @@ SSH 到一个代码空间
 编辑拉取请求
 
 ```
-    --add-assignee login      Add assigned users by their login. Use "@me" to assign yourself.
+    --add-assignee login      通过 login 分配人员。使用 @me 自我分配
     --add-label name          添加标签
     --add-project name        将 pull request 添加到 name 项目
     --add-reviewer login      通过 login ，添加审查人员.
 -B, --base branch             更改 PR 的基分支
 -b, --body string             设置新的主体内容.
--F, --body-file file          读取文件，输入主体内容 (use "-" to read from standard input)
+-F, --body-file file          读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
 -m, --milestone name          编辑 name 里程牌
-    --remove-assignee login   Remove assigned users by their login. Use "@me" to unassign yourself.
+    --remove-assignee login   移除 login 的人员配置. 使用 @me 就移除自己
     --remove-label name       移除 name 标签
     --remove-project name     移除 name 项目的 PR
     --remove-reviewer login   通过 login ，移除审查人员.
@@ -550,17 +550,17 @@ SSH 到一个代码空间
 列出并筛选此存储库中的请求
 
 ```
--a, --assignee string   Filter by assignee
--A, --author string     Filter by author
--B, --base string       Filter by base branch
--d, --draft             Filter by draft state
--H, --head string       Filter by head branch
+-a, --assignee string   过滤项：assignee
+-A, --author string     过滤项：author
+-B, --base string       过滤项：base branch
+-d, --draft             过滤项：draft state
+-H, --head string       过滤项：head branch
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
--l, --label strings     Filter by labels
+-l, --label strings     过滤项：labels
 -L, --limit int         Maximum number of items to fetch (default 30)
 -S, --search query      Search pull requests with query
--s, --state string      Filter by state: {open|closed|merged|all} (default "open")
+-s, --state string      过滤项：state: {open|closed|merged|all} (default "open")
 -t, --template string   模板化输出
 -w, --web               Open the browser to list the pull requests
 ```
@@ -573,7 +573,7 @@ SSH 到一个代码空间
     --admin            即便条件不达标，用管理员权限合并
     --auto             条件符合，自动合并
 -b, --body text        合并的主体内容
--F, --body-file file   读取文件，输入主体内容 (use "-" to read from standard input)
+-F, --body-file file   读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
 -d, --delete-branch    合并后，删除本地与远程分支
     --disable-auto     禁止自动合并
 -m, --merge            合并
@@ -597,7 +597,7 @@ SSH 到一个代码空间
 ```
 -a, --approve           批准 pull request
 -b, --body string       指定一个审查的主体内容
--F, --body-file file    读取文件，输入主体内容 (use "-" to read from standard input)
+-F, --body-file file    读取文件，输入主体内容 (使用 "-" 可以从标准输入读取)
 -c, --comment           给出评论
 -r, --request-changes   要求 PR 修改
 ```
@@ -637,7 +637,7 @@ SSH 到一个代码空间
 -d, --draft                        一个草稿版本
     --generate-notes               自动生成，release 的 标题与笔记
 -n, --notes string                 Release 笔记
--F, --notes-file file              用文件，读笔记 (use "-" to read from standard input)
+-F, --notes-file file              用文件，读笔记 (使用 "-" 可以从标准输入读取)
 -p, --prerelease                   预览版
     --target branch                指定的分支或是完整的 commit SHA (default: main branch)
 -t, --title string                 Release 标题
@@ -709,21 +709,21 @@ SSH 到一个代码空间
 创建一个新的存储库
 
 ```
--c, --clone                 Clone the new repository to the current directory
+-c, --clone                 Clone 新的存储库到当前目录
 -d, --description string    存储库的描述
-    --disable-issues        Disable issues in the new repository
-    --disable-wiki          Disable wiki in the new repository
--g, --gitignore string      Specify a gitignore template for the repository
+    --disable-issues        禁用 issues
+    --disable-wiki          禁用 wiki
+-g, --gitignore string      指定一个 gitignore 的模板
 -h, --homepage URL          主页URL
-    --internal              Make the new repository internal
--l, --license string        Specify an Open Source License for the repository
-    --private               Make the new repository private
-    --public                Make the new repository public
-    --push                  Push local commits to the new repository
--r, --remote string         Specify remote name for the new repository
--s, --source string         Specify path to local repository to use as source
--t, --team name             The name of the organization team to be granted access
--p, --template repository   Make the new repository based on a template repository
+    --internal              内部可见
+-l, --license string        指定开源的协议
+    --private               私有存储库
+    --public                公开存储库
+    --push                  推送本地的 commits 到新的存储库
+-r, --remote string         指定 remote 名称
+-s, --source string         指定存储库的源代码路径e
+-t, --team name             可以访问存储库的组织名字
+-p, --template repository   让新的存储库，基于 一个模板存储库生成
 ```
 
 ### `gh repo delete [<repository>] [flags]`
@@ -800,9 +800,9 @@ SSH 到一个代码空间
 同步存储库
 
 ```
--b, --branch string   Branch to sync (default: main branch)
-    --force           Hard reset the branch of the destination repository to match the source repository
--s, --source string   Source repository
+-b, --branch string   同步的分支 (default: main branch)
+    --force           强制同步
+-s, --source string   源存储库
 ```
 
 ### `gh repo view [<repository>] [flags]`
@@ -860,7 +860,7 @@ SSH 到一个代码空间
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
     --log               查看 完整的日志
-    --log-failed        View the log for any failed steps in a run or specific job
+    --log-failed        查看运行失败的日志
 -t, --template string   模板化输出
 -v, --verbose           展示 job 步骤
 -w, --web               浏览器打开
@@ -932,7 +932,7 @@ SSH 到一个代码空间
 
 ## `gh workflow <command>`
 
-查看有关 GitHub 操作工作流的详细信息
+查看有关 GitHub Actions 工作流的详细信息
 
 ### `gh workflow disable [<workflow-id> | <workflow-name>]`
 
@@ -953,13 +953,13 @@ SSH 到一个代码空间
 
 ### `gh workflow run [<workflow-id> | <workflow-name>] [flags]`
 
-通过创建工作流\\u 分派事件来运行工作流
+为给定工作流，创建 `workflow_dispatch` 事件。
 
 ```
--F, --field key=value       Add a string parameter in key=value format, respecting @ syntax
-    --json                  Read workflow inputs as JSON via STDIN
--f, --raw-field key=value   Add a string parameter in key=value format
--r, --ref string            The branch or tag name which contains the version of the workflow file you'd like to run
+-F, --field key=value       key=value 模式的字符串参数，遵守 @ 语法
+    --json                  通过 STDIN，读取 JSON 格式的工作流输入
+-f, --raw-field key=value   key=value 模式的字符串参数
+-r, --ref string            想要运行的 分支与 tag 下的工作流文件
 ```
 
 ### `gh workflow view [<workflow-id> | <workflow-name> | <filename>] [flags]`

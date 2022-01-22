@@ -13,7 +13,7 @@ gh auth setup-git [flags]
 
 <dl class="flags">
 	<dt><code>-h</code>, <code>--hostname &lt;string&gt;</code></dt>
-	<dd>The hostname to configure git for</dd>
+	<dd>配置 git 的 主机网址</dd>
 </dl>
 
 

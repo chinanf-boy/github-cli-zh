@@ -16,62 +16,61 @@ gh repo create [<name>] [flags]
 
 <dl class="flags">
 	<dt><code>-c</code>, <code>--clone</code></dt>
-	<dd>Clone the new repository to the current directory</dd>
+	<dd>Clone 新的存储库到当前目录</dd>
 
 <dt><code>-d</code>, <code>--description &lt;string&gt;</code></dt>
 <dd>存储库的描述</dd>
 
 <dt><code>--disable-issues</code></dt>
-<dd>Disable issues in the new repository</dd>
+<dd>禁用 issues</dd>
 
 <dt><code>--disable-wiki</code></dt>
-<dd>Disable wiki in the new repository</dd>
+<dd>禁用 wiki</dd>
 
 <dt><code>-g</code>, <code>--gitignore &lt;string&gt;</code></dt>
-<dd>Specify a gitignore template for the repository</dd>
+<dd>指定一个 gitignore 的模板</dd>
 
 <dt><code>-h</code>, <code>--homepage &lt;URL&gt;</code></dt>
 <dd>主页URL</dd>
 
 <dt><code>--internal</code></dt>
-<dd>Make the new repository internal</dd>
+<dd>内部可见</dd>
 
 <dt><code>-l</code>, <code>--license &lt;string&gt;</code></dt>
-<dd>Specify an Open Source License for the repository</dd>
+<dd>指定开源的协议</dd>
 
 <dt><code>--private</code></dt>
-<dd>Make the new repository private</dd>
+<dd>私有存储库</dd>
 
 <dt><code>--public</code></dt>
-<dd>Make the new repository public</dd>
+<dd>公开存储库</dd>
 
 <dt><code>--push</code></dt>
-<dd>Push local commits to the new repository</dd>
+<dd>推送本地的 commits 到新的存储库</dd>
 
 <dt><code>-r</code>, <code>--remote &lt;string&gt;</code></dt>
-<dd>Specify remote name for the new repository</dd>
+<dd>指定 remote 名称</dd>
 
 <dt><code>-s</code>, <code>--source &lt;string&gt;</code></dt>
-<dd>Specify path to local repository to use as source</dd>
+<dd>指定存储库的源代码路径e</dd>
 
 <dt><code>-t</code>, <code>--team &lt;name&gt;</code></dt>
-<dd>The name of the organization team to be granted access</dd>
+<dd>可以访问存储库的组织名字</dd>
 
 <dt><code>-p</code>, <code>--template &lt;repository&gt;</code></dt>
-<dd>Make the new repository based on a template repository</dd>
+<dd>让新的存储库，基于 一个模板存储库生成</dd>
 </dl>
 
 ### Examples
 
 ```bash
-
-# create a repository interactively 
+# 交互式创建一个 存储库
 gh repo create
 
-# create a new remote repository and clone it locally
+# 创建一个新的远程存储库，并将它 clone 到本地
 gh repo create my-project --public --clone
 
-# create a remote repository from the current directory
+# 以本地目录为基础，创建一个新的远程存储库
 gh repo create my-project --private --source=. --remote=upstream
 ```
 

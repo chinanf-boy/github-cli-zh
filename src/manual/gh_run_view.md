@@ -28,7 +28,7 @@ gh run view [<run-id>] [flags]
 	<dd>查看 完整的日志</dd>
 
 	<dt><code>--log-failed</code></dt>
-	<dd>View the log for any failed steps in a run or specific job</dd>
+	<dd>查看运行失败的日志</dd>
 
 	<dt><code>-t</code>, <code>--template &lt;string&gt;</code></dt>
 	<dd>模板化输出</dd>

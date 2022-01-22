@@ -12,11 +12,11 @@ gh auth status [flags]
 
 <dl class="flags">
 	<dt><code>-h</code>, <code>--hostname &lt;string&gt;</code></dt>
-	<dd>Check a specific hostname&#39;s auth status</dd>
+	<dd>检查的主机</dd>
 
 
 <dt><code>-t</code>, <code>--show-token</code></dt>
-<dd>Display the auth token</dd>
+<dd>展示 身份令牌</dd>
 
 
 </dl>

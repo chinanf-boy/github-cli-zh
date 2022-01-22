@@ -43,7 +43,7 @@ Make an authenticated GitHub API request
 -X, --method string         The HTTP method for the request (default "GET")
     --paginate              Make additional HTTP requests to fetch all pages of results
 -p, --preview strings       Opt into GitHub API previews
--f, --raw-field key=value   Add a string parameter in key=value format
+-f, --raw-field key=value   key=value 模式的字符串参数
     --silent                Do not print the response body
 -t, --template string       Format the response using a Go template
 ````
@@ -57,7 +57,7 @@ Login, logout, and refresh your authentication
 Authenticate with a GitHub host
 
 ```
--h, --hostname string   The hostname of the GitHub instance to authenticate with
+-h, --hostname string   身份验证的 GitHub 主址
 -s, --scopes strings    Additional authentication scopes for gh to have
 -w, --web               Open a browser to authenticate
     --with-token        Read token from standard input
@@ -85,7 +85,7 @@ Refresh stored authentication credentials
 Configure git to use GitHub CLI as a credential helper
 
 ```
--h, --hostname string   The hostname to configure git for
+-h, --hostname string   配置 git 的 主机网址
 ````
 
 ### `gh auth status [flags]`
@@ -94,7 +94,7 @@ View authentication status
 
 ```
 -h, --hostname string   Check a specific hostname's auth status
--t, --show-token        Display the auth token
+-t, --show-token        展示 身份令牌
 ````
 
 ## `gh browse [<number> | <path>] [flags]`
@@ -129,8 +129,8 @@ Copy files between local and remote file systems
 
 ```
 -c, --codespace string   名字
--e, --expand             Expand remote file names on remote shell
--r, --recursive          Recursively copy directories
+-e, --expand             在远程 shell上，展开远程的（多个）文件名
+-r, --recursive          递归复制目录
 ````
 
 ### `gh codespace create [flags]`
@@ -280,8 +280,8 @@ Remove an installed extension
 Upgrade installed extensions
 
 ```
---all     Upgrade all extensions
---force   Force upgrade extension
+--all     更新所有
+--force   强制更新
 ````
 
 ## `gh gist <command>`
@@ -381,7 +381,7 @@ Create a new issue
 -p, --project name     Add the issue to projects by name
     --recover string   Recover input from a failed run of create
 -t, --title string     Supply a title. Will prompt for one otherwise.
--w, --web              Open the browser to create an issue
+-w, --web              浏览器打开，创建 issue
 ````
 
 ### `gh issue delete {<number> | <url>}`
@@ -421,7 +421,7 @@ List and filter issues in this repository
 -S, --search query       Search issues with query
 -s, --state string       Filter by state: {open|closed|all} (default "open")
 -t, --template string    模板化输出
--w, --web                Open the browser to list the issue(s)
+-w, --web                浏览器打开，列出 issue(s)
 ````
 
 ### `gh issue reopen {<number> | <url>}`
@@ -711,21 +711,21 @@ Clone a repository locally
 Create a new repository
 
 ```
--c, --clone                 Clone the new repository to the current directory
+-c, --clone                 Clone 新的存储库到当前目录
 -d, --description string    存储库的描述
-    --disable-issues        Disable issues in the new repository
-    --disable-wiki          Disable wiki in the new repository
--g, --gitignore string      Specify a gitignore template for the repository
+    --disable-issues        禁用 issues
+    --disable-wiki          禁用 wiki
+-g, --gitignore string      指定一个 gitignore 的模板
 -h, --homepage URL          主页URL
-    --internal              Make the new repository internal
--l, --license string        Specify an Open Source License for the repository
-    --private               Make the new repository private
-    --public                Make the new repository public
-    --push                  Push local commits to the new repository
--r, --remote string         Specify remote name for the new repository
--s, --source string         Specify path to local repository to use as source
--t, --team name             The name of the organization team to be granted access
--p, --template repository   Make the new repository based on a template repository
+    --internal              内部可见
+-l, --license string        指定开源的协议
+    --private               私有存储库
+    --public                公开存储库
+    --push                  推送本地的 commits 到新的存储库
+-r, --remote string         指定 remote 名称
+-s, --source string         指定存储库的源代码路径e
+-t, --team name             可以访问存储库的组织名字
+-p, --template repository   让新的存储库，基于 一个模板存储库生成
 ````
 
 ### `gh repo delete [<repository>] [flags]`
@@ -802,9 +802,9 @@ Rename a repository
 Sync a repository
 
 ```
--b, --branch string   Branch to sync (default: main branch)
-    --force           Hard reset the branch of the destination repository to match the source repository
--s, --source string   Source repository
+-b, --branch string   同步的分支 (default: main branch)
+    --force           强制同步
+-s, --source string   源存储库
 ````
 
 ### `gh repo view [<repository>] [flags]`
@@ -862,7 +862,7 @@ View a summary of a workflow run
 -q, --jq expression     jq 表达式，过滤 JSON 输出
     --json fields       JSON 输出特殊字段
     --log               查看 完整的日志
-    --log-failed        View the log for any failed steps in a run or specific job
+    --log-failed        查看运行失败的日志
 -t, --template string   模板化输出
 -v, --verbose           展示 job 步骤
 -w, --web               浏览器打开
@@ -958,9 +958,9 @@ List workflows
 Run a workflow by creating a workflow_dispatch event
 
 ```
--F, --field key=value       Add a string parameter in key=value format, respecting @ syntax
-    --json                  Read workflow inputs as JSON via STDIN
--f, --raw-field key=value   Add a string parameter in key=value format
+-F, --field key=value       key=value 模式的字符串参数，遵守 @ 语法
+    --json                  通过 STDIN，读取 JSON 格式的工作流输入
+-f, --raw-field key=value   key=value 模式的字符串参数
 -r, --ref string            The branch or tag name which contains the version of the workflow file you'd like to run
 ````
 

@@ -10,7 +10,7 @@ gh gist view [<id> | <url>] [flags]
 
 <dl class="flags">
 	<dt><code>-f</code>, <code>--filename &lt;string&gt;</code></dt>
-	<dd>展示单个文件t</dd>
+	<dd>展示单个文件</dd>
 
 <dt><code>--files</code></dt>
 <dd>列出文件名列表</dd>

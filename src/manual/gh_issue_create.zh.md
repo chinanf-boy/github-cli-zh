@@ -34,7 +34,7 @@ gh issue create [flags]
 <dd>提供一个标题。不填，也会提示</dd>
 
 <dt><code>-w</code>, <code>--web</code></dt>
-<dd>Open the browser to create an issue</dd>
+<dd>浏览器打开，创建 issue</dd>
 
 </dl>
 

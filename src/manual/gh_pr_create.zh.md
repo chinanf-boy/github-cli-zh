@@ -42,10 +42,10 @@ gh pr create [flags]
 <dd>添加标签</dd>
 
 <dt><code>-m</code>, <code>--milestone &lt;name&gt;</code></dt>
-<dd>通过 name，添加 issue 到 name 里程牌</dd>
+<dd>通过 name，添加 PR 到 name 里程牌</dd>
 
 <dt><code>--no-maintainer-edit</code></dt>
-<dd>Disable maintainer&#39;s ability to modify pull request</dd>
+<dd>禁用维护人员修改 PR </dd>
 
 <dt><code>-p</code>, <code>--project &lt;name&gt;</code></dt>
 <dd>将 pull request 添加到 name 项目</dd>
