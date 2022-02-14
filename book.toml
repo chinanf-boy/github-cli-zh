@@ -22,6 +22,7 @@ curly-quotes = true
 # additional-css = ["theme/custom.css"]
 git_repository_url = "https://github.com/chinanf-boy/github-cli-zh"
 git_repository_icon = "fa-github"
+edit-url-template = "https://github.com/chinanf-boy/github-cli-zh/edit/master/{path}"
 # additional-js = ["theme/custom.js"]
 
 [output.html.playpen]
